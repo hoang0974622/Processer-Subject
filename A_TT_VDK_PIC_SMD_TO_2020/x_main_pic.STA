@@ -1,0 +1,215 @@
+
+ROM used:   4942/32768 (15%)
+            4942/32768 (15%) including unused fragments
+
+            0.4 Average locations per line
+            1.0 Average locations per statement
+
+RAM used:   1434/2048 (70%) at main() level
+            1453/2048 (71%) worst case
+
+Stack used: 10 worst case (9 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  169    18   0  x_main_pic.c
+   39     0   0  b_tv_lbr_chuong_all.c
+  309    74   1  tv_01_mbi_hardware.c
+  837     0   0  ..\..\..\..\APP\PICC\Devices\18f4550.h
+   38    18   0  tv_03_mbi_32led_don.c
+   85    38   1  tv_04_mbi_4led_7doan.c
+  100    47   1  tv_05_mbi_8led_7doan.c
+   39    16   0  tv_06_mbi_lcd_glcd.c
+   82    37   1  tv_10_mbi_led_matran.c
+  393   248   5  TV_PICKIT2_SHIFT_32LED_DON.c
+   36    17   0  TV_PICKIT2_SHIFT_DS18B20.c
+  230    54   1  ..\..\..\..\APP\PICC\Drivers\TOUCH.c
+   52    28   1  TV_PICKIT2_SHIFT_STEP_MOTOR.c
+   69    31   1  TV_PICKIT2_SHIFT_DC_MOTOR.c
+  359   173   3  lbr_03_key.c
+    3     0   0  lbr_04_timer_ngat.c
+  120    39   1  lbr_06_lcd.c
+  265    98   2  lbr_06_glcd.c
+  123    77   2  lbr_08_i2c.c
+    2     0   0  lbr_10_matran_cot.c
+    2     0   0  lbr_10_matran_hang.c
+  578   319   6  chuong3_32led_key.c
+  490   257   5  chuong4_4led_7doan.c
+  821   540  11  chuong5_8led_7doan.c
+ 1660  1080  21  chuong6_lcd_glcd.c
+  540   163   3  ..\..\..\..\APP\PICC\Drivers\graphics.c
+ 2229   257   5  ..\..\..\..\APP\PICC\Drivers\math.h
+  839   487  10  chuong7_adc_cb.c
+ 1351   876  17  chuong8_i2c_all.c
+  226   113   2  chuong9_dongco.c
+    3     0   0  chuonga_led_matran.c
+----- -----
+12089  5105 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     82   1    1             @I2C_WRITE_1
+0     42   0    1             @delay_ms1
+0     32   0    1             @delay_us1
+0     32   0    0   180  0.9  reset_cac_bien
+0     46   0    0   119  1.7  mo_ic_74573_a_thong_dl
+0     48   0    0   119  1.7  mo_ic_74573_b_thong_dl
+0     74   1    0   303  2.3  set_up_port_ic_chot
+0     42   0    2   234  4.3  xuat_1byte
+0     40   0    2   226  2.8  xuat_buzzer_relay
+0     42   0    0             @const703
+0     44   0    4   231  2.3  xuat_4led_7doan_4so
+0     70   1    5             @DIV1616
+0     44   0    3             @DIV88
+0     44   0    0   172  1.8  xuat_glcd_lcd
+0     20   0    2    80  2.7  xuat_lcd20x4
+0    116   1    1   450  3.3  touch_write_bit
+0     54   1    3   185  5.6  touch_write_byte
+0     90   1    2   260  3.2  touch_present
+0     74   1    0   158  1.3  KHOI_TAO_DS18B20
+0      8   0    0    29  1.2  DC_MOTOR_ENABLE
+0     80   1    2             @MUL88
+0     26   0    1   102  2.1  lcd_xuat_8bit
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     92   1    0   245  1.8  setup_lcd
+0     86   1    0   313  4.2  @const989
+0     90   1    0   313  4.2  @const993
+0     30   0    0   313  4.2  @const999
+0     36   0    3   147  3.7  lcd_goto_xy
+0    118   1    6   278  6.0  lcd_hienthi_so_z_toado_xy
+0     98   1    1    92  1.3  pcf8591_xuat_dac
+0     76   1    4   313  4.2  @DIVS88
+0     12   0    0    42  1.4  khoi_tao_timer0
+0     20   0    0    29  1.2  interrupt_timer1
+0     22   0    0    78  1.6  khoi_tao_timer1_ngat
+0     62   1    4             @SFTOI
+0     56   1    2             @ITOF
+0    352   4   14   313  4.2  @DIVFF
+0     24   0    0   313  4.2  @const1493
+0     32   0    2             @PSTRINGC_984
+0     22   0    0             @const1495
+0     22   0    0   313  4.2  @const1496
+0     22   0    0             @const1497
+0      2   0    0   313  4.2  @const1499
+0     22   0    0             @const1500
+0      4   0    0             @const1501
+0     20   0    0   313  4.2  @const1502
+0     22   0    0             @const1504
+0     22   0    0   313  4.2  @const1505
+0     22   0    0   313  4.2  @const1507
+0     22   0    0             @const1508
+0     22   0    0             @const1510
+0     22   0    0             @const1511
+0     10   0    0   313  4.2  @const1514
+0      2   0    0             @const1516
+0     10   0    0   313  4.2  @const1518
+0      2   0    0   313  4.2  @const1520
+0      2   0    0             @const1521
+0     10   0    0             @const1523
+0      2   0    0   313  4.2  @const1525
+0      2   0    0   313  4.2  @const1526
+0     10   0    0             @const1531
+0      2   0    0   313  4.2  @const1533
+0      2   0    0   313  4.2  @const1534
+0     10   0    0   313  4.2  @const1541
+0     14   0    0             @const1545
+0     14   0    0   313  4.2  @const1546
+0     14   0    0   313  4.2  @const1553
+0     14   0    0             @const1555
+0      4   0    0   313  4.2  @const1559
+0     18   0    0   313  4.2  @const1561
+0     18   0    0             @const1562
+0     14   0    0             @const1564
+0     14   0    0   313  4.2  @const1565
+0     18   0    0             @const1570
+0     18   0    0             @const1574
+0     18   0    0             @const1580
+0     18   0    0             @const1591
+0     18   0    0             @const1598
+0     18   0    0             @const1605
+0      2   0    0   313  4.2  @const1606
+0      2   0    0   313  4.2  @const1607
+0      2   0    0             @const1608
+0      2   0    0   313  4.2  @const1609
+0     22   0    0             @const1611
+0     18   0    0             @const1613
+0     24   0    0   313  4.2  @const1615
+0     18   0    0   313  4.2  @const1618
+0     18   0    0   313  4.2  @const1620
+0     16   0    0             @const1622
+0     12   0    0   313  4.2  @const1623
+0     14   0    0   313  4.2  @const1624
+0     14   0    0   313  4.2  @const1628
+0     14   0    0             @const1633
+0     14   0    0             @const1634
+0      8   0    0             @const1642
+0      6   0    0   313  4.2  @const1643
+0      2   0    0   313  4.2  @const1644
+0      6   0    0   313  4.2  @const1645
+0      2   0    0   313  4.2  @const1646
+0      6   0    0   313  4.2  @const1647
+0      2   0    0   313  4.2  @const1648
+0     10   0    0   313  4.2  @const1650
+0      2   0    0             @const1651
+0      2   0    0             @const1652
+0     14   0    0             @const1661
+0     20   0    0   313  4.2  @const1662
+0      6   0    0   313  4.2  @const1670
+0     20   0    0             @const1671
+0     24   0    0    42  1.4  khoi_tao_adc
+0     18   0    0   313  4.2  @const1690
+0      8   0    0   313  4.2  @const1702
+0      8   0    0   313  4.2  @const1703
+0     18   0    0   313  4.2  @const1715
+0     18   0    0   313  4.2  @const1716
+0     16   0    0   313  4.2  @const1717
+0      8   0    0   313  4.2  @const1732
+0      8   0    0   313  4.2  @const1733
+0     16   0    0   313  4.2  @const1734
+0      6   0    0             @const1735
+0     14   0    0   313  4.2  @const1740
+0      8   0    0   313  4.2  @const1757
+0      4   0    0   313  4.2  @const1780
+0      4   0    0   313  4.2  @const1781
+0      4   0    0   313  4.2  @const1782
+0      4   0    0   313  4.2  @const1783
+0      4   0    0   313  4.2  @const1784
+0      4   0    0   313  4.2  @const1785
+0      4   0    0   313  4.2  @const1798
+0      4   0    0   313  4.2  @const1799
+0      4   0    0   313  4.2  @const1800
+0      4   0    0   313  4.2  @const1801
+0      4   0    0   313  4.2  @const1802
+0      4   0    0   313  4.2  @const1803
+0     88   1    2    83  2.9  hien_thi_4led_7doan
+0    320   3    2   568  4.7  hien_thi_lcd_so_to
+0     22   0    0             @const1840
+0     22   0    0             @const1841
+0    162   2    0   240  3.9  doc_nd_lm35a
+0    250   3    0   955  6.8  bai_thi
+0    498   5    1   383  4.2  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               95
+    Statements              5105
+    Comments                2092
+    Volume (V)              60094
+    Difficulty (D)          344.0
+    Effort to implement (E) 20674911
+    Time to implement (T)   319 hours, 3 minutes
+    Est Delivered Bugs (B)  25
+    Cyclomatic Complexity   86
+    Maintainability (MI)    114
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  4796  27822  
+
+
+

@@ -1,0 +1,2752 @@
+D G "pir" 28 6 "pin_a3"
+D G "__PCH__" 0 170 ""5.015""
+D G "__DEVICE__" 0 170 "4550"
+D G "__DATE__" 0 170 ""09-Sep-20""
+D G "__TIME__" 0 170 ""11:25:05"" "Standard Header file for the PIC18F4550 device ////////////////"
+c L "set_tris_a" 3 3 6 "FUNCTION"
+v L "value" 3 45 "int8" `54 
+f B "set_tris_a" 3 45 "void(int8 value)" `53 
+v L "value" 3 46 "int8" `56 
+f B "set_tris_b" 3 46 "void(int8 value)" `55 
+v L "value" 3 47 "int8" `58 
+f B "set_tris_c" 3 47 "void(int8 value)" `57 
+v L "value" 3 48 "int8" `60 
+f B "set_tris_d" 3 48 "void(int8 value)" `59 
+v L "value" 3 49 "int8" `62 
+f B "set_tris_e" 3 49 "void(int8 value)" `61 
+f B "get_tris_a" 3 50 "int8()" `63 
+f B "get_tris_b" 3 51 "int8()" `64 
+f B "get_tris_c" 3 52 "int8()" `65 
+f B "get_tris_d" 3 53 "int8()" `66 
+f B "get_tris_e" 3 54 "int8()" `67 
+v L "value" 3 55 "int8" `69 
+f B "output_a" 3 55 "void(int8 value)" `68 
+v L "value" 3 56 "int8" `71 
+f B "output_b" 3 56 "void(int8 value)" `70 
+v L "value" 3 57 "int8" `73 
+f B "output_c" 3 57 "void(int8 value)" `72 
+v L "value" 3 58 "int8" `75 
+f B "output_d" 3 58 "void(int8 value)" `74 
+v L "value" 3 59 "int8" `77 
+f B "output_e" 3 59 "void(int8 value)" `76 
+f B "input_a" 3 60 "int8()" `78 
+f B "input_b" 3 61 "int8()" `79 
+f B "input_c" 3 62 "int8()" `80 
+f B "input_d" 3 63 "int8()" `81 
+f B "input_e" 3 64 "int8()" `82 
+f B "input_change_a" 3 65 "int8()" `83 
+f B "input_change_b" 3 66 "int8()" `84 
+f B "input_change_c" 3 67 "int8()" `85 
+f B "input_change_d" 3 68 "int8()" `86 
+f B "input_change_e" 3 69 "int8()" `87 
+v L "pin" 3 70 "int16" `89 
+f B "input" 3 70 "int8(int16 pin)" `88 
+v L "pin" 3 71 "int16" `91 
+f B "input_state" 3 71 "int8(int16 pin)" `90 
+v L "pin" 3 72 "int16" `93 
+f B "output_low" 3 72 "void(int16 pin)" `92 
+v L "pin" 3 73 "int16" `95 
+f B "output_high" 3 73 "void(int16 pin)" `94 
+v L "pin" 3 74 "int16" `97 
+f B "output_toggle" 3 74 "void(int16 pin)" `96 
+v L "pin" 3 75 "int16" `99 
+v L "level" 3 75 "int8" `100 
+f B "output_bit" 3 75 "void(int16 pin,int8 level)" `98 
+v L "pin" 3 76 "int16" `102 
+f B "output_float" 3 76 "void(int16 pin)" `101 
+v L "pin" 3 77 "int16" `104 
+f B "output_drive" 3 77 "void(int16 pin)" `103  "Constants used to identify pins in the above are:"
+d G "PIN_A0" 3 81 "31744"
+d G "PIN_A1" 3 82 "31745"
+d G "PIN_A2" 3 83 "31746"
+d G "PIN_A3" 3 84 "31747"
+d G "PIN_A4" 3 85 "31748"
+d G "PIN_A5" 3 86 "31749"
+d G "PIN_A6" 3 87 "31750"
+d G "PIN_B0" 3 89 "31752"
+d G "PIN_B1" 3 90 "31753"
+d G "PIN_B2" 3 91 "31754"
+d G "PIN_B3" 3 92 "31755"
+d G "PIN_B4" 3 93 "31756"
+d G "PIN_B5" 3 94 "31757"
+d G "PIN_B6" 3 95 "31758"
+d G "PIN_B7" 3 96 "31759"
+d G "PIN_C0" 3 98 "31760"
+d G "PIN_C1" 3 99 "31761"
+d G "PIN_C2" 3 100 "31762"
+d G "PIN_C4" 3 101 "31764"
+d G "PIN_C5" 3 102 "31765"
+d G "PIN_C6" 3 103 "31766"
+d G "PIN_C7" 3 104 "31767"
+d G "PIN_D0" 3 106 "31768"
+d G "PIN_D1" 3 107 "31769"
+d G "PIN_D2" 3 108 "31770"
+d G "PIN_D3" 3 109 "31771"
+d G "PIN_D4" 3 110 "31772"
+d G "PIN_D5" 3 111 "31773"
+d G "PIN_D6" 3 112 "31774"
+d G "PIN_D7" 3 113 "31775"
+d G "PIN_E0" 3 115 "31776"
+d G "PIN_E1" 3 116 "31777"
+d G "PIN_E2" 3 117 "31778"
+d G "PIN_E3" 3 118 "31779"
+d G "PIN_E7" 3 119 "31783"
+d G "FALSE" 3 122 "0"
+d G "TRUE" 3 123 "1"
+d G "BYTE" 3 125 "int8"
+d G "BOOLEAN" 3 126 "int1"
+d G "getc" 3 128 "getch"
+d G "fgetc" 3 129 "getch"
+d G "getchar" 3 130 "getch"
+d G "putc" 3 131 "putchar"
+d G "fputc" 3 132 "putchar"
+d G "fgets" 3 133 "gets"
+d G "fputs" 3 134 "puts"
+c L "output_drive" 3 3 3 "FUNCTION"
+f B "restart_cause" 3 139 "int8()" `105 
+f B "reset_cpu" 3 140 "void()" `106 
+f B "sleep" 3 141 "void()" `107 
+v L "type" 3 142 "int8" `109 
+f G "sleep" 3 142 "void(int8 type)" `108  "Constants returned from RESTART_CAUSE() are:"
+d G "WDT_TIMEOUT" 3 144 "7"
+d G "MCLR_FROM_SLEEP" 3 145 "11"
+d G "MCLR_FROM_RUN" 3 146 "15"
+d G "NORMAL_POWER_UP" 3 147 "12"
+d G "BROWNOUT_RESTART" 3 148 "14"
+d G "WDT_FROM_SLEEP" 3 149 "3"
+d G "RESET_INSTRUCTION" 3 150 "0"
+d G "SLEEP_FULL" 3 153 "0" "Default"
+d G "SLEEP_IDLE" 3 154 "1" "Clock and peripherals don't stop"
+c L "sleep" 3 3 5 "FUNCTION"
+v L "mode" 3 161 "int8" `111 
+f B "setup_timer_0" 3 161 "void(int8 mode)" `110 
+v L "value" 3 162 "int16" `113 
+f B "set_timer0" 3 162 "void(int16 value)" `112 
+f B "get_timer0" 3 163 "int16()" `114 
+v L "mode" 3 164 "int8" `116 
+v L "prescaler" 3 164 "int8" `117 
+f B "setup_counters" 3 164 "void(int8 mode,int8 prescaler)" `115 
+v L "value" 3 165 "int16" `119 
+f B "set_rtcc" 3 165 "void(int16 value)" `118 
+f B "get_rtcc" 3 166 "int16()" `120  "Constants used for SETUP_TIMER_0() are:"
+d G "T0_INTERNAL" 3 168 "0"
+d G "T0_EXT_L_TO_H" 3 169 "32"
+d G "T0_EXT_H_TO_L" 3 170 "48"
+d G "T0_DIV_1" 3 172 "8"
+d G "T0_DIV_2" 3 173 "0"
+d G "T0_DIV_4" 3 174 "1"
+d G "T0_DIV_8" 3 175 "2"
+d G "T0_DIV_16" 3 176 "3"
+d G "T0_DIV_32" 3 177 "4"
+d G "T0_DIV_64" 3 178 "5"
+d G "T0_DIV_128" 3 179 "6"
+d G "T0_DIV_256" 3 180 "7"
+d G "T0_OFF" 3 182 "0x80"
+d G "T0_8_BIT" 3 184 "0x40"
+d G "RTCC_INTERNAL" 3 186 "0" "The following are provided for compatibility"
+d G "RTCC_EXT_L_TO_H" 3 187 "32" "with older compiler versions"
+d G "RTCC_EXT_H_TO_L" 3 188 "48"
+d G "RTCC_DIV_1" 3 189 "8"
+d G "RTCC_DIV_2" 3 190 "0"
+d G "RTCC_DIV_4" 3 191 "1"
+d G "RTCC_DIV_8" 3 192 "2"
+d G "RTCC_DIV_16" 3 193 "3"
+d G "RTCC_DIV_32" 3 194 "4"
+d G "RTCC_DIV_64" 3 195 "5"
+d G "RTCC_DIV_128" 3 196 "6"
+d G "RTCC_DIV_256" 3 197 "7"
+d G "RTCC_OFF" 3 198 "0x80"
+d G "RTCC_8_BIT" 3 199 "0x40"
+c L "get_rtcc" 3 3 8 "FUNCTION"
+v L "mode" 3 210 "int16" `122 
+f B "setup_wdt" 3 210 "void(int16 mode)" `121 
+f B "restart_wdt" 3 211 "void()" `123  "Constants used for SETUP_WDT() are:"
+d G "WDT_ON" 3 213 "0x100"
+d G "WDT_OFF" 3 214 "0"
+d G "WDT_4MS" 3 216 "0x300"
+d G "WDT_8MS" 3 217 "0x500"
+d G "WDT_16MS" 3 218 "0x700"
+d G "WDT_32MS" 3 219 "0x900"
+d G "WDT_64MS" 3 220 "0xB00"
+d G "WDT_128MS" 3 221 "0xD00"
+d G "WDT_256MS" 3 222 "0xF00"
+d G "WDT_512MS" 3 223 "0x1100"
+d G "WDT_1S" 3 224 "0x1300"
+d G "WDT_2S" 3 225 "0x1500"
+d G "WDT_4S" 3 226 "0x1700"
+d G "WDT_8S" 3 227 "0x1900"
+d G "WDT_16" 3 228 "0x1B00"
+d G "WDT_32S" 3 229 "0x1D00"
+d G "WDT_64S" 3 230 "0x1F00"
+d G "WDT_128S" 3 231 "0x2100"
+c L "restart_wdt" 3 3 3 "FUNCTION"
+v L "mode" 3 237 "int16" `125 
+f B "setup_timer_1" 3 237 "void(int16 mode)" `124 
+f B "get_timer1" 3 238 "int16()" `126 
+v L "value" 3 239 "int16" `128 
+f B "set_timer1" 3 239 "void(int16 value)" `127  "Constants used for SETUP_TIMER_1() are:"
+d G "T1_DISABLED" 3 242 "0"
+d G "T1_INTERNAL" 3 243 "0x85"
+d G "T1_EXTERNAL" 3 244 "0x87"
+d G "T1_EXTERNAL_SYNC" 3 245 "0x83"
+d G "T1_CLK_OUT" 3 247 "8"
+d G "T1_DIV_BY_1" 3 249 "0"
+d G "T1_DIV_BY_2" 3 250 "0x10"
+d G "T1_DIV_BY_4" 3 251 "0x20"
+d G "T1_DIV_BY_8" 3 252 "0x30"
+c L "set_timer1" 3 3 3 "FUNCTION"
+v L "mode" 3 257 "int8" `130 
+v L "period" 3 257 "int8" `131 
+v L "postscale" 3 257 "int8" `132 
+f B "setup_timer_2" 3 257 "void(int8 mode,int8 period,int8 postscale)" `129 
+f B "get_timer2" 3 258 "int8()" `133 
+v L "value" 3 259 "int8" `135 
+f B "set_timer2" 3 259 "void(int8 value)" `134  "Constants used for SETUP_TIMER_2() are:"
+d G "T2_DISABLED" 3 261 "0"
+d G "T2_DIV_BY_1" 3 262 "4"
+d G "T2_DIV_BY_4" 3 263 "5"
+d G "T2_DIV_BY_16" 3 264 "6"
+c L "set_timer2" 3 3 3 "FUNCTION"
+v L "mode" 3 269 "int16" `137 
+f B "setup_timer_3" 3 269 "void(int16 mode)" `136 
+f B "get_timer3" 3 270 "int16()" `138 
+v L "value" 3 271 "int16" `140 
+f B "set_timer3" 3 271 "void(int16 value)" `139  "Constants used for SETUP_TIMER_3() are:"
+d G "T3_DISABLED" 3 274 "0"
+d G "T3_INTERNAL" 3 275 "0x85"
+d G "T3_EXTERNAL" 3 276 "0x87"
+d G "T3_EXTERNAL_SYNC" 3 277 "0x83"
+d G "T3_DIV_BY_1" 3 279 "0"
+d G "T3_DIV_BY_2" 3 280 "0x10"
+d G "T3_DIV_BY_4" 3 281 "0x20"
+d G "T3_DIV_BY_8" 3 282 "0x30"
+c L "set_timer3" 3 3 4 "FUNCTION"
+v L "mode" 3 288 "int32" `142 
+f B "setup_ccp1" 3 288 "void(int32 mode)" `141 
+v L "mode" 3 289 "int32" `144 
+v L "pwm" 3 289 "int8" `145 
+f G "setup_ccp1" 3 289 "void(int32 mode,int8 pwm)" `143 
+v L "value" 3 290 "int16" `147 
+f B "set_pwm1_duty" 3 290 "void(int16 value)" `146  "Constants used for SETUP_CCPx() are:"
+d G "CCP_OFF" 3 292 "0"
+d G "CCP_CAPTURE_FE" 3 293 "4"
+d G "CCP_CAPTURE_RE" 3 294 "5"
+d G "CCP_CAPTURE_DIV_4" 3 295 "6"
+d G "CCP_CAPTURE_DIV_16" 3 296 "7"
+d G "CCP_COMPARE_SET_ON_MATCH" 3 297 "8"
+d G "CCP_COMPARE_CLR_ON_MATCH" 3 298 "9"
+d G "CCP_COMPARE_INT" 3 299 "0xA"
+d G "CCP_COMPARE_INT_AND_TOGGLE" 3 300 "0x2"
+d G "CCP_COMPARE_RESET_TIMER" 3 301 "0xB"
+d G "CCP_PWM" 3 302 "0xC"
+d G "CCP_PWM_PLUS_1" 3 303 "0x1c"
+d G "CCP_PWM_PLUS_2" 3 304 "0x2c"
+d G "CCP_PWM_PLUS_3" 3 305 "0x3c"
+c L "set_pwm1_duty" 3 3 1 "FUNCTION"
+d G "T3_CCP1_TO_2" 3 311 "0x48"
+d G "T3_CCP2" 3 312 "0x8"
+d G "CCP_PWM_H_H" 3 315 "0x0c"
+d G "CCP_PWM_H_L" 3 316 "0x0d"
+d G "CCP_PWM_L_H" 3 317 "0x0e"
+d G "CCP_PWM_L_L" 3 318 "0x0f"
+d G "CCP_PWM_FULL_BRIDGE" 3 320 "0x40"
+d G "CCP_PWM_FULL_BRIDGE_REV" 3 321 "0xC0"
+d G "CCP_PWM_HALF_BRIDGE" 3 322 "0x80"
+d G "CCP_SHUTDOWN_ON_COMP1" 3 324 "0x100000"
+d G "CCP_SHUTDOWN_ON_COMP2" 3 325 "0x200000"
+d G "CCP_SHUTDOWN_ON_COMP" 3 326 "0x300000"
+d G "CCP_SHUTDOWN_ON_INT0" 3 327 "0x400000"
+d G "CCP_SHUTDOWN_ON_COMP1_INT0" 3 328 "0x500000"
+d G "CCP_SHUTDOWN_ON_COMP2_INT0" 3 329 "0x600000"
+d G "CCP_SHUTDOWN_ON_COMP_INT0" 3 330 "0x700000"
+d G "CCP_SHUTDOWN_AC_L" 3 332 "0x000000"
+d G "CCP_SHUTDOWN_AC_H" 3 333 "0x040000"
+d G "CCP_SHUTDOWN_AC_F" 3 334 "0x080000"
+d G "CCP_SHUTDOWN_BD_L" 3 336 "0x000000"
+d G "CCP_SHUTDOWN_BD_H" 3 337 "0x010000"
+d G "CCP_SHUTDOWN_BD_F" 3 338 "0x020000"
+d G "CCP_SHUTDOWN_RESTART" 3 340 "0x80000000"
+c L "set_pwm1_duty" 3 3 1 "FUNCTION"
+v L "mode" 3 344 "int32" `152 
+f B "setup_ccp2" 3 344 "void(int32 mode)" `151 
+v L "mode" 3 345 "int32" `154 
+v L "pwm" 3 345 "int8" `155 
+f G "setup_ccp2" 3 345 "void(int32 mode,int8 pwm)" `153 
+v L "value" 3 346 "int16" `157 
+f B "set_pwm2_duty" 3 346 "void(int16 value)" `156 
+c L "set_pwm2_duty" 3 3 5 "FUNCTION"
+v L "mode" 3 355 "int8" `162 
+f B "setup_psp" 3 355 "void(int8 mode)" `161 
+f B "psp_output_full" 3 356 "int8()" `163 
+f B "psp_input_full" 3 357 "int8()" `164 
+f B "psp_overflow" 3 358 "int8()" `165  "Constants used in SETUP_PSP() are:"
+d G "PSP_ENABLED" 3 360 "0x10"
+d G "PSP_DISABLED" 3 361 "0"
+c L "psp_overflow" 3 3 3 "FUNCTION"
+v L "mode" 3 368 "int32" `168 
+f B "setup_spi" 3 368 "void(int32 mode)" `167 
+v L "value" 3 369 "int8" `170 
+f B "spi_write" 3 369 "void(int8 value)" `169 
+f B "spi_read" 3 370 "int8()" `171 
+v L "value" 3 371 "int8" `173 
+f G "spi_read" 3 371 "int8(int8 value)" `172 
+f B "spi_data_in" 3 372 "int8()" `174 
+v L "mode" 3 373 "int32" `176 
+f B "setup_spi2" 3 373 "void(int32 mode)" `175 
+v L "value" 3 374 "int8" `178 
+f B "spi_write2" 3 374 "void(int8 value)" `177 
+f B "spi_read2" 3 375 "int8()" `179 
+v L "value" 3 376 "int8" `181 
+f G "spi_read2" 3 376 "int8(int8 value)" `180 
+f B "spi_data_in2" 3 377 "int8()" `182  "Constants used in SETUP_SPI() are:"
+d G "SPI_DISABLED" 3 379 "0x00"
+d G "SPI_MASTER" 3 380 "0x20"
+d G "SPI_SLAVE" 3 381 "0x24"
+d G "SPI_SCK_IDLE_HIGH" 3 382 "0x10"
+d G "SPI_SCK_IDLE_LOW" 3 383 "0x00"
+d G "SPI_CLK_DIV_4" 3 384 "0x00"
+d G "SPI_CLK_DIV_16" 3 385 "0x01"
+d G "SPI_CLK_DIV_64" 3 386 "0x02"
+d G "SPI_CLK_T2" 3 387 "0x03"
+d G "SPI_SS_DISABLED" 3 388 "0x01"
+d G "SPI_XMIT_L_TO_H" 3 390 "0x4000"
+d G "SPI_XMIT_H_TO_L" 3 391 "0x0000"
+d G "SPI_SAMPLE_AT_MIDDLE" 3 393 "0x0000"
+d G "SPI_SAMPLE_AT_END" 3 394 "0x8000"
+d G "SPI_L_TO_H" 3 397 "SPI_SCK_IDLE_LOW"
+d G "SPI_H_TO_L" 3 398 "SPI_SCK_IDLE_HIGH"
+c L "spi_data_in2" 3 3 2 "FUNCTION"
+v L "baud" 3 402 "int32" `184 
+f B "setup_uart" 3 402 "void(int32 baud)" `183 
+v L "baud" 3 403 "int32" `186 
+v L "stream" 3 403 "int8" `187 
+f G "setup_uart" 3 403 "void(int32 baud,int8 stream)" `185 
+v L "baud" 3 404 "int32" `189 
+v L "stream" 3 404 "int8" `190 
+v L "clock" 3 404 "int32" `191 
+f G "setup_uart" 3 404 "void(int32 baud,int8 stream,int32 clock)" `188 
+v L "baud" 3 405 "int32" `193 
+f B "set_uart_speed" 3 405 "void(int32 baud)" `192 
+v L "baud" 3 406 "int32" `195 
+v L "stream" 3 406 "int8" `196 
+f G "set_uart_speed" 3 406 "void(int32 baud,int8 stream)" `194 
+v L "baud" 3 407 "int32" `198 
+v L "stream" 3 407 "int8" `199 
+v L "clock" 3 407 "int32" `200 
+f G "set_uart_speed" 3 407 "void(int32 baud,int8 stream,int32 clock)" `197  "Constants used in setup_uart() are:"
+d G "UART_ADDRESS" 3 411 "2"
+d G "UART_DATA" 3 412 "4"
+d G "UART_AUTODETECT" 3 413 "8"
+d G "UART_AUTODETECT_NOWAIT" 3 414 "9"
+d G "UART_WAKEUP_ON_RDA" 3 415 "10"
+d G "UART_SEND_BREAK" 3 416 "13"
+c L "set_uart_speed" 3 3 3 "FUNCTION"
+v L "mode" 3 420 "int32" `202 
+f B "setup_comparator" 3 420 "void(int32 mode)" `201  "Constants used in setup_comparator() are:"
+d G "A0_A3_A1_A3" 3 422 "0xfff04"
+d G "A0_A3_A1_A2_OUT_ON_A4_A5" 3 423 "0xfcf03"
+d G "A0_A3_A1_A3_OUT_ON_A4_A5" 3 424 "0xbcf05"
+d G "NC_NC_NC_NC" 3 425 "0x0ff07"
+d G "A0_A3_A1_A2" 3 426 "0xfff02"
+d G "A0_A3_NC_NC_OUT_ON_A4" 3 427 "0x9ef01"
+d G "A0_VR_A1_VR" 3 428 "0x3ff06"
+d G "A3_VR_A2_VR" 3 429 "0xcff0e"
+d G "CP1_INVERT" 3 430 "0x0000010"
+d G "CP2_INVERT" 3 431 "0x0000020"
+c L "setup_comparator" 3 3 2 "FUNCTION"
+v L "mode" 3 438 "int8" `206 
+f B "setup_vref" 3 438 "void(int8 mode)" `205  "Constants used in setup_vref() are:"
+d G "VREF_LOW" 3 440 "0xa0"
+d G "VREF_HIGH" 3 441 "0x80"
+d G "VREF_F5" 3 443 "0x40"
+d G "VREF_COMP" 3 444 "0x10"
+c L "setup_vref" 3 3 2 "FUNCTION"
+v L "mode" 3 448 "int8" `208 
+f B "setup_low_volt_detect" 3 448 "void(int8 mode)" `207  "Constants used in setup_low_volt_detect() are:"
+d G "LVD_LVDIN" 3 450 "0x1F"
+d G "LVD_45" 3 451 "0x1E"
+d G "LVD_42" 3 452 "0x1D"
+d G "LVD_40" 3 453 "0x1C"
+d G "LVD_38" 3 454 "0x1B"
+d G "LVD_36" 3 455 "0x1A"
+d G "LVD_35" 3 456 "0x19"
+d G "LVD_33" 3 457 "0x18"
+d G "LVD_30" 3 458 "0x17"
+d G "LVD_28" 3 459 "0x16"
+d G "LVD_27" 3 460 "0x15"
+d G "LVD_25" 3 461 "0x14"
+d G "LVD_24" 3 462 "0x13"
+d G "LVD_23" 3 463 "0x12"
+d G "LVD_22" 3 464 "0x11"
+d G "LVD_21" 3 465 "0x10"
+d G "LVD_TRIGGER_BELOW" 3 467 "0"
+d G "LVD_TRIGGER_ABOVE" 3 468 "0x80"
+c L "setup_low_volt_detect" 3 3 2 "FUNCTION"
+v L "mode" 3 473 "int16" `210 
+f B "setup_oscillator" 3 473 "int8(int16 mode)" `209 
+v L "mode" 3 474 "int16" `212 
+v L "tune" 3 474 "sint8" `213 
+f G "setup_oscillator" 3 474 "int8(int16 mode,sint8 tune)" `211  "Constants used in setup_oscillator() are:"
+d G "OSC_31KHZ" 3 477 "0"
+d G "OSC_125KHZ" 3 478 "0x10"
+d G "OSC_250KHZ" 3 479 "0x20"
+d G "OSC_500KHZ" 3 480 "0x30"
+d G "OSC_1MHZ" 3 481 "0x40"
+d G "OSC_2MHZ" 3 482 "0x50"
+d G "OSC_4MHZ" 3 483 "0x60"
+d G "OSC_8MHZ" 3 484 "0x70"
+d G "OSC_TIMER1" 3 486 "1"
+d G "OSC_INTRC" 3 487 "2"
+d G "OSC_NORMAL" 3 488 "0"
+d G "OSC_IDLE_MODE" 3 490 "0x80"
+d G "OSC_31250" 3 491 "0x8000"
+d G "OSC_STATE_STABLE" 3 495 "4"
+d G "OSC_STATE_EXT_RUNNING" 3 496 "8"
+c L "setup_oscillator" 3 3 4 "FUNCTION"
+v L "mode" 3 503 "int16" `215 
+f B "setup_adc" 3 503 "void(int16 mode)" `214 
+f B "read_adc" 3 504 "int8()" `216 
+v L "mode" 3 505 "int8" `218 
+f G "read_adc" 3 505 "int8(int8 mode)" `217 
+f G "read_adc" 3 506 "int16()" `219 
+v L "mode" 3 507 "int8" `221 
+f G "read_adc" 3 507 "int16(int8 mode)" `220 
+f B "adc_done" 3 508 "int8()" `222  "Constants used for SETUP_ADC() are:"
+d G "ADC_OFF" 3 510 "0" "ADC Off"
+d G "ADC_CLOCK_DIV_2" 3 511 "0x100"
+d G "ADC_CLOCK_DIV_4" 3 512 "0x04"
+d G "ADC_CLOCK_DIV_8" 3 513 "0x01"
+d G "ADC_CLOCK_DIV_16" 3 514 "0x05"
+d G "ADC_CLOCK_DIV_32" 3 515 "0x02"
+d G "ADC_CLOCK_DIV_64" 3 516 "0x06"
+d G "ADC_CLOCK_INTERNAL" 3 517 "0x07" "Internal 2-6us"
+d G "ADC_TAD_MUL_0" 3 519 "0x00"
+d G "ADC_TAD_MUL_2" 3 520 "0x08"
+d G "ADC_TAD_MUL_4" 3 521 "0x10"
+d G "ADC_TAD_MUL_6" 3 522 "0x18"
+d G "ADC_TAD_MUL_8" 3 523 "0x20"
+d G "ADC_TAD_MUL_12" 3 524 "0x28"
+d G "ADC_TAD_MUL_16" 3 525 "0x30"
+d G "ADC_TAD_MUL_20" 3 526 "0x38"
+c L "adc_done" 3 3 1 "FUNCTION"
+v L "pins" 3 529 "int8" `224 
+f B "setup_adc_ports" 3 529 "void(int8 pins)" `223 
+v L "pins" 3 530 "int8" `226 
+v L "reference" 3 530 "int8" `227 
+f G "setup_adc_ports" 3 530 "void(int8 pins,int8 reference)" `225 
+v L "channel" 3 531 "int8" `229 
+f B "set_adc_channel" 3 531 "void(int8 channel)" `228  "Constants used in SETUP_ADC_PORTS() are:"
+d G "NO_ANALOGS" 3 534 "0x0F" "None"
+d G "ALL_ANALOG" 3 535 "0x00" "A0 A1 A2 A3 A5 E0 E1 E2 B2 B3 B1 B4 B0"
+d G "AN0_TO_AN11" 3 536 "0x03" "A0 A1 A2 A3 A5 E0 E1 E2 B2 B3 B1 B4"
+d G "AN0_TO_AN10" 3 537 "0x04" "A0 A1 A2 A3 A5 E0 E1 E2 B2 B3 B1"
+d G "AN0_TO_AN9" 3 538 "0x05" "A0 A1 A2 A3 A5 E0 E1 E2 B2 B3"
+d G "AN0_TO_AN8" 3 539 "0x06" "A0 A1 A2 A3 A5 E0 E1 E2 B2"
+d G "AN0_TO_AN7" 3 540 "0x07" "A0 A1 A2 A3 A5 E0 E1 E2"
+d G "AN0_TO_AN6" 3 541 "0x08" "A0 A1 A2 A3 A5 E0 E1"
+d G "AN0_TO_AN5" 3 542 "0x09" "A0 A1 A2 A3 A5 E0"
+d G "AN0_TO_AN4" 3 543 "0x0A" "A0 A1 A2 A3 A5"
+d G "AN0_TO_AN3" 3 544 "0x0B" "A0 A1 A2 A3"
+d G "AN0_TO_AN2" 3 545 "0x0C" "A0 A1 A2"
+d G "AN0_TO_AN1" 3 546 "0x0D" "A0 A1"
+d G "AN0" 3 547 "0x0E" "A0"
+d G "AN0_TO_AN11_ANALOG" 3 548 "0x03" "!old only provided for compatibility"
+d G "AN0_TO_AN10_ANALOG" 3 549 "0x04" "!old only provided for compatibility"
+d G "AN0_TO_AN9_ANALOG" 3 550 "0x05" "!old only provided for compatibility"
+d G "AN0_TO_AN8_ANALOG" 3 551 "0x06" "!old only provided for compatibility"
+d G "AN0_TO_AN7_ANALOG" 3 552 "0x07" "!old only provided for compatibility"
+d G "AN0_TO_AN6_ANALOG" 3 553 "0x08" "!old only provided for compatibility"
+d G "AN0_TO_AN5_ANALOG" 3 554 "0x09" "!old only provided for compatibility"
+d G "AN0_TO_AN4_ANALOG" 3 555 "0x0A" "!old only provided for compatibility"
+d G "AN0_TO_AN3_ANALOG" 3 556 "0x0B" "!old only provided for compatibility"
+d G "AN0_TO_AN2_ANALOG" 3 557 "0x0C" "!old only provided for compatibility"
+d G "AN0_TO_AN1_ANALOG" 3 558 "0x0D" "!old only provided for compatibility"
+d G "AN0_ANALOG" 3 559 "0x0E" "!old only provided for compatibility"
+d G "VSS_VDD" 3 562 "0x00" "Range 0-Vdd"
+d G "VREF_VREF" 3 563 "0x30" "Range VrefL-VrefH"
+d G "VREF_VDD" 3 564 "0x20" "Range VrefL-Vdd"
+d G "VSS_VREF" 3 565 "0x10" "Range 0-VrefH"
+d G "ADC_START_AND_READ" 3 568 "7" "This is the default if nothing is specified"
+d G "ADC_START_ONLY" 3 569 "1"
+d G "ADC_READ_ONLY" 3 570 "6"
+c L "set_adc_channel" 3 3 3 "FUNCTION"
+v L "x" 3 576 "sint8" `231 
+f B "abs" 3 576 "sint8(sint8 x)" `230 
+v L "x" 3 577 "sint16" `233 
+f G "abs" 3 577 "sint16(sint16 x)" `232 
+v L "x" 3 578 "sint32" `235 
+f G "abs" 3 578 "sint32(sint32 x)" `234 
+v L "x" 3 579 "float" `237 
+f G "abs" 3 579 "float(float x)" `236 
+v L "??65535" 3 580 "int8" `239 
+v L "??65535" 3 580 "int8" `240 
+f B "_mul" 3 580 "int16(int8 ,int8 )" `238 
+v L "??65535" 3 581 "sint8" `239 
+v L "??65535" 3 581 "sint8" `243 
+f G "_mul" 3 581 "sint16(sint8 ,sint8 )" `241 
+v L "??65535" 3 582 "int16" `239 
+v L "??65535" 3 582 "int16" `246 
+f G "_mul" 3 582 "int32(int16 ,int16 )" `244 
+v L "??65535" 3 583 "sint16" `239 
+v L "??65535" 3 583 "sint16" `249 
+f G "_mul" 3 583 "sint32(sint16 ,sint16 )" `247  "Memory Manipulation Prototypes:"
+v L "bank" 3 586 "int8" `251 
+v L "offset" 3 586 "int8" `252 
+f B "read_bank" 3 586 "int8(int8 bank,int8 offset)" `250 
+v L "bank" 3 587 "int8" `254 
+v L "offset" 3 587 "int8" `255 
+v L "value" 3 587 "int8" `256 
+f B "write_bank" 3 587 "void(int8 bank,int8 offset,int8 value)" `253 
+v L "dest" 3 588 "*int8" `258 
+v L "src" 3 588 "*int8" `259 
+f B "strcpy" 3 588 "void(*int8 dest,*int8 src)" `257 
+v L "dest" 3 589 "*int8" `261 
+v L "src" 3 589 "*int8" `262 
+f B "strcopy" 3 589 "void(*int8 dest,*int8 src)" `260 
+v L "destination" 3 590 "*int8" `264 
+v L "value" 3 590 "int8" `265 
+v L "num" 3 590 "int16" `266 
+f B "memset" 3 590 "void(*int8 destination,int8 value,int16 num)" `263 
+v L "destination" 3 591 "*int8" `268 
+v L "source" 3 591 "*int8" `269 
+v L "num" 3 591 "int16" `270 
+f B "memcpy" 3 591 "void(*int8 destination,*int8 source,int16 num)" `267  "String Prototypes:"
+v L "cvalue" 3 594 "int8" `272 
+f B "toupper" 3 594 "int8(int8 cvalue)" `271 
+v L "cvalue" 3 595 "int8" `274 
+f B "tolower" 3 595 "int8(int8 cvalue)" `273 
+v L "string" 3 596 "*int8" `276 
+v L "cstring" 3 596 "*int8" `277 
+f B "sprintf" 3 596 "void(*int8 string,*int8 cstring,*int8 _VA_LIST)" `275  "Data Manipulators Prototypes:"
+v L "address" 3 599 "*int8" `280 
+v L "bytes" 3 599 "int8" `281 
+v L "value" 3 599 "int8" `282 
+f B "shift_left" 3 599 "int8(*int8 address,int8 bytes,int8 value)" `279 
+v L "address" 3 600 "*int8" `284 
+v L "bytes" 3 600 "int8" `285 
+v L "value" 3 600 "int8" `286 
+f B "shift_right" 3 600 "int8(*int8 address,int8 bytes,int8 value)" `283 
+v L "address" 3 601 "*int8" `288 
+v L "bytes" 3 601 "int8" `289 
+f B "rotate_left" 3 601 "void(*int8 address,int8 bytes)" `287 
+v L "address" 3 602 "*int8" `291 
+v L "bytes" 3 602 "int8" `292 
+f B "rotate_right" 3 602 "void(*int8 address,int8 bytes)" `290 
+v L "value" 3 603 "int8" `294 
+f B "swap" 3 603 "void(int8 value)" `293 
+v L "var" 3 604 "int16" `296 
+v L "offset" 3 604 "int8" `297 
+f B "make8" 3 604 "int8(int16 var,int8 offset)" `295 
+v L "var" 3 605 "int32" `296 
+v L "offset" 3 605 "int8" `300 
+f G "make8" 3 605 "int8(int32 var,int8 offset)" `298 
+v L "varhigh" 3 606 "int8" `302 
+v L "varlow" 3 606 "int8" `303 
+f B "make16" 3 606 "int16(int8 varhigh,int8 varlow)" `301 
+v L "var1" 3 607 "int16" `305 
+f B "make32" 3 607 "int32(int16 var1)" `304 
+v L "var1" 3 608 "int16" `307 
+v L "var2" 3 608 "int16" `308 
+f G "make32" 3 608 "int32(int16 var1,int16 var2)" `306 
+v L "var1" 3 609 "int16" `307 
+v L "var2" 3 609 "int8" `311 
+f G "make32" 3 609 "int32(int16 var1,int8 var2)" `309 
+v L "var1" 3 610 "int16" `313 
+v L "var2" 3 610 "int8" `314 
+v L "var3" 3 610 "int8" `315 
+f G "make32" 3 610 "int32(int16 var1,int8 var2,int8 var3)" `312 
+v L "var1" 3 611 "int8" `317 
+f G "make32" 3 611 "int32(int8 var1)" `316 
+v L "var1" 3 612 "int8" `307 
+v L "var2" 3 612 "int8" `320 
+f G "make32" 3 612 "int32(int8 var1,int8 var2)" `318 
+v L "var1" 3 613 "int8" `313 
+v L "var2" 3 613 "int8" `314 
+v L "var3" 3 613 "int8" `324 
+f G "make32" 3 613 "int32(int8 var1,int8 var2,int8 var3)" `321 
+v L "var1" 3 614 "int8" `326 
+v L "var2" 3 614 "int8" `327 
+v L "var3" 3 614 "int8" `328 
+v L "var4" 3 614 "int8" `329 
+f G "make32" 3 614 "int32(int8 var1,int8 var2,int8 var3,int8 var4)" `325 
+v L "var1" 3 615 "int8" `307 
+v L "var2" 3 615 "int16" `332 
+f G "make32" 3 615 "int32(int8 var1,int16 var2)" `330 
+v L "var1" 3 616 "int8" `313 
+v L "var2" 3 616 "int16" `314 
+v L "var3" 3 616 "int8" `336 
+f G "make32" 3 616 "int32(int8 var1,int16 var2,int8 var3)" `333 
+v L "var1" 3 617 "int8" `313 
+v L "var2" 3 617 "int8" `314 
+v L "var3" 3 617 "int16" `340 
+f G "make32" 3 617 "int32(int8 var1,int8 var2,int16 var3)" `337 
+v L "var" 3 618 "int8" `342 
+v L "bit" 3 618 "int8" `343 
+f B "bit_set" 3 618 "void(int8 var,int8 bit)" `341 
+v L "var" 3 619 "int16" `342 
+v L "bit" 3 619 "int8" `346 
+f G "bit_set" 3 619 "void(int16 var,int8 bit)" `344 
+v L "var" 3 620 "int32" `342 
+v L "bit" 3 620 "int8" `349 
+f G "bit_set" 3 620 "void(int32 var,int8 bit)" `347 
+v L "var" 3 621 "int8" `351 
+v L "bit" 3 621 "int8" `352 
+f B "bit_clear" 3 621 "void(int8 var,int8 bit)" `350 
+v L "var" 3 622 "int16" `351 
+v L "bit" 3 622 "int8" `355 
+f G "bit_clear" 3 622 "void(int16 var,int8 bit)" `353 
+v L "var" 3 623 "int32" `351 
+v L "bit" 3 623 "int8" `358 
+f G "bit_clear" 3 623 "void(int32 var,int8 bit)" `356 
+v L "var" 3 624 "int8" `360 
+v L "bit" 3 624 "int8" `361 
+f B "bit_test" 3 624 "int8(int8 var,int8 bit)" `359 
+v L "var" 3 625 "int16" `360 
+v L "bit" 3 625 "int8" `364 
+f G "bit_test" 3 625 "int8(int16 var,int8 bit)" `362 
+v L "var" 3 626 "int32" `360 
+v L "bit" 3 626 "int8" `367 
+f G "bit_test" 3 626 "int8(int32 var,int8 bit)" `365  "#use delay() Prototypes:"
+v L "count" 3 629 "int8" `369 
+f B "delay_cycles" 3 629 "void(int8 count)" `368 
+v L "time" 3 630 "int16" `371 
+f B "delay_ms" 3 630 "void(int16 time)" `370 
+v L "time" 3 631 "int16" `373 
+f B "delay_us" 3 631 "void(int16 time)" `372  "#use rs232() Prototypes:"
+v L "cdata" 3 634 "int8" `375 
+f B "putchar" 3 634 "void(int8 cdata)" `374 
+v L "cdata" 3 635 "int8" `377 
+v L "stream" 3 635 "int8" `378 
+f G "putchar" 3 635 "void(int8 cdata,int8 stream)" `376 
+v L "string" 3 636 "*int8" `380 
+f B "puts" 3 636 "void(*int8 string)" `379 
+v L "string" 3 637 "*int8" `382 
+v L "stream" 3 637 "int8" `383 
+f G "puts" 3 637 "void(*int8 string,int8 stream)" `381 
+f B "getch" 3 638 "int8()" `384 
+v L "stream" 3 639 "int8" `386 
+f G "getch" 3 639 "int8(int8 stream)" `385 
+v L "string" 3 640 "*int8" `388 
+f B "gets" 3 640 "void(*int8 string)" `387 
+v L "string" 3 641 "*int8" `390 
+v L "stream" 3 641 "int8" `391 
+f G "gets" 3 641 "void(*int8 string,int8 stream)" `389 
+f B "kbhit" 3 642 "int8()" `392 
+v L "stream" 3 643 "int8" `394 
+f G "kbhit" 3 643 "int8(int8 stream)" `393 
+v L "string" 3 644 "*int8" `396 
+f B "printf" 3 644 "void(*int8 string,*int8 _VA_LIST)" `395 
+v L "stream" 3 645 "int8" `399 
+v L "string" 3 645 "*int8" `400 
+f B "fprintf" 3 645 "void(int8 stream,*int8 string,*int8 _VA_LIST)" `398 
+f B "putc_send" 3 646 "void()" `402 
+v L "stream" 3 647 "int8" `404 
+f B "fputc_send" 3 647 "void(int8 stream)" `403 
+f B "rcv_buffer_full" 3 648 "int8()" `405 
+v L "stream" 3 649 "int8" `407 
+f G "rcv_buffer_full" 3 649 "int8(int8 stream)" `406 
+f B "rcv_buffer_bytes" 3 650 "int16()" `408 
+v L "stream" 3 651 "int8" `410 
+f G "rcv_buffer_bytes" 3 651 "int16(int8 stream)" `409 
+f B "tx_buffer_full" 3 652 "int8()" `411 
+v L "stream" 3 653 "int8" `413 
+f G "tx_buffer_full" 3 653 "int8(int8 stream)" `412 
+f B "tx_buffer_bytes" 3 654 "int16()" `414 
+v L "stream" 3 655 "int8" `416 
+f G "tx_buffer_bytes" 3 655 "int16(int8 stream)" `415  "#use i2c() Prototypes:"
+f B "i2c_read" 3 658 "int8()" `417 
+v L "stream" 3 659 "int8" `419 
+f G "i2c_read" 3 659 "int8(int8 stream)" `418 
+v L "stream" 3 660 "int8" `421 
+v L "ack" 3 660 "int8" `422 
+f G "i2c_read" 3 660 "int8(int8 stream,int8 ack)" `420 
+v L "data" 3 661 "int8" `424 
+f B "i2c_write" 3 661 "int8(int8 data)" `423 
+v L "stream" 3 662 "int8" `426 
+v L "data" 3 662 "int8" `427 
+f G "i2c_write" 3 662 "int8(int8 stream,int8 data)" `425 
+f B "i2c_start" 3 663 "void()" `428 
+v L "stream" 3 664 "int8" `430 
+f G "i2c_start" 3 664 "void(int8 stream)" `429 
+v L "stream" 3 665 "int8" `432 
+v L "restart" 3 665 "int8" `433 
+f G "i2c_start" 3 665 "void(int8 stream,int8 restart)" `431 
+f B "i2c_stop" 3 666 "void()" `434 
+v L "stream" 3 667 "int8" `436 
+f G "i2c_stop" 3 667 "void(int8 stream)" `435 
+f B "i2c_isr_state" 3 668 "int8()" `437 
+v L "addr" 3 669 "int8" `439 
+f B "i2c_slaveaddr" 3 669 "void(int8 addr)" `438 
+v L "stream" 3 670 "int8" `441 
+v L "addr" 3 670 "int8" `442 
+f G "i2c_slaveaddr" 3 670 "void(int8 stream,int8 addr)" `440 
+f B "i2c_poll" 3 671 "int8()" `443 
+v L "stream" 3 672 "int8" `445 
+f G "i2c_poll" 3 672 "int8(int8 stream)" `444 
+v L "baud" 3 673 "int32" `447 
+f B "i2c_init" 3 673 "void(int32 baud)" `446 
+v L "stream" 3 674 "int8" `449 
+v L "baud" 3 674 "int32" `450 
+f G "i2c_init" 3 674 "void(int8 stream,int32 baud)" `448  "#use spi() Prototypes:"
+f B "spi_xfer" 3 677 "int8()" `451 
+f G "spi_xfer" 3 678 "int16()" `452 
+f G "spi_xfer" 3 679 "int32()" `453 
+v L "data" 3 680 "int8" `455 
+f G "spi_xfer" 3 680 "int8(int8 data)" `454 
+v L "data" 3 681 "int16" `457 
+f G "spi_xfer" 3 681 "int16(int16 data)" `456 
+v L "data" 3 682 "int32" `459 
+f G "spi_xfer" 3 682 "int32(int32 data)" `458 
+v L "stream" 3 683 "int8" `461 
+v L "data" 3 683 "int8" `462 
+f G "spi_xfer" 3 683 "int8(int8 stream,int8 data)" `460 
+v L "stream" 3 684 "int8" `461 
+v L "data" 3 684 "int16" `465 
+f G "spi_xfer" 3 684 "int16(int8 stream,int16 data)" `463 
+v L "stream" 3 685 "int8" `461 
+v L "data" 3 685 "int32" `468 
+f G "spi_xfer" 3 685 "int32(int8 stream,int32 data)" `466 
+v L "stream" 3 686 "int8" `470 
+v L "data" 3 686 "int8" `471 
+v L "bits" 3 686 "int8" `472 
+f G "spi_xfer" 3 686 "int8(int8 stream,int8 data,int8 bits)" `469 
+v L "stream" 3 687 "int8" `470 
+v L "data" 3 687 "int16" `471 
+v L "bits" 3 687 "int8" `476 
+f G "spi_xfer" 3 687 "int16(int8 stream,int16 data,int8 bits)" `473 
+v L "stream" 3 688 "int8" `470 
+v L "data" 3 688 "int32" `471 
+v L "bits" 3 688 "int8" `480 
+f G "spi_xfer" 3 688 "int32(int8 stream,int32 data,int8 bits)" `477 
+v L "baud" 3 689 "int32" `482 
+f B "spi_init" 3 689 "void(int32 baud)" `481 
+v L "stream" 3 690 "int8" `484 
+v L "baud" 3 690 "int32" `485 
+f G "spi_init" 3 690 "void(int8 stream,int32 baud)" `483 
+v L "baud" 3 691 "int32" `487 
+f B "spi_speed" 3 691 "void(int32 baud)" `486 
+v L "stream" 3 692 "int8" `489 
+v L "baud" 3 692 "int32" `490 
+f G "spi_speed" 3 692 "void(int8 stream,int32 baud)" `488 
+v L "stream" 3 693 "int8" `492 
+v L "baud" 3 693 "int32" `493 
+v L "clock" 3 693 "int32" `494 
+f G "spi_speed" 3 693 "void(int8 stream,int32 baud,int32 clock)" `491 
+v L "data" 3 694 "int8" `496 
+f B "spi_prewrite" 3 694 "void(int8 data)" `495 
+v L "data" 3 695 "int16" `498 
+f G "spi_prewrite" 3 695 "void(int16 data)" `497 
+v L "data" 3 696 "int32" `500 
+f G "spi_prewrite" 3 696 "void(int32 data)" `499 
+v L "??65535" 3 697 "int8" `502 
+v L "data" 3 697 "int8" `503 
+f G "spi_prewrite" 3 697 "void(int8 ,int8 data)" `501 
+v L "??65535" 3 698 "int8" `502 
+v L "data" 3 698 "int16" `506 
+f G "spi_prewrite" 3 698 "void(int8 ,int16 data)" `504 
+v L "??65535" 3 699 "int8" `502 
+v L "data" 3 699 "int32" `509 
+f G "spi_prewrite" 3 699 "void(int8 ,int32 data)" `507 
+f B "spi_xfer_in" 3 700 "int8()" `510 
+f G "spi_xfer_in" 3 701 "int16()" `511 
+f G "spi_xfer_in" 3 702 "int32()" `512 
+v L "bits" 3 703 "int8" `514 
+f G "spi_xfer_in" 3 703 "int8(int8 bits)" `513 
+v L "bits" 3 704 "int8" `516 
+f G "spi_xfer_in" 3 704 "int16(int8 bits)" `515 
+v L "bits" 3 705 "int8" `518 
+f G "spi_xfer_in" 3 705 "int32(int8 bits)" `517 
+v L "stream" 3 706 "int8" `520 
+v L "bits" 3 706 "int8" `521 
+f G "spi_xfer_in" 3 706 "int8(int8 stream,int8 bits)" `519 
+v L "stream" 3 707 "int8" `520 
+v L "bits" 3 707 "int8" `524 
+f G "spi_xfer_in" 3 707 "int16(int8 stream,int8 bits)" `522 
+v L "stream" 3 708 "int8" `520 
+v L "bits" 3 708 "int8" `527 
+f G "spi_xfer_in" 3 708 "int32(int8 stream,int8 bits)" `525  "#use rtos() Prototypes:"
+f B "rtos_run" 3 711 "void()" `528 
+f B "rtos_yield" 3 712 "void()" `529 
+v L "task" 3 713 "int8" `531 
+f B "rtos_enable" 3 713 "void(int8 task)" `530 
+v L "task" 3 714 "int8" `533 
+f B "rtos_disable" 3 714 "void(int8 task)" `532 
+f B "rtos_terminate" 3 715 "void()" `534 
+v L "flag" 3 716 "int8" `536 
+f B "rtos_await" 3 716 "void(int8 flag)" `535 
+v L "sem" 3 717 "int8" `538 
+f B "rtos_wait" 3 717 "void(int8 sem)" `537 
+v L "sem" 3 718 "int8" `540 
+f B "rtos_signal" 3 718 "void(int8 sem)" `539 
+v L "task" 3 719 "int8" `542 
+v L "msg" 3 719 "int8" `543 
+f B "rtos_msg_send" 3 719 "void(int8 task,int8 msg)" `541 
+f B "rtos_msg_read" 3 720 "int8()" `544 
+f B "rtos_msg_poll" 3 721 "int8()" `545 
+v L "task" 3 722 "int8" `547 
+f B "rtos_overrun" 3 722 "int8(int8 task)" `546 
+v L "task" 3 723 "int8" `549 
+v L "stat" 3 723 "*int8" `550 
+f B "rtos_stats" 3 723 "void(int8 task,*int8 stat)" `548  "#use timer() Prototypes:"
+f B "get_ticks" 3 726 "int8()" `551 
+f G "get_ticks" 3 727 "int16()" `552 
+f G "get_ticks" 3 728 "int32()" `553 
+v L "stream" 3 729 "int8" `555 
+f G "get_ticks" 3 729 "int8(int8 stream)" `554 
+v L "stream" 3 730 "int8" `557 
+f G "get_ticks" 3 730 "int16(int8 stream)" `556 
+v L "stream" 3 731 "int8" `559 
+f G "get_ticks" 3 731 "int32(int8 stream)" `558 
+v L "value" 3 732 "int8" `561 
+f B "set_ticks" 3 732 "void(int8 value)" `560 
+v L "value" 3 733 "int16" `563 
+f G "set_ticks" 3 733 "void(int16 value)" `562 
+v L "value" 3 734 "int32" `565 
+f G "set_ticks" 3 734 "void(int32 value)" `564 
+v L "stream" 3 735 "int8" `567 
+v L "value" 3 735 "int8" `568 
+f G "set_ticks" 3 735 "void(int8 stream,int8 value)" `566 
+v L "stream" 3 736 "int8" `567 
+v L "value" 3 736 "int16" `571 
+f G "set_ticks" 3 736 "void(int8 stream,int16 value)" `569 
+v L "stream" 3 737 "int8" `567 
+v L "value" 3 737 "int32" `574 
+f G "set_ticks" 3 737 "void(int8 stream,int32 value)" `572  "#use pwm() Prototypes:"
+f B "pwm_on" 3 740 "void()" `575 
+v L "stream" 3 741 "int8" `577 
+f G "pwm_on" 3 741 "void(int8 stream)" `576 
+f B "pwm_off" 3 742 "void()" `578 
+v L "stream" 3 743 "int8" `580 
+f G "pwm_off" 3 743 "void(int8 stream)" `579 
+v L "duty" 3 744 "int16" `582 
+f B "pwm_set_duty" 3 744 "void(int16 duty)" `581 
+v L "stream" 3 745 "int8" `584 
+v L "duty" 3 745 "int16" `585 
+f G "pwm_set_duty" 3 745 "void(int8 stream,int16 duty)" `583 
+v L "percent" 3 746 "int16" `587 
+f B "pwm_set_duty_percent" 3 746 "void(int16 percent)" `586 
+v L "stream" 3 747 "int8" `589 
+v L "percent" 3 747 "int16" `590 
+f G "pwm_set_duty_percent" 3 747 "void(int8 stream,int16 percent)" `588 
+v L "frequency" 3 748 "int32" `592 
+f B "pwm_set_frequency" 3 748 "void(int32 frequency)" `591 
+v L "stream" 3 749 "int8" `594 
+v L "frequency" 3 749 "int32" `595 
+f G "pwm_set_frequency" 3 749 "void(int8 stream,int32 frequency)" `593  "#use capture() Prototypes:"
+f B "get_capture_time" 3 752 "int16()" `596 
+v L "stream" 3 753 "int8" `598 
+f G "get_capture_time" 3 753 "int16(int8 stream)" `597 
+f B "get_capture_event" 3 754 "int8()" `599 
+v L "stream" 3 755 "int8" `601 
+f G "get_capture_event" 3 755 "int8(int8 stream)" `600  "Enviroment Prototypes:"
+c L "get_capture_event" 3 3 2 "FUNCTION"
+v L "address" 3 768 "int16" `603 
+f B "goto_address" 3 768 "void(int16 address)" `602 
+v L "label" 3 769 "int16" `605 
+f B "label_address" 3 769 "int16(int16 label)" `604  "Program Memory Prototypes:"
+v L "address" 3 772 "int16" `607 
+v L "dataptr" 3 772 "*int8" `608 
+v L "count" 3 772 "int16" `609 
+f B "read_program_memory" 3 772 "void(int16 address,*int8 dataptr,int16 count)" `606 
+v L "address" 3 773 "int16" `611 
+f B "read_program_eeprom" 3 773 "int16(int16 address)" `610 
+v L "address" 3 774 "int16" `613 
+f B "erase_program_eeprom" 3 774 "void(int16 address)" `612 
+v L "address" 3 775 "int16" `615 
+v L "dataptr" 3 775 "*int8" `616 
+v L "count" 3 775 "int16" `617 
+f B "write_program_memory" 3 775 "void(int16 address,*int8 dataptr,int16 count)" `614 
+v L "address" 3 776 "int16" `619 
+v L "data" 3 776 "int16" `620 
+f B "write_program_eeprom" 3 776 "void(int16 address,int16 data)" `618  "EEPROM Prototypes:"
+t G "__EEADDRESS__" 3 781 "int16" `621 
+v L "address" 3 786 "__EEADDRESS__" `623 
+f B "read_eeprom" 3 786 "int8(__EEADDRESS__ address)" `622 
+v L "address" 3 787 "__EEADDRESS__" `625 
+v L "value" 3 787 "int8" `626 
+f B "write_eeprom" 3 787 "void(__EEADDRESS__ address,int8 value)" `624  "INT"
+c L "write_eeprom" 3 3 4 "FUNCTION"
+v L "interrupt" 3 794 "int32" `628 
+f B "enable_interrupts" 3 794 "void(int32 interrupt)" `627 
+v L "interrupt" 3 795 "int32" `630 
+f B "disable_interrupts" 3 795 "void(int32 interrupt)" `629 
+v L "interrupt" 3 796 "int32" `632 
+f B "clear_interrupt" 3 796 "void(int32 interrupt)" `631 
+v L "interrupt" 3 797 "int32" `634 
+f B "interrupt_active" 3 797 "int8(int32 interrupt)" `633 
+v L "interrupt" 3 798 "int32" `636 
+f B "interrupt_enabled" 3 798 "int8(int32 interrupt)" `635 
+v L "source" 3 799 "int8" `638 
+v L "edge" 3 799 "int8" `639 
+f B "ext_int_edge" 3 799 "void(int8 source,int8 edge)" `637 
+v L "address" 3 800 "int16" `641 
+f B "jump_to_irs" 3 800 "void(int16 address)" `640  "Constants used in EXT_INT_EDGE() are:"
+d G "L_TO_H" 3 802 "0x40"
+d G "H_TO_L" 3 803 "0"
+d G "GLOBAL" 3 805 "0xF2C0"
+d G "PERIPH" 3 806 "0xF240"
+d G "INT_RTCC" 3 807 "0x00F220"
+d G "INT_TIMER0" 3 808 "0x00F220"
+d G "INT_TIMER1" 3 809 "0x009D01"
+d G "INT_TIMER2" 3 810 "0x009D02"
+d G "INT_TIMER3" 3 811 "0x00A002"
+d G "INT_EXT_L2H" 3 812 "0x5000F210"
+d G "INT_EXT_H2L" 3 813 "0x6000F210"
+d G "INT_EXT" 3 814 "0x00F210"
+d G "INT_EXT1_L2H" 3 815 "0x5001F008"
+d G "INT_EXT1_H2L" 3 816 "0x6001F008"
+d G "INT_EXT1" 3 817 "0x00F008"
+d G "INT_EXT2_L2H" 3 818 "0x5002F010"
+d G "INT_EXT2_H2L" 3 819 "0x6002F010"
+d G "INT_EXT2" 3 820 "0x00F010"
+d G "INT_RB" 3 821 "0x00FFF208"
+d G "INT_AD" 3 822 "0x009D40"
+d G "INT_RDA" 3 823 "0x009D20"
+d G "INT_TBE" 3 824 "0x009D10"
+d G "INT_SSP" 3 825 "0x009D08"
+d G "INT_CCP1" 3 826 "0x009D04"
+d G "INT_CCP2" 3 827 "0x00A001"
+d G "INT_BUSCOL" 3 828 "0x00A008"
+d G "INT_LOWVOLT" 3 829 "0x00A004"
+d G "INT_COMP" 3 830 "0x00A040"
+d G "INT_EEPROM" 3 831 "0x00A010"
+d G "INT_OSCF" 3 832 "0x00A080"
+d G "INT_SPP" 3 833 "0x009D80"
+d G "INT_USB" 3 834 "0x00A020"
+D G "usi8" 2 8 "unsigned int8"
+D G "usi16" 2 9 "unsigned int16"
+D G "usi32" 2 10 "unsigned int32"
+D G "si8" 2 11 "signed int8"
+D G "co_reset" 2 13 "true"
+D G "no_reset" 2 14 "false"
+D G "tt_on" 2 16 "1"
+D G "tt_off" 2 17 "0"
+D G "enable" 2 18 "1"
+D G "disable" 2 19 "0"
+D G "sang" 2 20 "1"
+D G "tat" 2 21 "0"
+D G "tat_l7d" 2 22 "0xff"
+D G "cx_vn" 2 23 "true" "co xoa so 0 vo nghia"
+D G "kx_vn" 2 24 "false" "khong xoa so 0 vo nghia"
+D G "co_fill" 2 25 "true"
+D G "no_fill" 2 26 "false"
+V G "i" 2 28 "int8" `650 
+V G "y8" 2 29 "int8" `651 
+V G "sl" 2 29 "int8" `652 
+V G "lt" 2 30 "int16" `653 
+V G "lp" 2 30 "int16" `654 
+V G "y" 2 31 "int32" `655  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+D G "co_nhan" 2 35 "1"
+D G "khong_nhan" 2 36 "0"
+D G "c_ktnp" 2 37 "1" "co kiem tra nha phim"
+D G "k_ktnp" 2 38 "0" "khong kiem tra nha phim"
+D G "sole_1" 2 39 "false"
+D G "sole_2" 2 40 "true"
+V G "tt_on_off" 2 42 "int1" `656 
+V G "tt_inv" 2 42 "int1" `657 
+V G "dl_btn" 2 43 "int16" `658 
+C L "jump_to_irs" 2 6 7 "FUNCTION"
+F G "reset_cac_bien" 2 53 "void()" `659 
+D G "enable_573a" 2 60 "pin_d1" "cs0 cua a"
+D G "enable_573b" 2 61 "pin_d0" "cs1 cua b"
+D G "ssdo" 2 63 "pin_e2" "chung tat ca"
+D G "ssck" 2 64 "pin_e0" "chung tat ca"
+D G "rck_4led7doan" 2 66 "pin_d7" "a - 4 byte"
+D G "g_4led7doan" 2 67 "pin_d6" "a - 4 byte"
+D G "rck_matranled" 2 69 "pin_d7" "b - 3 byte dao"
+D G "g_matranled" 2 70 "pin_d6" "b - 3 byte dao"
+D G "rck_32led" 2 72 "pin_d5" "a - 4 byte"
+D G "g_32led" 2 73 "pin_d4" "a - 4 byte"
+D G "rck_8ledquet" 2 75 "pin_d5" "b - 2 byte dao"
+D G "g_8ledquet" 2 76 "pin_d4" "b - 2 byte dao"
+D G "rck_lcd20x4" 2 78 "pin_d3" "a - 2 byte dao"
+D G "g_lcd20x4" 2 79 "pin_d2" "a - 2 byte dao"
+D G "rck_buzerelay" 2 81 "pin_d3" "b - 1 byte"
+D G "g_buzerelay" 2 82 "pin_d2" "b - 1 byte"
+D G "chot_2_ic_74573_a_b" 2 86 "output_d(0xfc)"
+V G "tin_hieu_dk_74573_a" 2 88 "int8" `660 
+D G "mo_32_led_don" 2 93 "g_32a=0;"
+D G "tat_32_led_don" 2 94 "g_32a=1;"
+D G "mo_4_led_7doan" 2 96 "g_4a=0;"
+D G "tat_4_led_7doan" 2 97 "g_4a=1;"
+D G "mo_glcd_lcd" 2 99 "g_lcda=0;"
+D G "tat_glcd_lcd" 2 100 "g_lcda=1;"
+V G "tin_hieu_dk_74573_b" 2 102 "int8" `664 
+D G "mo_led_matran" 2 107 "g_mtb=0;"
+D G "tat_led_matran" 2 108 "g_mtb=1;"
+D G "mo_8_led_quet" 2 110 "g_8b=0;"
+D G "tat_8_led_quet" 2 111 "g_8b=1;"
+D G "mo_relay_buzzer_dc" 2 113 "g_rbdcb=0;"
+D G "tat_relay_buzzer_dc" 2 114 "g_rbdcb=1;"
+D G "cho_ic_74573_a_goi_du_lieu" 2 118 "output_high(enable_573a)"
+D G "chot_ic_74573_a_goi_du_lieu" 2 119 "output_low(enable_573a)"
+D G "cho_ic_74573_b_goi_du_lieu" 2 121 "output_high(enable_573b)"
+D G "chot_ic_74573_b_goi_du_lieu" 2 122 "output_low(enable_573b)"
+f G "mo_ic_74573_a_thong_dl" 2 123 "void()" `668  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+C L "mo_ic_74573_a_thong_dl" 2 6 2 "FUNCTION"
+V G "rbdc" 2 128 "int16" `669 
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 1 "FUNCTION"
+C L "mo_ic_74573_a_thong_dl" 2 6 5 "FUNCTION"
+F G "mo_ic_74573_a_thong_dl" 2 148 "void()" `668 
+C L "mo_ic_74573_b_thong_dl" 2 6 1 "FUNCTION"
+F G "mo_ic_74573_b_thong_dl" 2 157 "void()" `682 
+C L "set_up_port_ic_chot" 2 6 3 "FUNCTION"
+F G "set_up_port_ic_chot" 2 168 "void()" `683 
+C L "xuat_1byte" 2 6 3 "FUNCTION"
+V L "bytexuat" 2 188 "int8" `685 
+F G "xuat_1byte" 2 189 "void(int8 bytexuat)" `684 
+V L "sb" 2 190 "int8" `686 
+C L "xuat_buzzer_relay" 2 6 3 "FUNCTION"
+F G "xuat_buzzer_relay" 2 203 "void()" `688 
+V L "rbdc1" 2 204 "int8" `689 
+V L "rbdc2" 2 204 "int8" `690 
+C L "buzzer_on" 2 6 2 "FUNCTION"
+F G "buzzer_on" 2 216 "void()" `691 
+C L "buzzer_off" 2 6 2 "FUNCTION"
+F G "buzzer_off" 2 223 "void()" `692 
+C L "relay_1_on" 2 6 2 "FUNCTION"
+F G "relay_1_on" 2 230 "void()" `693 
+C L "relay_1_off" 2 6 2 "FUNCTION"
+F G "relay_1_off" 2 237 "void()" `694 
+C L "relay_2_on" 2 6 2 "FUNCTION"
+F G "relay_2_on" 2 244 "void()" `695 
+C L "relay_2_off" 2 6 2 "FUNCTION"
+F G "relay_2_off" 2 251 "void()" `696 
+C L "relay_1_relay_2_on" 2 6 2 "FUNCTION"
+F G "relay_1_relay_2_on" 2 258 "void()" `697 
+C L "relay_1_relay_2_off" 2 6 2 "FUNCTION"
+F G "relay_1_relay_2_off" 2 265 "void()" `698 
+C L "triac_1_on" 2 6 2 "FUNCTION"
+F G "triac_1_on" 2 272 "void()" `699 
+C L "triac_1_off" 2 6 2 "FUNCTION"
+F G "triac_1_off" 2 279 "void()" `700 
+C L "triac_2_on" 2 6 2 "FUNCTION"
+F G "triac_2_on" 2 286 "void()" `701 
+C L "triac_2_off" 2 6 2 "FUNCTION"
+F G "triac_2_off" 2 293 "void()" `702 
+V G "ma7doan" 2 298 "[16]" `703 
+D G "maso0" 2 301 "0xc0"
+D G "maso1" 2 302 "0xf9"
+D G "maso2" 2 303 "0xa4"
+D G "maso3" 2 304 "0xb0"
+D G "maso4" 2 305 "0x99"
+D G "maso5" 2 306 "0x92"
+D G "maso6" 2 307 "0x82"
+D G "maso7" 2 308 "0xf8"
+C L "xuat_32led_don_4byte" 4 1 4 "FUNCTION"
+V L "bld3" 4 5 "int8" `707 
+V L "bld2" 4 5 "int8" `708 
+V L "bld1" 4 5 "int8" `709 
+V L "bld0" 4 5 "int8" `710 
+F G "xuat_32led_don_4byte" 4 6 "void(int8 bld3,int8 bld2,int8 bld1,int8 bld0)" `706 
+C L "xuat_32led_don_2word" 4 1 4 "FUNCTION"
+V L "wld1" 4 20 "int16" `712 
+V L "wld0" 4 20 "int16" `713 
+F G "xuat_32led_don_2word" 4 21 "void(int16 wld1,int16 wld0)" `711 
+V L "b3" 4 22 "int8" `714 
+V L "b2" 4 22 "int8" `715 
+V L "b1" 4 22 "int8" `716 
+V L "b0" 4 22 "int8" `717 
+C L "xuat_32led_don_1dw" 4 1 4 "FUNCTION"
+V L "dwld" 4 31 "int32" `719 
+F G "xuat_32led_don_1dw" 4 32 "void(int32 dwld)" `718 
+V L "wd1" 4 33 "int16" `720 
+V L "wd0" 4 33 "int16" `721 
+C L "xuat_4led_7doan_4so" 5 1 4 "FUNCTION"
+V L "bl743" 5 5 "int8" `723 
+V L "bl742" 5 5 "int8" `724 
+V L "bl741" 5 5 "int8" `725 
+V L "bl740" 5 5 "int8" `726 
+F G "xuat_4led_7doan_4so" 5 6 "void(int8 bl743,int8 bl742,int8 bl741,int8 bl740)" `722 
+C L "xuat_4led_7doan_3so" 5 1 3 "FUNCTION"
+V L "bl742" 5 20 "int8" `728 
+V L "bl741" 5 20 "int8" `729 
+V L "bl740" 5 20 "int8" `730 
+F G "xuat_4led_7doan_3so" 5 21 "void(int8 bl742,int8 bl741,int8 bl740)" `727 
+C L "xuat_4led_7doan_2so" 5 1 3 "FUNCTION"
+V L "bl741" 5 27 "int8" `732 
+V L "bl740" 5 27 "int8" `733 
+F G "xuat_4led_7doan_2so" 5 28 "void(int8 bl741,int8 bl740)" `731 
+C L "xuat_4led_7doan_1so" 5 1 3 "FUNCTION"
+V L "bl740" 5 34 "int8" `735 
+F G "xuat_4led_7doan_1so" 5 35 "void(int8 bl740)" `734 
+V G "donvi4" 5 43 "int8" `736 
+V G "chuc4" 5 43 "int8" `737 
+V G "tram4" 5 43 "int8" `738 
+V G "ngan4" 5 43 "int8" `739 
+V L "tam" 5 44 "int16" `741 
+F G "xuat_4led_7doan_giaima_xoa_so0" 5 45 "void(int16 tam)" `740 
+V L "bh" 5 62 "int8" `746 
+V L "bl" 5 62 "int8" `747 
+F G "xuat_4led_7doan_2_so" 5 63 "void(int8 bh,int8 bl)" `745 
+V G "donvi2" 5 67 "int8" `751 
+V G "donvi1" 5 67 "int8" `752 
+V G "chuc2" 5 67 "int8" `753 
+V G "chuc1" 5 67 "int8" `754 
+V L "bh" 5 68 "int8" `756 
+V L "bl" 5 68 "int8" `757 
+F G "xuat_4led_7doan_2_so_xoa_so0" 5 69 "void(int8 bh,int8 bl)" `755 
+C L "xuat_8led_7doan_quet_1" 6 1 4 "FUNCTION"
+V L "ma" 6 5 "int8" `759 
+V L "so_hthi" 6 5 "int8" `760 
+F G "xuat_8led_7doan_quet_1" 6 6 "void(int8 ma,int8 so_hthi)" `758 
+C L "xuat_8led_7doan_quet_tat_led" 6 1 4 "FUNCTION"
+F G "xuat_8led_7doan_quet_tat_led" 6 20 "void()" `761 
+V G "ttledquet" 6 27 "[8]" `762 
+V L "thutuled" 6 28 "int8" `766 
+V L "so_hthi" 6 28 "int8" `767 
+F G "xuat_8led_7doan_quet_2" 6 29 "void(int8 thutuled,int8 so_hthi)" `765 
+V G "led_7dq" 6 40 "int8[8]" `768 
+V G "tt8led" 6 41 "int8" `769 
+F G "hien_thi_8led_7doan_quet" 6 43 "void()" `770 
+C L "hien_thi_8led_7doan_quet_all" 6 1 4 "FUNCTION"
+F G "hien_thi_8led_7doan_quet_all" 6 57 "void()" `771 
+V L "dl" 6 66 "int16" `773 
+F G "delay_quet_8led" 6 67 "void(int16 dl)" `772 
+V L "i" 6 68 "int8" `774 
+V L "x" 6 73 "int16" `776 
+F G "giai_ma_gan_cho_8led_quet_16_xoa" 6 74 "void(int16 x)" `775 
+V G "lcddata" 7 3 "int8" `777 
+V G "lcdcontrol" 7 4 "int8" `778 
+V G "glcddata" 7 5 "int8" `779 
+V G "glcdcontrol" 7 6 "int8" `780 
+C L "xuat_glcd_lcd" 7 1 3 "FUNCTION"
+F G "xuat_glcd_lcd" 7 11 "void()" `781 
+C L "xuat_lcd20x4" 7 1 1 "FUNCTION"
+V L "lcd_signal" 7 24 "int8" `783 
+V L "lcd_ins_hthi" 7 24 "int8" `784 
+F G "xuat_lcd20x4" 7 25 "void(int8 lcd_signal,int8 lcd_ins_hthi)" `782 
+C L "xuat_glcd128x64" 7 1 1 "FUNCTION"
+V L "glcd_signal" 7 31 "int8" `786 
+V L "glcd_ins_hthi" 7 31 "int8" `787 
+F G "xuat_glcd128x64" 7 32 "void(int8 glcd_signal,int8 glcd_ins_hthi)" `785 
+C L "xuat_1bit" 8 3 3 "FUNCTION"
+V L "bytexuat" 8 6 "int8" `789 
+F G "xuat_1bit" 8 7 "int8(int8 bytexuat)" `788 
+V L "xbitx" 8 8 "int8" `790 
+C L "xuat_2byte" 8 3 4 "FUNCTION"
+V L "byte2xuat" 8 27 "int16" `793 
+F G "xuat_2byte" 8 28 "void(int16 byte2xuat)" `792 
+V L "sbb" 8 29 "int8" `794 
+V L "xx" 8 30 "int16" `795  "short  bseri;"
+C L "xuat_matranled" 8 3 3 "FUNCTION"
+V L "mahang" 8 43 "int16" `798 
+V L "macot1" 8 43 "int16" `799 
+V L "macot2" 8 44 "int16" `800 
+V L "macot3" 8 44 "int16" `801 
+F G "xuat_matranled" 8 45 "void(int16 mahang,int16 macot1,int16 macot2,int16 macot3)" `797 
+C L "tat_matranled" 8 3 3 "FUNCTION"
+F G "tat_matranled" 8 61 "void()" `802 
+V L "xzy" 8 68 "int8" `804 
+F G "hieu_chinh_4bit_cao" 8 69 "int8(int8 xzy)" `803 
+V L "btg" 8 70 "int1" `805 
+V L "bx" 8 71 "int8" `806 
+V G "YP_CHAY" 9 1 "int32" `811 
+V G "YT_CHAY" 9 1 "int32" `812 
+V G "Y_CODINH" 9 1 "int32" `813 
+V G "ZT" 9 2 "int16" `814 
+V G "ZT_CHAY_T" 9 2 "int16" `815 
+V G "ZT_CHAY_P" 9 2 "int16" `816 
+V G "ZT_CODINH" 9 2 "int16" `817 
+V G "ZP" 9 3 "int16" `818 
+V G "ZP_CHAY_T" 9 3 "int16" `819 
+V G "ZP_CHAY_P" 9 3 "int16" `820 
+V G "ZP_CODINH" 9 3 "int16" `821 
+V G "TGDLAY" 9 5 "int16" `822 
+V G "DEM_LED" 9 6 "int8" `823 
+V G "I32" 9 7 "sint8" `824 
+V G "J32" 9 7 "sint8" `825 
+V G "TTCT_TD" 9 7 "sint8" `826 
+V G "I16" 9 7 "sint8" `827 
+V G "J16" 9 7 "sint8" `828 
+V G "ttct" 9 7 "sint8" `829 
+V G "ZA" 9 9 "int32" `830 
+V G "YA" 9 9 "int32" `831 
+V G "XA" 9 9 "int32" `832 
+V G "ZB" 9 9 "int32" `833 
+V G "YB" 9 9 "int32" `834 
+V G "XB" 9 9 "int32" `835 
+V G "IA" 9 10 "sint8" `836 
+V G "JA" 9 10 "sint8" `837 
+F G "RESET_TOAN_BO_BIEN" 9 12 "void()" `838 
+C L "RESET_TOAN_BO_BIEN" 9 13 1 "FUNCTION"
+V L "dl" 9 25 "int8" `840 
+F G "TANG_DEM_LED_DELAY_1" 9 26 "void(int8 dl)" `839 
+V L "i" 9 27 "int8" `841 
+V L "dl" 9 33 "int8" `843 
+F G "TANG_DEM_LED_DELAY_0" 9 34 "void(int8 dl)" `842 
+V L "dl" 9 39 "int8" `845 
+V L "CHONDELAY" 9 39 "int8" `846 
+F G "DELAY_CHON" 9 40 "void(int8 dl,int8 CHONDELAY)" `844 
+C L "DIEM_SANG_DICH_TRAI_MAT_DAN_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 47 "int8" `848 
+V L "CHONDELAY" 9 47 "int8" `849 
+F G "DIEM_SANG_DICH_TRAI_MAT_DAN_32LED" 9 48 "void(int8 dl,int8 CHONDELAY)" `847 
+C L "DIEM_SANG_DICH_PHAI_MAT_DAN_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 73 "int8" `851 
+V L "CHONDELAY" 9 73 "int8" `852 
+F G "DIEM_SANG_DICH_PHAI_MAT_DAN_32LED" 9 74 "void(int8 dl,int8 CHONDELAY)" `850 
+C L "DAO_DL_32BIT_VA_XUAT" 9 13 3 "FUNCTION"
+F G "DAO_DL_32BIT_VA_XUAT" 9 100 "void()" `853 
+V L "dl" 9 104 "int8" `855 
+V L "CHONDELAY" 9 104 "int8" `856 
+F G "SANG_TAT_32LED" 9 105 "void(int8 dl,int8 CHONDELAY)" `854 
+C L "SANG_TAT_DAN_NGOAI_VAO_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 120 "int8" `858 
+V L "CHONDELAY" 9 120 "int8" `859 
+F G "SANG_TAT_DAN_NGOAI_VAO_32LED" 9 121 "void(int8 dl,int8 CHONDELAY)" `857 
+C L "SANG_TAT_DAN_TRONG_RA_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 142 "int8" `861 
+V L "CHONDELAY" 9 142 "int8" `862 
+F G "SANG_TAT_DAN_TRONG_RA_32LED" 9 143 "void(int8 dl,int8 CHONDELAY)" `860 
+C L "SANG_TAT_DAN_PHAI_SANG_TRAI_2X16LED" 9 13 3 "FUNCTION"
+V L "dl" 9 164 "int8" `864 
+V L "CHONDELAY" 9 164 "int8" `865 
+F G "SANG_TAT_DAN_PHAI_SANG_TRAI_2X16LED" 9 165 "void(int8 dl,int8 CHONDELAY)" `863 
+C L "SANG_TAT_DAN_TRAI_SANG_PHAI_2X16LED" 9 13 3 "FUNCTION"
+V L "dl" 9 184 "int8" `867 
+V L "CHONDELAY" 9 184 "int8" `868 
+F G "SANG_TAT_DAN_TRAI_SANG_PHAI_2X16LED" 9 185 "void(int8 dl,int8 CHONDELAY)" `866 
+C L "SANG_TAT_DAN_PST_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 204 "int8" `870 
+V L "CHONDELAY" 9 204 "int8" `871 
+F G "SANG_TAT_DAN_PST_32LED" 9 205 "void(int8 dl,int8 CHONDELAY)" `869 
+C L "SANG_TAT_DAN_TSP_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 224 "int8" `873 
+V L "CHONDELAY" 9 224 "int8" `874 
+F G "SANG_TAT_DAN_TSP_32LED" 9 225 "void(int8 dl,int8 CHONDELAY)" `872 
+C L "DIEM_SANG_DI_CHUYEN_PST_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 245 "int8" `876 
+V L "CHONDELAY" 9 245 "int8" `877 
+F G "DIEM_SANG_DI_CHUYEN_PST_32LED" 9 246 "void(int8 dl,int8 CHONDELAY)" `875 
+C L "DIEM_SANG_DI_CHUYEN_TSP_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 266 "int8" `879 
+V L "CHONDELAY" 9 266 "int8" `880 
+F G "DIEM_SANG_DI_CHUYEN_TSP_32LED" 9 267 "void(int8 dl,int8 CHONDELAY)" `878 
+C L "SANG_DON_PST_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 287 "int8" `882 
+V L "CHONDELAY" 9 287 "int8" `883 
+F G "SANG_DON_PST_32LED" 9 288 "void(int8 dl,int8 CHONDELAY)" `881 
+C L "SANG_DON_TSP_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 312 "int8" `885 
+V L "CHONDELAY" 9 312 "int8" `886 
+F G "SANG_DON_TSP_32LED" 9 313 "void(int8 dl,int8 CHONDELAY)" `884 
+C L "SANG_DON_TNT_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 338 "int8" `888 
+V L "CHONDELAY" 9 338 "int8" `889 
+F G "SANG_DON_TNT_32LED" 9 339 "void(int8 dl,int8 CHONDELAY)" `887 
+C L "SANG_DON_TTR_32LED" 9 13 3 "FUNCTION"
+V L "dl" 9 368 "int8" `891 
+V L "CHONDELAY" 9 368 "int8" `892 
+F G "SANG_DON_TTR_32LED" 9 369 "void(int8 dl,int8 CHONDELAY)" `890 
+D G "TOUCH_PIN" 10 1 "PIN_A5"
+D G "TOUCH_C" 11 36 ""
+D G "TOUCH_PIN_LOW" 11 42 "()    output_drive(TOUCH_PIN); output_low(TOUCH_PIN)"
+D G "TOUCH_PIN_HIGH" 11 43 "()    output_drive(TOUCH_PIN); output_high(TOUCH_PIN)"
+D G "TOUCH_PIN_FLOAT" 11 44 "()  output_float(TOUCH_PIN)"
+D G "TOUCH_PIN_READ" 11 45 "()      input_state(TOUCH_PIN)"
+C L "touch_read_bit" 11 2 7 "FUNCTION"
+f G "touch_read_bit" 11 59 "int8()" `893  "BYTE touch_read_byte()"
+C L "touch_read_bit" 11 2 3 "FUNCTION"
+f G "touch_read_byte" 11 67 "int8()" `894  "BOOLEAN touch_write_bit(int1 data)"
+C L "touch_read_byte" 11 2 3 "FUNCTION"
+V L "data" 11 75 "int8" `896 
+f G "touch_write_bit" 11 75 "int8(int8 data)" `895  "BOOLEAN touch_write_byte(BYTE data)"
+C L "touch_write_bit" 11 2 3 "FUNCTION"
+V L "data" 11 83 "int8" `898 
+f G "touch_write_byte" 11 83 "int8(int8 data)" `897  "BOOLEAN touch_present()"
+C L "touch_write_byte" 11 2 3 "FUNCTION"
+f G "touch_present" 11 91 "int8()" `899  "void reset_pulse()"
+C L "touch_present" 11 2 3 "FUNCTION"
+f G "reset_pulse" 11 99 "void()" `900  "////"
+C L "reset_pulse" 11 2 6 "FUNCTION"
+F G "touch_read_bit" 11 114 "int8()" `893 
+V L "data" 11 115 "int1" `901 
+C L "touch_read_byte" 11 2 4 "FUNCTION"
+F G "touch_read_byte" 11 134 "int8()" `894 
+V L "i" 11 135 "int8" `902 
+V L "data" 11 135 "int8" `903 
+C L "touch_write_bit" 11 2 4 "FUNCTION"
+V L "data" 11 149 "int8" `905 
+F G "touch_write_bit" 11 150 "int8(int8 data)" `895 
+C L "touch_write_byte" 11 2 4 "FUNCTION"
+V L "data" 11 179 "int8" `905 
+F G "touch_write_byte" 11 180 "int8(int8 data)" `897 
+V L "i" 11 181 "int8" `904 
+C L "touch_present" 11 2 4 "FUNCTION"
+F G "touch_present" 11 197 "int8()" `899 
+V L "present" 11 198 "int1" `905 
+C L "reset_pulse" 11 2 4 "FUNCTION"
+F G "reset_pulse" 11 220 "void()" `900 
+D G "SKIP_ROM" 10 3 "0xCC"
+D G "CONVERT_T" 10 4 "0x44"
+D G "READ_SCRATCHPAD" 10 5 "0xBE"
+D G "WRITE_SCRATCHPAD" 10 6 "0x4E"
+D G "COPY_SCRATCHPAD" 10 7 "0x48"
+V G "DS18AL" 10 8 "int8" `906 
+V G "DS18AH" 10 8 "int8" `907 
+V G "DS18A_TAM" 10 8 "int8" `908 
+V G "DS18A" 10 9 "int16" `909 
+F G "KHOI_TAO_DS18B20" 10 11 "void()" `910 
+C L "KHOI_TAO_DS18B20" 10 15 1 "FUNCTION"
+C L "KHOI_TAO_DS18B20" 10 15 1 "FUNCTION"
+F G "DOC_GIATRI_DS18B20" 10 24 "void()" `911 
+V G "STEPMOTOR_FULLSTEP" 12 1 "int8[1]" `912 
+V G "STEPMOTOR_HALFSTEP" 12 2 "int8[1]" `913 
+V G "STEPMOTOR_I" 12 3 "int8" `914 
+V G "STEPMOTOR_DELAY" 12 3 "int8" `915 
+V G "so_buoc" 12 4 "int16" `916 
+V G "STEPMOTOR_TN" 12 5 "int1" `917 
+V G "STEPMOTOR_ONOFF" 12 5 "int1" `918 
+F G "STEP_MOTOR_QUAY_THUAN_FS" 12 7 "void()" `919 
+F G "STEP_MOTOR_QUAY_NGHICH_FS" 12 16 "void()" `920 
+F G "MOTOR_STEP_RUN_FS" 12 25 "void()" `921 
+F G "STEP_MOTOR_QUAY_THUAN_HS" 12 31 "void()" `922 
+F G "STEP_MOTOR_QUAY_NGHICH_HS" 12 39 "void()" `923 
+F G "MOTOR_STEP_RUN_HS" 12 47 "void()" `924 
+V G "DCMOTOR_TN" 13 1 "int1" `925 
+V G "DCMOTOR_ONOFF" 13 1 "int1" `926 
+C L "DC_MOTOR_ENABLE" 13 2 3 "FUNCTION"
+F G "DC_MOTOR_ENABLE" 13 6 "void()" `927 
+F G "DC_MOTOR_QUAY_THUAN" 13 11 "void()" `928 
+F G "DC_MOTOR_QUAY_NGHICH" 13 16 "void()" `929 
+F G "DC_MOTOR_STOP" 13 21 "void()" `930 
+F G "DC_MOTOR_CONTROL" 13 26 "void()" `931 
+V G "PWM_DUTY" 13 38 "int16" `932 
+F G "DC_MOTOR_KTAO_CCP1_THUAN" 13 40 "void()" `933 
+F G "DC_MOTOR_KTAO_CCP2_NGHICH" 13 46 "void()" `934 
+F G "DC_MOTOR_KTAO_CCPX_KTAO" 13 52 "void()" `935 
+F G "DC_MOTOR_PWW_SETUP_DUTY" 13 57 "void()" `936 
+F G "DC_MOTOR_PWM_CCP1_CCP2_STOP" 13 62 "void()" `937 
+D G "bt0" 14 1 "pin_b5"
+D G "bt1" 14 2 "pin_b4"
+D G "bt2" 14 3 "pin_b3"
+D G "bt3" 14 4 "pin_b2"
+D G "on" 14 6 "bt0" "dk led don, motor"
+D G "off" 14 7 "bt1"
+D G "inv" 14 8 "bt2"
+D G "up" 14 10 "bt0" "dk led don"
+D G "dw" 14 11 "bt1"
+D G "clr" 14 12 "bt2"
+D G "mod" 14 13 "bt3"
+D G "stop" 14 15 "bt3"
+D G "on1" 14 17 "bt0"
+D G "off1" 14 18 "bt1"
+D G "on2" 14 19 "bt2"
+D G "off2" 14 20 "bt3"
+D G "phim_on_c1" 14 39 "phim_bt0_c1"
+D G "phim_run_c1" 14 40 "phim_bt0_c1"
+D G "phim_up_c1" 14 41 "phim_bt0_c1"
+V L "ktnp" 14 43 "int8" `939 
+V L "dl" 14 43 "int16" `940 
+F G "phim_bt0_c1" 14 44 "int8(int8 ktnp,int16 dl)" `938 
+D G "phim_off_c1" 14 62 "phim_bt1_c1"
+D G "phim_stop_c1" 14 63 "phim_bt1_c1"
+D G "phim_dw_c1" 14 64 "phim_bt1_c1"
+V L "ktnp" 14 65 "int8" `942 
+V L "dl" 14 65 "int16" `943 
+F G "phim_bt1_c1" 14 66 "int8(int8 ktnp,int16 dl)" `941 
+D G "phim_inv_c1" 14 85 "phim_bt2_c1"
+V L "ktnp" 14 86 "int8" `945 
+V L "dl" 14 86 "int16" `946 
+F G "phim_bt2_c1" 14 87 "int8(int8 ktnp,int16 dl)" `944 
+D G "phim_mode_c1" 14 105 "phim_bt3_c1"
+D G "phim_ud_c1" 14 106 "phim_bt3_c1"
+V L "ktnp" 14 107 "int8" `948 
+V L "dl" 14 107 "int16" `949 
+F G "phim_bt3_c1" 14 108 "int8(int8 ktnp,int16 dl)" `947 
+C L "phim_on_off_inv_3btn" 14 22 6 "FUNCTION"
+F G "phim_on_off_inv_3btn" 14 130 "int8()" `950 
+C L "phim_on_off_2btn" 14 22 6 "FUNCTION"
+F G "phim_on_off_2btn" 14 158 "int8()" `951 
+C L "phim_on_off_1btn" 14 22 5 "FUNCTION"
+F G "phim_on_off_1btn" 14 178 "int8()" `952 
+D G "phim_on_c2" 14 203 "phim_bt0_c2"
+D G "phim_run_c2" 14 204 "phim_bt0_c2"
+D G "phim_up_c2" 14 205 "phim_bt0_c2"
+V L "dl" 14 206 "int16" `954 
+F G "phim_bt0_c2" 14 207 "int8(int16 dl)" `953 
+D G "phim_off_c2" 14 227 "phim_bt1_c2"
+D G "phim_stop_c2" 14 228 "phim_bt1_c2"
+D G "phim_dw_c2" 14 229 "phim_bt1_c2"
+V L "dl" 14 230 "int16" `956 
+F G "phim_bt1_c2" 14 231 "int8(int16 dl)" `955 
+D G "phim_inv_c2" 14 251 "phim_bt2_c2"
+V L "dl" 14 253 "int16" `958 
+F G "phim_bt2_c2" 14 254 "int8(int16 dl)" `957 
+D G "phim_mode_c2" 14 273 "phim_bt3_c2"
+D G "phim_ud_c2" 14 274 "phim_bt3_c2"
+V L "dl" 14 277 "int16" `960 
+F G "phim_bt3_c2" 14 278 "int8(int16 dl)" `959 
+V G "maquetkey" 14 297 "[4]" `961 
+V G "mpt1" 14 298 "int8" `964 
+V G "mpt2" 14 298 "int8" `965 
+F G "key_nhan" 14 300 "int8()" `966 
+V L "maphim" 14 300 "sint8" `967 
+V L "hang" 14 300 "sint8" `968 
+V L "cot" 14 300 "sint8" `969 
+F G "key_4x4_dw" 14 314 "int8()" `973 
+F G "key_4x4_up" 14 326 "int8()" `974 
+C L "key_4x4_up" 14 22 1 "FUNCTION"
+C L "key_4x4_up" 14 22 1 "FUNCTION"
+C L "key_4x4_up" 14 22 1 "FUNCTION"
+V G "lcd_control" 16 1 "int8" `975 
+D G "lcd_function_set" 16 7 "0x38"
+D G "lcd_display_control" 16 8 "0x0c"
+D G "lcd_clear_display" 16 9 "0x01"
+D G "lcd_entry_mode" 16 10 "0x06"
+D G "lcd_shift_left" 16 11 "0x18"
+D G "lcd_shift_right" 16 12 "0x1c"
+D G "lcd_addr_line1" 16 14 "0x80"
+D G "lcd_addr_line2" 16 15 "0xc0"
+D G "lcd_addr_line3" 16 16 "0x94"
+D G "lcd_addr_line4" 16 17 "0xd4"
+V L "lcd_data_x" 16 19 "int8" `981 
+F G "lcd_xuat_8bit" 16 20 "void(int8 lcd_data_x)" `980 
+V L "lcd_data_x" 16 24 "int8" `983 
+F G "lcd_command" 16 25 "void(int8 lcd_data_x)" `982 
+V L "lcd_data_x" 16 29 "int8" `985 
+F G "lcd_data" 16 30 "void(int8 lcd_data_x)" `984 
+F G "lcd_power_off" 16 36 "void()" `986 
+F G "lcd_power_on" 16 41 "void()" `987 
+F G "setup_lcd" 16 46 "void()" `988 
+V G "lcd_so_x" 16 61 "[10][6]" `989 
+V G "lcd_ma_8doan" 16 73 "[1]" `993 
+C L "lcd_goto_xy" 16 62 1 "FUNCTION"
+V L "x" 16 83 "sint8" `997 
+V L "y" 16 83 "sint8" `998 
+F G "lcd_goto_xy" 16 84 "void(sint8 x,sint8 y)" `996 
+V L "lcd_vitri" 16 85 "[1]" `999 
+F G "xxx" 16 90 "void()" `1002 
+V L "x" 16 91 "sint8" `1003 
+V L "lcd_so" 16 96 "sint8" `1005 
+V L "x1" 16 96 "int8" `1006 
+V L "y1" 16 96 "int8" `1007 
+F G "lcd_hienthi_so_z_toado_xy" 16 97 "void(sint8 lcd_so,int8 x1,int8 y1)" `1004 
+V L "i" 16 97 "sint8" `1008 
+V L "x1" 16 106 "sint8" `1010 
+V L "y1" 16 106 "int8" `1011 
+F G "lcd_xoa_so_to_toado_xy" 16 107 "void(sint8 x1,int8 y1)" `1009 
+V L "i" 16 107 "sint8" `1012 
+V G "glcd_control" 17 1 "int8" `1013 
+D G "glcd_text_mode" 17 12 "0x30"
+D G "glcd_graphic_mode" 17 13 "0x36"
+D G "glcd_clear_display" 17 15 "0x01"
+D G "glcd_cursor_display" 17 16 "0x0c"
+D G "glcd_entry_mode" 17 17 "0x06"
+D G "glcd_addr_line1" 17 20 "0x80"
+D G "glcd_addr_line2" 17 21 "0x90"
+D G "glcd_addr_line3" 17 22 "0x88"
+D G "glcd_addr_line4" 17 23 "0x98"
+V L "glcd_data1" 17 25 "int8" `1023 
+F G "glcd_xuat_8bit" 17 26 "void(int8 glcd_data1)" `1022 
+V L "glcd_data2" 17 31 "int8" `1025 
+F G "glcd_command" 17 32 "void(int8 glcd_data2)" `1024 
+V L "glcd_data3" 17 36 "int8" `1027 
+F G "glcd_data" 17 37 "void(int8 glcd_data3)" `1026 
+V L "glcd_data3" 17 42 "int8" `1029 
+F G "glcd_data_x" 17 43 "void(int8 glcd_data3)" `1028 
+F G "glcd_power_on" 17 50 "void()" `1030 
+F G "glcd_power_off" 17 56 "void()" `1031 
+V L "glcd_function_set_mode" 17 60 "int8" `1033 
+F G "setup_glcd" 17 61 "void(int8 glcd_function_set_mode)" `1032 
+D G "glcd_ngang" 17 77 "16" "16x16=256 pixel"
+D G "glcd_doc" 17 78 "32" "32 hang"
+D G "glcd_width" 17 79 "128" "danh cho thu vien graphic.c"
+V G "doc" 17 80 "int8" `1034 
+V G "ngang" 17 80 "int8" `1035 
+T G "dots" 17 86 "{int16 word,int8[2] nbyte}" `1039 
+T G "gd_ram" 17 92 "{int1 refresh,dots[32][16] pixel}" `1044 
+V G "gdram_vdk" 17 94 "gd_ram" `1045 
+V L "glcd_color" 17 97 "int8" `1047 
+F G "glcd_mau_nen" 17 98 "void(int8 glcd_color)" `1046 
+V L "d" 17 99 "int16" `1048 
+V L "x" 17 111 "int8" `1053 
+V L "y" 17 111 "int8" `1054 
+V L "color" 17 111 "int8" `1055 
+F G "glcd_pixel" 17 112 "void(int8 x,int8 y,int8 color)" `1052 
+V L "b" 17 113 "int8" `1056 
+F G "gdram_vdk_to_gdram_glcd_all" 17 126 "void()" `1057 
+C L "gdram_vdk_to_gdram_glcd_all" 17 11 1 "FUNCTION"
+C L "gdram_vdk_to_gdram_glcd_all" 17 11 1 "FUNCTION"
+C L "gdram_vdk_to_gdram_glcd_all" 17 11 1 "FUNCTION"
+C L "gdram_vdk_to_gdram_glcd_all" 17 11 1 "FUNCTION"
+V L "x" 17 144 "int8" `1059 
+V L "y" 17 144 "int8" `1060 
+V L "rong" 17 144 "int8" `1061 
+V L "cao" 17 144 "int8" `1062 
+F G "gdram_vdk_to_gdram_glcd_area" 17 145 "void(int8 x,int8 y,int8 rong,int8 cao)" `1058 
+V L "hesox" 17 146 "int8" `1063 
+V L "hesoy" 17 146 "int8" `1064 
+C L "gdram_vdk_to_gdram_glcd_area" 17 11 1 "FUNCTION"
+C L "gdram_vdk_to_gdram_glcd_area" 17 11 1 "FUNCTION"
+V G "logo_dhspkttp" 17 203 "[1]" `1065 
+V L "width" 17 245 "int8" `1069 
+V L "height" 17 245 "int8" `1070 
+V L "x" 17 245 "int8" `1071 
+V L "y" 17 245 "int8" `1072 
+F G "glcd_xuat_anh" 17 246 "void(int8 width,int8 height,int8 x,int8 y)" `1068 
+V L "i" 17 247 "int8" `1073 
+V L "j" 17 247 "int8" `1074 
+V L "k" 17 247 "int8" `1075 
+V L "count" 17 248 "int16" `1076 
+D G "GIAY_HTAI" 18 1 "0X55"
+D G "PHUT_HTAI" 18 2 "0X33"
+D G "GIO_HTAI" 18 3 "0X08"
+D G "THU_HTAI" 18 4 "8"
+D G "NGAY_HTAI" 18 5 "0X16"
+D G "THANG_HTAI" 18 6 "0X06"
+D G "NAM_HTAI" 18 7 "0X13"
+D G "MA_DS" 18 8 "0X98"
+D G "ADDR_WR_1307" 18 10 "0xd0"
+D G "ADDR_RD_1307" 18 11 "0xd1"
+D G "ADDR_MEM" 18 12 "0x00"
+V G "nam_ds13" 18 14 "int8" `1077 
+V G "thang_ds13" 18 14 "int8" `1078 
+V G "ngay_ds13" 18 14 "int8" `1079 
+V G "thu_ds13" 18 14 "int8" `1080 
+V G "gio_ds13" 18 14 "int8" `1081 
+V G "phut_ds13" 18 15 "int8" `1082 
+V G "giay_ds13" 18 15 "int8" `1083 
+V G "ma_ds13" 18 15 "int8" `1084 
+V G "control_ds13" 18 15 "int8" `1085 
+V G "giaytam" 18 15 "int8" `1086 
+F G "thiet_lap_thoi_gian_hien_tai" 18 18 "void()" `1087 
+F G "nap_thoi_gian_htai_vao_ds1307" 18 27 "void()" `1088 
+F G "doc_thoi_gian_tu_realtime" 18 38 "void()" `1089 
+C L "doc_thoi_gian_tu_realtime" 18 53 1 "FUNCTION"
+F G "doc_giay_tu_realtime" 18 59 "void()" `1090 
+F G "hien_thi_thoi_gian_ds1307" 18 72 "void()" `1091 
+C L "hien_thi_thoi_gian_ds1307" 18 53 1 "FUNCTION"
+C L "hien_thi_thoi_gian_ds1307" 18 53 1 "FUNCTION"
+D G "pcf8591_address_wr" 18 86 "0x90"
+D G "pcf8591_address_rd" 18 87 "0x91"
+D G "pcf8591_channel_0" 18 89 "0x40"
+D G "pcf8591_channel_1" 18 90 "0x41"
+D G "pcf8591_channel_2" 18 91 "0x42"
+D G "pcf8591_channel_3" 18 92 "0x43"
+V L "kenh" 18 94 "int8" `1093 
+F G "pcf8591_chonkenh" 18 95 "void(int8 kenh)" `1092 
+V L "dac_out" 18 102 "int8" `1095 
+F G "pcf8591_xuat_dac" 18 103 "void(int8 dac_out)" `1094 
+F G "pcf8591_doc_adc" 18 112 "int8()" `1096 
+V L "tam" 18 112 "int8" `1097 
+V G "mp" 21 10 "sint8" `1098 
+V G "mp1" 21 10 "sint8" `1099 
+C L "bai_301_chop_tat_8led_c1" 21 2 4 "FUNCTION"
+F G "bai_301_chop_tat_8led_c1" 21 17 "void()" `1100 
+C L "bai_301_chop_tat_8led_c2" 21 2 3 "FUNCTION"
+V L "dl" 21 27 "int16" `1102 
+F G "bai_301_chop_tat_8led_c2" 21 28 "void(int16 dl)" `1101 
+C L "bai_302_chop_tat_16led" 21 2 3 "FUNCTION"
+V L "dl" 21 37 "int16" `1104 
+F G "bai_302_chop_tat_16led" 21 38 "void(int16 dl)" `1103 
+C L "bai_303_chop_tat_32led" 21 2 3 "FUNCTION"
+V L "dl" 21 48 "int16" `1106 
+F G "bai_303_chop_tat_32led" 21 49 "void(int16 dl)" `1105 
+C L "bai_304_std_pst_8led" 21 2 3 "FUNCTION"
+V L "dl" 21 59 "int16" `1108 
+F G "bai_304_std_pst_8led" 21 60 "void(int16 dl)" `1107 
+C L "bai_305_std_pst_16led" 21 2 3 "FUNCTION"
+V L "dl" 21 79 "int16" `1110 
+F G "bai_305_std_pst_16led" 21 80 "void(int16 dl)" `1109 
+C L "bai_306_std_pst_16led_ss" 21 2 3 "FUNCTION"
+V L "dl" 21 97 "int16" `1112 
+F G "bai_306_std_pst_16led_ss" 21 98 "void(int16 dl)" `1111 
+C L "bai_307_std_pst_32led" 21 2 3 "FUNCTION"
+V L "dl" 21 116 "int16" `1114 
+F G "bai_307_std_pst_32led" 21 117 "void(int16 dl)" `1113 
+C L "bai_308_std_tsp_32led" 21 2 3 "FUNCTION"
+V L "dl" 21 136 "int16" `1116 
+F G "bai_308_std_tsp_32led" 21 137 "void(int16 dl)" `1115 
+C L "bai_309_std_pst_32led" 21 2 3 "FUNCTION"
+V L "dl" 21 154 "int16" `1118 
+F G "bai_309_std_pst_32led" 21 155 "void(int16 dl)" `1117 
+C L "ham_310_chop_tat_32led_nlan" 21 2 3 "FUNCTION"
+V L "dl" 21 163 "int16" `1120 
+V L "n" 21 163 "int8" `1121 
+F G "ham_310_chop_tat_32led_nlan" 21 164 "void(int16 dl,int8 n)" `1119 
+C L "ham_310_std_pst_32led_nlan" 21 2 1 "FUNCTION"
+V L "dl" 21 171 "int16" `1123 
+V L "n" 21 171 "int8" `1124 
+F G "ham_310_std_pst_32led_nlan" 21 172 "void(int16 dl,int8 n)" `1122 
+C L "ham_310_std_tsp_32led_nlan" 21 2 1 "FUNCTION"
+V L "dl" 21 179 "int16" `1126 
+V L "n" 21 179 "int8" `1127 
+F G "ham_310_std_tsp_32led_nlan" 21 180 "void(int16 dl,int8 n)" `1125 
+C L "bai_310_tong_hop_dk_32led" 21 2 1 "FUNCTION"
+F G "bai_310_tong_hop_dk_32led" 21 188 "void()" `1128 
+C L "ham_311_xuat_std_tnv_ttr_pst_tsp" 21 2 3 "FUNCTION"
+V L "dl" 21 198 "int16" `1130 
+V L "tt" 21 198 "int8" `1131 
+F G "ham_311_xuat_std_tnv_ttr_pst_tsp" 21 199 "void(int16 dl,int8 tt)" `1129 
+C L "ham_311_std_tnv_ttr_pst_tsp" 21 2 1 "FUNCTION"
+V L "dl" 21 208 "int16" `1133 
+V L "tt" 21 208 "int8" `1134 
+F G "ham_311_std_tnv_ttr_pst_tsp" 21 209 "void(int16 dl,int8 tt)" `1132 
+C L "bai_311_tong_hop_dk_32led" 21 2 1 "FUNCTION"
+F G "bai_311_tong_hop_dk_32led" 21 226 "void()" `1135 
+C L "b321_dk_32led_on_off_2bt" 21 2 3 "FUNCTION"
+F G "b321_dk_32led_on_off_2bt" 21 248 "void()" `1136 
+C L "b322_on_off_inv_8led" 21 2 3 "FUNCTION"
+F G "b322_on_off_inv_8led" 21 259 "void()" `1137 
+C L "ham_323_phim_inv" 21 2 3 "FUNCTION"
+F G "ham_323_phim_inv" 21 278 "void()" `1138 
+F G "b323_on_off_inv_cdoi_8led" 21 291 "void()" `1139 
+C L "ham_324_phim_up" 21 2 3 "FUNCTION"
+F G "ham_324_phim_up" 21 306 "void()" `1140 
+C L "ham_324_phim_dw" 21 2 1 "FUNCTION"
+F G "ham_324_phim_dw" 21 320 "void()" `1141 
+C L "ham_324_phim_clr" 21 2 1 "FUNCTION"
+F G "ham_324_phim_clr" 21 334 "void()" `1142 
+C L "b324_16led_up_dw_clr_1" 21 2 1 "FUNCTION"
+F G "b324_16led_up_dw_clr_1" 21 348 "void()" `1143 
+C L "ham_325_phim_up" 21 2 3 "FUNCTION"
+F G "ham_325_phim_up" 21 360 "void()" `1144 
+C L "ham_325_phim_dw" 21 2 1 "FUNCTION"
+F G "ham_325_phim_dw" 21 377 "void()" `1145 
+C L "ham_325_phim_clr" 21 2 1 "FUNCTION"
+F G "ham_325_phim_clr" 21 394 "void()" `1146 
+C L "b325_16led_up_dw_clr_2" 21 2 1 "FUNCTION"
+F G "b325_16led_up_dw_clr_2" 21 409 "void()" `1147 
+C L "b332_matranphim_leddon" 21 2 7 "FUNCTION"
+F G "b332_matranphim_leddon" 21 428 "void()" `1148 
+V L "mp" 21 429 "sint8" `1149 
+C L "b333_matranphim_8led_on_off" 21 2 4 "FUNCTION"
+F G "b333_matranphim_8led_on_off" 21 441 "void()" `1150 
+V L "mp" 21 442 "sint8" `1151 
+C L "b334_matranphim_8led_16_btn_on_off" 21 2 4 "FUNCTION"
+F G "b334_matranphim_8led_16_btn_on_off" 21 462 "void()" `1152 
+V L "mp" 21 463 "sint8" `1153 
+C L "bai_335_7ct_7btn" 21 2 4 "FUNCTION"
+F G "bai_335_7ct_7btn" 21 478 "void()" `1154 
+C L "ham_337_phim_up" 21 2 4 "FUNCTION"
+F G "ham_337_phim_up" 21 496 "void()" `1155 
+C L "ham_337_phim_dw" 21 2 1 "FUNCTION"
+F G "ham_337_phim_dw" 21 509 "void()" `1156 
+C L "ham_337_phim_clr" 21 2 1 "FUNCTION"
+F G "ham_337_phim_clr" 21 522 "void()" `1157 
+C L "b337_tonghop_up_dn_clr" 21 2 1 "FUNCTION"
+F G "b337_tonghop_up_dn_clr" 21 535 "void()" `1158 
+C L "b338_quangcao" 21 2 5 "FUNCTION"
+F G "b338_quangcao" 21 557 "void()" `1159 
+V G "t0" 22 10 "int8" `1163 
+V G "t0_tam" 22 10 "int8" `1164 
+V G "t0_16bit" 22 11 "int16" `1165 
+V G "t0_tam_16bit" 22 11 "int16" `1166 
+V G "donvi" 22 12 "int8" `1167 
+V G "chuc" 22 12 "int8" `1168 
+V G "tram" 22 12 "int8" `1169 
+C L "khoi_tao_timer0" 22 1 2 "FUNCTION"
+F G "khoi_tao_timer0" 22 17 "void()" `1170 
+C L "bai_401_hienthi_4so" 22 1 4 "FUNCTION"
+F G "bai_401_hienthi_4so" 22 27 "void()" `1171 
+C L "bai_402_dem_0_9" 22 1 4 "FUNCTION"
+F G "bai_402_dem_0_9" 22 36 "void()" `1172 
+C L "bai_403_dem_00_99" 22 1 4 "FUNCTION"
+F G "bai_403_dem_00_99" 22 49 "void()" `1173 
+C L "bai_404_dem_00_59" 22 1 4 "FUNCTION"
+F G "bai_404_dem_00_59" 22 62 "void()" `1174 
+C L "bai_405_dem_00_59_00" 22 1 4 "FUNCTION"
+F G "bai_405_dem_00_59_00" 22 75 "void()" `1175 
+C L "bai_406_dem_00_59_00_3s" 22 1 4 "FUNCTION"
+F G "bai_406_dem_00_59_00_3s" 22 94 "void()" `1176 
+C L "bai_407_dem_000_999" 22 1 4 "FUNCTION"
+F G "bai_407_dem_000_999" 22 122 "void()" `1177 
+C L "bai_408_dem_0000_9999" 22 1 4 "FUNCTION"
+F G "bai_408_dem_0000_9999" 22 135 "void()" `1181 
+C L "bai_409_dem_phut_giay" 22 1 4 "FUNCTION"
+F G "bai_409_dem_phut_giay" 22 150 "void()" `1182 
+C L "bai_411_dem_xung_t0" 22 1 4 "FUNCTION"
+F G "bai_411_dem_xung_t0" 22 166 "void()" `1183 
+C L "ham_412_giai_ma_hien_thi" 22 1 4 "FUNCTION"
+V L "tam" 22 177 "int16" `1185 
+F G "ham_412_giai_ma_hien_thi" 22 178 "void(int16 tam)" `1184 
+C L "bai_412_dem_xung_t0_xoa_so0_vn" 22 1 1 "FUNCTION"
+F G "bai_412_dem_xung_t0_xoa_so0_vn" 22 193 "void()" `1186 
+C L "bai_413_dem_xung_t0_xoa_so0_vn_ct" 22 1 5 "FUNCTION"
+F G "bai_413_dem_xung_t0_xoa_so0_vn_ct" 22 207 "void()" `1187 
+C L "bai_414_dem_xung_t0_240_255" 22 1 4 "FUNCTION"
+F G "bai_414_dem_xung_t0_240_255" 22 225 "void()" `1188 
+C L "bai_415_dem_xung_t0_250_300" 22 1 4 "FUNCTION"
+F G "bai_415_dem_xung_t0_250_300" 22 243 "void()" `1189 
+C L "bai_416_dem_xung_t0_0_9999" 22 1 4 "FUNCTION"
+F G "bai_416_dem_xung_t0_0_9999" 22 261 "void()" `1190 
+C L "ham_417_phim_on" 22 1 4 "FUNCTION"
+F G "ham_417_phim_on" 22 278 "void()" `1191 
+C L "ham_417_phim_off" 22 1 1 "FUNCTION"
+F G "ham_417_phim_off" 22 294 "void()" `1192 
+C L "bai_417_dem_xung_t0_start_stop_32led" 22 1 1 "FUNCTION"
+F G "bai_417_dem_xung_t0_start_stop_32led" 22 310 "void()" `1193 
+C L "ham_421_phim_up" 22 1 4 "FUNCTION"
+F G "ham_421_phim_up" 22 329 "void()" `1194 
+C L "ham_421_phim_dw" 22 1 1 "FUNCTION"
+F G "ham_421_phim_dw" 22 342 "void()" `1195 
+C L "ham_421_phim_clr" 22 1 1 "FUNCTION"
+F G "ham_421_phim_clr" 22 355 "void()" `1196 
+C L "bai_421_dem_xung_t0_quang_cao_32led" 22 1 1 "FUNCTION"
+F G "bai_421_dem_xung_t0_quang_cao_32led" 22 368 "void()" `1197  "ttct=1;"
+C L "bai_422_dem_xung_t0_quang_cao_32led" 22 1 4 "FUNCTION"
+F G "bai_422_dem_xung_t0_quang_cao_32led" 22 396 "void()" `1198  "ttct=1;"
+V G "m4led" 22 429 "int8[4]" `1199 
+C L "bai_423_key_4x4_4led_dich" 22 1 1 "FUNCTION"
+F G "bai_423_key_4x4_4led_dich" 22 432 "void()" `1200 
+V L "mp" 22 433 "int8" `1201 
+V L "i" 22 433 "int8" `1202 
+V G "m4led8" 22 450 "int8[8]" `1203 
+C L "bai_424_key_4x4_4led_dich_undo4" 22 1 1 "FUNCTION"
+F G "bai_424_key_4x4_4led_dich_undo4" 22 453 "void()" `1204 
+V L "mp" 22 454 "int8" `1205 
+V L "i" 22 455 "sint8" `1206 
+V L "j" 22 455 "sint8" `1207 
+C L "bai_424_key_4x4_4led_dich_undo4" 22 1 1 "FUNCTION"
+C L "bai_424_key_4x4_4led_dich_undo4" 22 1 1 "FUNCTION"
+V G "tg_delay" 23 8 "int16" `1208 
+V G "gio" 23 9 "sint8" `1209 
+V G "phut" 23 9 "sint8" `1210 
+V G "giay" 23 9 "sint8" `1211 
+V G "bdn" 23 9 "sint8" `1212 
+V G "dem_tg_exit" 23 9 "sint8" `1213 
+V G "led7dq" 23 10 "int8[8]" `1214 
+V G "gia_tri_mod" 23 11 "int8" `1215  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+C L "interrupt_timer1" 23 1 2 "FUNCTION"
+F G "interrupt_timer1" 23 18 "void()" `1216 
+C L "khoi_tao_timer1_ngat" 23 1 2 "FUNCTION"
+F G "khoi_tao_timer1_ngat" 23 26 "void()" `1217 
+C L "bai_501_hienthi_8so" 23 1 4 "FUNCTION"
+F G "bai_501_hienthi_8so" 23 38 "void()" `1218 
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_501_hienthi_8so" 23 1 1 "FUNCTION"
+C L "bai_502_hienthi_10" 23 1 4 "FUNCTION"
+F G "bai_502_hienthi_10" 23 71 "void()" `1219 
+C L "bai_502_hienthi_10" 23 1 1 "FUNCTION"
+C L "bai_502_hienthi_10" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 4 "FUNCTION"
+F G "bai_503_hienthi_8so_cach2" 23 86 "void()" `1220 
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "bai_503_hienthi_8so_cach2" 23 1 1 "FUNCTION"
+C L "ham_504_hien_thi_8led" 23 1 4 "FUNCTION"
+F G "ham_504_hien_thi_8led" 23 119 "void()" `1221 
+F G "bai_504_hienthi_8so_cach3" 23 128 "void()" `1222 
+C L "ham_511_hienthi_delay" 23 1 4 "FUNCTION"
+F G "ham_511_hienthi_delay" 23 137 "void()" `1223 
+F G "bai_511_dem_giay" 23 149 "void()" `1224 
+C L "ham_512_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_512_giai_ma_gan_cho_8led_quet" 23 159 "void()" `1225 
+C L "bai_512_dem_giay_cx" 23 1 1 "FUNCTION"
+F G "bai_512_dem_giay_cx" 23 166 "void()" `1226 
+C L "ham_513_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_513_giai_ma_gan_cho_8led_quet" 23 184 "void()" `1227 
+C L "bai_513_dem_phut_giay" 23 1 1 "FUNCTION"
+F G "bai_513_dem_phut_giay" 23 192 "void()" `1228 
+C L "ham_514_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_514_giai_ma_gan_cho_8led_quet" 23 216 "void()" `1229 
+C L "bai_514_dem_gio_phut_giay" 23 1 1 "FUNCTION"
+F G "bai_514_dem_gio_phut_giay" 23 226 "void()" `1230 
+C L "ham_515_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_515_giai_ma_gan_cho_8led_quet" 23 255 "void()" `1231 
+C L "ham_515_delay_hienthi" 23 1 1 "FUNCTION"
+F G "ham_515_delay_hienthi" 23 268 "void()" `1232 
+C L "ham_515_phim_mod" 23 1 1 "FUNCTION"
+F G "ham_515_phim_mod" 23 274 "void()" `1233 
+C L "ham_515_phim_up" 23 1 1 "FUNCTION"
+F G "ham_515_phim_up" 23 293 "void()" `1234 
+C L "ham_515_phim_dw" 23 1 2 "FUNCTION"
+F G "ham_515_phim_dw" 23 324 "void()" `1235 
+C L "bai_515_dem_gio_phut_giay_key" 23 1 1 "FUNCTION"
+F G "bai_515_dem_gio_phut_giay_key" 23 354 "void()" `1236 
+C L "ham_516_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_516_giai_ma_gan_cho_8led_quet" 23 389 "void()" `1237 
+C L "ham_516_phim_mod" 23 1 1 "FUNCTION"
+F G "ham_516_phim_mod" 23 402 "void()" `1238 
+C L "ham_516_phim_up" 23 1 1 "FUNCTION"
+F G "ham_516_phim_up" 23 411 "void()" `1239 
+C L "ham_516_phim_dw" 23 1 2 "FUNCTION"
+F G "ham_516_phim_dw" 23 432 "void()" `1240 
+C L "bai_516_dem_gio_phut_giay_key_caitien" 23 1 1 "FUNCTION"
+F G "bai_516_dem_gio_phut_giay_key_caitien" 23 452 "void()" `1241 
+C L "ham_517_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_517_giai_ma_gan_cho_8led_quet" 23 487 "void()" `1242 
+C L "ham_517_tat_2led_chinh" 23 1 1 "FUNCTION"
+F G "ham_517_tat_2led_chinh" 23 500 "void()" `1243 
+C L "ham_517_phim_mod" 23 1 1 "FUNCTION"
+F G "ham_517_phim_mod" 23 507 "void()" `1244 
+C L "ham_517_phim_up" 23 1 1 "FUNCTION"
+F G "ham_517_phim_up" 23 517 "void()" `1245 
+C L "ham_517_phim_dw" 23 1 1 "FUNCTION"
+F G "ham_517_phim_dw" 23 540 "void()" `1246 
+C L "bai_517_dem_gio_phut_giay_key_caitien" 23 1 1 "FUNCTION"
+F G "bai_517_dem_gio_phut_giay_key_caitien" 23 562 "void()" `1247 
+C L "ham_518_giai_ma_gan_cho_8led_quet" 23 1 4 "FUNCTION"
+F G "ham_518_giai_ma_gan_cho_8led_quet" 23 605 "void()" `1248 
+C L "ham_518_phim_on" 23 1 1 "FUNCTION"
+F G "ham_518_phim_on" 23 611 "void()" `1249 
+C L "ham_518_phim_off" 23 1 1 "FUNCTION"
+F G "ham_518_phim_off" 23 626 "void()" `1250 
+C L "ham_518_phim_clr" 23 1 1 "FUNCTION"
+F G "ham_518_phim_clr" 23 641 "void()" `1251 
+C L "bai_518_dem_xung_t0_ssc" 23 1 1 "FUNCTION"
+F G "bai_518_dem_xung_t0_ssc" 23 655 "void()" `1252 
+C L "ham_521_giai_ma_gan_cho_8led_quet" 23 1 3 "FUNCTION"
+F G "ham_521_giai_ma_gan_cho_8led_quet" 23 676 "void()" `1253 
+C L "ham_521_tat_2led_chinh" 23 1 1 "FUNCTION"
+F G "ham_521_tat_2led_chinh" 23 689 "void()" `1254 
+C L "ham_521_phim_mod" 23 1 1 "FUNCTION"
+F G "ham_521_phim_mod" 23 696 "void()" `1255 
+C L "ham_521_phim_up" 23 1 1 "FUNCTION"
+F G "ham_521_phim_up" 23 706 "void()" `1256 
+C L "ham_521_phim_dw" 23 1 1 "FUNCTION"
+F G "ham_521_phim_dw" 23 729 "void()" `1257 
+C L "bai_521_3module_123" 23 1 1 "FUNCTION"
+F G "bai_521_3module_123" 23 752 "void()" `1258 
+D G "GRAPHICS_DRAWING_FUNCTIONS" 25 59 ""
+D G "YES" 25 73 "1"
+D G "NO" 25 77 "0"
+V G "FONT" 25 85 "[51][5]" `1259 
+V G "FONT2" 25 137 "[44][5]" `1263 
+C L "glcd_line" 25 2 6 "FUNCTION"
+V L "x1" 25 195 "int8" `1268 
+V L "y1" 25 195 "int8" `1269 
+V L "x2" 25 195 "int8" `1270 
+V L "y2" 25 195 "int8" `1271 
+V L "color" 25 195 "int8" `1272 
+F G "glcd_line" 25 197 "void(int8 x1,int8 y1,int8 x2,int8 y2,int8 color)" `1267 
+V L "dy" 25 198 "int16" `1273 
+V L "dx" 25 198 "int16" `1274 
+V L "addx" 25 199 "sint8" `1275 
+V L "addy" 25 199 "sint8" `1276 
+V L "P" 25 200 "sint16" `1277 
+V L "diff" 25 200 "sint16" `1278 
+V L "i" 25 207 "int8" `1279 
+C L "glcd_rect" 25 2 6 "FUNCTION"
+V L "x1" 25 277 "int8" `1281 
+V L "y1" 25 277 "int8" `1282 
+V L "x2" 25 277 "int8" `1283 
+V L "y2" 25 277 "int8" `1284 
+V L "fill" 25 277 "int8" `1285 
+V L "color" 25 277 "int8" `1286 
+F G "glcd_rect" 25 279 "void(int8 x1,int8 y1,int8 x2,int8 y2,int8 fill,int8 color)" `1280 
+V L "i" 25 285 "int8" `1287 
+V L "xmin" 25 285 "int8" `1288 
+V L "xmax" 25 285 "int8" `1289 
+V L "ymin" 25 285 "int8" `1290 
+V L "ymax" 25 285 "int8" `1291 
+C L "glcd_rect" 25 2 1 "FUNCTION"
+C L "glcd_rect" 25 2 1 "FUNCTION"
+C L "glcd_rect" 25 2 1 "FUNCTION"
+C L "glcd_bar" 25 2 5 "FUNCTION"
+V L "x1" 25 337 "int8" `1293 
+V L "y1" 25 337 "int8" `1294 
+V L "x2" 25 337 "int8" `1295 
+V L "y2" 25 337 "int8" `1296 
+V L "width" 25 337 "int8" `1297 
+V L "color" 25 337 "int8" `1298 
+F G "glcd_bar" 25 339 "void(int8 x1,int8 y1,int8 x2,int8 y2,int8 width,int8 color)" `1292 
+V L "half_width" 25 340 "int8" `1299 
+V L "dy" 25 341 "sint16" `1300 
+V L "dx" 25 341 "sint16" `1301 
+V L "addx" 25 342 "sint8" `1302 
+V L "addy" 25 342 "sint8" `1303 
+V L "j" 25 342 "sint8" `1304 
+V L "P" 25 343 "sint16" `1305 
+V L "diff" 25 343 "sint16" `1306 
+V L "c1" 25 343 "sint16" `1307 
+V L "c2" 25 343 "sint16" `1308 
+V L "i" 25 350 "int8" `1309 
+V L "temp" 25 361 "sint16" `1313 
+V L "temp" 25 369 "sint16" `1314 
+C L "glcd_circle" 25 2 5 "FUNCTION"
+V L "x" 25 437 "int8" `1316 
+V L "y" 25 437 "int8" `1317 
+V L "radius" 25 437 "int8" `1318 
+V L "fill" 25 437 "int8" `1319 
+V L "color" 25 437 "int8" `1320 
+F G "glcd_circle" 25 439 "void(int8 x,int8 y,int8 radius,int8 fill,int8 color)" `1315 
+V L "a" 25 443 "sint8" `1321 
+V L "b" 25 443 "sint8" `1322 
+V L "P" 25 443 "sint8" `1323 
+C L "glcd_text57" 25 2 5 "FUNCTION"
+V L "x" 25 489 "int8" `1325 
+V L "y" 25 489 "int8" `1326 
+V L "textptr" 25 489 "*int8" `1327 
+V L "size" 25 489 "int8" `1328 
+V L "color" 25 489 "int8" `1329 
+F G "glcd_text57" 25 491 "void(int8 x,int8 y,*int8 textptr,int8 size,int8 color)" `1324 
+V L "j" 25 492 "int8" `1330 
+V L "k" 25 492 "int8" `1331 
+V L "l" 25 492 "int8" `1332 
+V L "m" 25 492 "int8" `1333  "Loop counters"
+V L "pixelData" 25 493 "int8[5]" `1334  "Stores character data"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 2 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+C L "glcd_text57" 25 2 1 "FUNCTION"
+D G "MATH_H" 26 30 ""
+D G "PI" 26 35 "3.1415926535897932"
+D G "SQRT2" 26 38 "1.4142135623730950"
+C L "CEIL_FLOOR" 26 2 3 "FUNCTION"
+V L "x" 26 45 "float" `1336 
+V L "n" 26 45 "int8" `1337 
+F G "CEIL_FLOOR" 26 46 "float(float x,int8 n)" `1335 
+V L "y" 26 47 "float" `1338 
+V L "res" 26 47 "float" `1339 
+V L "l" 26 48 "int16" `1340 
+V L "s" 26 49 "int1" `1341 
+C L "floor" 26 2 5 "FUNCTION"
+V L "x" 26 207 "float" `1356 
+F G "floor" 26 208 "float(float x)" `1355 
+C L "ceil" 26 2 5 "FUNCTION"
+V L "x" 26 233 "float" `1358 
+F G "ceil" 26 234 "float(float x)" `1357 
+D G "fabs" 26 259 "abs"
+C L "fmod" 26 2 6 "FUNCTION"
+V L "x" 26 271 "float" `1360 
+V L "y" 26 271 "float" `1361 
+F G "fmod" 26 272 "float(float x,float y)" `1359 
+V L "i" 26 273 "float" `1362 
+D G "LN2" 26 334 "0.6931471805599453"
+D G "LN2_INV" 26 335 "1.4426950408889634073"
+V G "pe" 26 337 "[6]" `1366 
+V L "x" 26 341 "float" `1370 
+F G "exp" 26 342 "float(float x)" `1369 
+V L "y" 26 343 "float" `1371 
+V L "res" 26 343 "float" `1372 
+V L "r" 26 343 "float" `1373 
+V L "n" 26 347 "sint8" `1374 
+V L "s" 26 348 "int1" `1375 
+C L "exp" 26 2 1 "FUNCTION"
+V G "pl" 26 525 "[4]" `1378 
+V G "ql" 26 526 "[4]" `1381 
+C L "log" 26 2 3 "FUNCTION"
+V L "x" 26 534 "float" `1385 
+F G "log" 26 535 "float(float x)" `1384 
+V L "y" 26 536 "float" `1386 
+V L "res" 26 536 "float" `1387 
+V L "r" 26 536 "float" `1388 
+V L "y2" 26 536 "float" `1389 
+V L "n" 26 540 "sint8" `1390 
+C L "log" 26 2 1 "FUNCTION"
+D G "LN10" 26 758 "2.3025850929940456"
+D G "LN10_INV" 26 759 "0.4342944819032518276"
+C L "log10" 26 2 3 "FUNCTION"
+V L "x" 26 767 "float" `1392 
+F G "log10" 26 768 "float(float x)" `1391 
+V L "r" 26 769 "float" `1393 
+C L "modf" 26 2 8 "FUNCTION"
+V L "value" 26 808 "float" `1395 
+V L "iptr" 26 808 "*float" `1396 
+F G "modf" 26 809 "float(float value,*float iptr)" `1394 
+C L "pwr" 26 2 6 "FUNCTION"
+V L "x" 26 836 "float" `1398 
+V L "y" 26 836 "float" `1399 
+F G "pwr" 26 837 "float(float x,float y)" `1397 
+C L "pow" 26 2 7 "FUNCTION"
+V L "x" 26 899 "float" `1401 
+V L "y" 26 899 "float" `1402 
+F G "pow" 26 900 "float(float x,float y)" `1400 
+C L "sqrt" 26 2 5 "FUNCTION"
+V L "x" 26 960 "float" `1404 
+F G "sqrt" 26 961 "float(float x)" `1403 
+V L "y" 26 962 "float" `1405 
+V L "res" 26 962 "float" `1406 
+V L "P" 26 966 "*int8" `1407 
+D G "PI_DIV_BY_TWO_INV" 26 1155 "0.63661977236758134"
+D G "PI_DIV_BY_TWO" 26 1159 "1.5707963267948966"
+D G "TWOBYPI" 26 1163 "0.6366197723675813"
+C L "cos" 26 2 3 "FUNCTION"
+V L "x" 26 1171 "float" `1409 
+F G "cos" 26 1172 "float(float x)" `1408 
+V L "y" 26 1173 "float" `1410 
+V L "t" 26 1173 "float" `1411 
+V L "t2" 26 1173 "float" `1412 
+V L "quad" 26 1174 "int8" `1413 
+V L "i" 26 1174 "int8" `1414 
+V L "frac" 26 1175 "float" `1415 
+V L "P" 26 1176 "float[5]" `1416  "by the series definition for cosine"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 2 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "cos" 26 2 1 "FUNCTION"
+C L "sin" 26 2 5 "FUNCTION"
+V L "x" 26 1312 "float" `1418 
+F G "sin" 26 1313 "float(float x)" `1417 
+C L "tan" 26 2 5 "FUNCTION"
+V L "x" 26 1338 "float" `1420 
+F G "tan" 26 1339 "float(float x)" `1419 
+V L "c" 26 1340 "float" `1421 
+V L "s" 26 1340 "float" `1422 
+V G "pas" 26 1378 "[3]" `1423 
+V G "qas" 26 1379 "[3]" `1426 
+V L "x" 26 1381 "float" `1430 
+V L "n" 26 1381 "int8" `1431 
+F G "ASIN_COS" 26 1382 "float(float x,int8 n)" `1429 
+V L "y" 26 1383 "float" `1432 
+V L "res" 26 1383 "float" `1433 
+V L "r" 26 1383 "float" `1434 
+V L "y2" 26 1383 "float" `1435 
+V L "s" 26 1384 "int1" `1436 
+C L "ASIN_COS" 26 2 1 "FUNCTION"
+C L "ASIN_COS" 26 2 1 "FUNCTION"
+C L "asin" 26 2 5 "FUNCTION"
+V L "x" 26 1539 "float" `1438 
+F G "asin" 26 1540 "float(float x)" `1437 
+V L "r" 26 1541 "float" `1439 
+C L "acos" 26 2 5 "FUNCTION"
+V L "x" 26 1573 "float" `1441 
+F G "acos" 26 1574 "float(float x)" `1440 
+V L "r" 26 1575 "float" `1442 
+V G "pat" 26 1601 "[4]" `1443 
+V G "qat" 26 1602 "[4]" `1446 
+C L "atan" 26 2 3 "FUNCTION"
+V L "x" 26 1610 "float" `1450 
+F G "atan" 26 1611 "float(float x)" `1449 
+V L "y" 26 1612 "float" `1451 
+V L "res" 26 1612 "float" `1452 
+V L "r" 26 1612 "float" `1453 
+V L "s" 26 1613 "int1" `1454 
+V L "flag" 26 1613 "int1" `1455 
+C L "atan" 26 2 1 "FUNCTION"
+C L "atan2" 26 2 7 "FUNCTION"
+V L "y" 26 1753 "float" `1457 
+V L "x" 26 1753 "float" `1458 
+F G "atan2" 26 1754 "float(float y,float x)" `1456 
+V L "z" 26 1755 "float" `1459 
+V L "sign" 26 1756 "int1" `1460 
+V L "quad" 26 1757 "int8" `1461 
+C L "atan2" 26 2 1 "FUNCTION"
+C L "atan2" 26 2 1 "FUNCTION"
+C L "cosh" 26 2 7 "FUNCTION"
+V L "x" 26 1975 "float" `1464 
+F G "cosh" 26 1976 "float(float x)" `1463 
+C L "sinh" 26 2 6 "FUNCTION"
+V L "x" 26 2002 "float" `1466 
+F G "sinh" 26 2003 "float(float x)" `1465 
+C L "tanh" 26 2 6 "FUNCTION"
+V L "x" 26 2032 "float" `1468 
+F G "tanh" 26 2033 "float(float x)" `1467 
+D G "LOG2" 26 2062 ".30102999566398119521"
+D G "LOG2_INV" 26 2063 "3.32192809488736234787"
+V L "x" 26 2064 "float" `1470 
+V L "exp" 26 2064 "*sint8" `1471 
+F G "frexp" 26 2065 "float(float x,*sint8 exp)" `1469 
+V L "res" 26 2066 "float" `1472 
+V L "sign" 26 2067 "int1" `1473 
+C L "ldexp" 26 2 6 "FUNCTION"
+V L "value" 26 2209 "float" `1475 
+V L "exp" 26 2209 "sint8" `1476 
+F G "ldexp" 26 2210 "float(float value,sint8 exp)" `1474 
+C L "khoi_tao_glcd" 26 2 2 "FUNCTION"
+C L "khoi_tao_glcd" 24 6 2 "FUNCTION"
+F G "khoi_tao_glcd" 24 10 "void()" `1477 
+V G "gioi_han" 24 20 "int8" `1478 
+V G "flag" 24 20 "int8" `1479 
+V G "gioi_han_tam" 24 20 "int8[2]" `1480 
+V G "hang1" 24 21 "int8[20]" `1481 
+V G "hang2" 24 22 "int8[20]" `1482 
+V G "hang3" 24 23 "int8[20]" `1483 
+V G "hang4" 24 24 "int8[20]" `1484 
+V G "hang1234" 24 25 "int8[80]" `1485 
+V G "dem" 24 26 "sint8" `1486  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+C L "bai_601_lcd_hienthi_4hang" 24 6 3 "FUNCTION"
+F G "bai_601_lcd_hienthi_4hang" 24 33 "void()" `1487 
+V L "hang1" 24 34 "int8[1]" `1488 
+V L "hang2" 24 35 "int8[1]" `1489 
+V L "hang3" 24 36 "int8[1]" `1490 
+V L "hang4" 24 37 "int8[1]" `1491 
+C L "bai_602_lcd_hienthi_4hang" 24 6 4 "FUNCTION"
+F G "bai_602_lcd_hienthi_4hang" 24 57 "void()" `1492 
+C L "bai_603_lcd_ht_4kytu_4goc" 24 6 4 "FUNCTION"
+F G "bai_603_lcd_ht_4kytu_4goc" 24 76 "void()" `1498 
+C L "bai_604_lcd_ht_2hang_dich_trai" 24 6 4 "FUNCTION"
+F G "bai_604_lcd_ht_2hang_dich_trai" 24 96 "void()" `1503 
+C L "bai_605_lcd_ht_2hang_dich_phai" 24 6 4 "FUNCTION"
+F G "bai_605_lcd_ht_2hang_dich_phai" 24 114 "void()" `1506 
+C L "bai_606_lcd_ht_2hang_dich_2c" 24 6 4 "FUNCTION"
+F G "bai_606_lcd_ht_2hang_dich_2c" 24 132 "void()" `1509 
+C L "ham_611_lcd_hienthi_dongho" 24 6 4 "FUNCTION"
+F G "ham_611_lcd_hienthi_dongho" 24 157 "void()" `1512 
+C L "bai_611_lcd_ht_dem_giay" 24 6 1 "FUNCTION"
+F G "bai_611_lcd_ht_dem_giay" 24 165 "void()" `1513 
+C L "ham_612_lcd_hienthi_dongho" 24 6 4 "FUNCTION"
+F G "ham_612_lcd_hienthi_dongho" 24 179 "void()" `1515 
+C L "bai_612_lcd_ht_dem_phut_giay" 24 6 1 "FUNCTION"
+F G "bai_612_lcd_ht_dem_phut_giay" 24 190 "void()" `1517 
+C L "ham_613_lcd_hienthi_dongho" 24 6 4 "FUNCTION"
+F G "ham_613_lcd_hienthi_dongho" 24 210 "void()" `1519 
+C L "bai_613_lcd_ht_dem_gio_phut_giay" 24 6 1 "FUNCTION"
+F G "bai_613_lcd_ht_dem_gio_phut_giay" 24 224 "void()" `1522 
+C L "ham_614_lcd_hienthi_dongho" 24 6 4 "FUNCTION"
+F G "ham_614_lcd_hienthi_dongho" 24 249 "void()" `1524 
+C L "ham_614_phim_mod" 24 6 1 "FUNCTION"
+F G "ham_614_phim_mod" 24 266 "void()" `1527 
+C L "ham_614_phim_up" 24 6 1 "FUNCTION"
+F G "ham_614_phim_up" 24 276 "void()" `1528 
+C L "ham_614_phim_dw" 24 6 1 "FUNCTION"
+F G "ham_614_phim_dw" 24 298 "void()" `1529 
+C L "bai_614_lcd_gio_phut_giay" 24 6 2 "FUNCTION"
+F G "bai_614_lcd_gio_phut_giay" 24 322 "void()" `1530 
+C L "ham_615_lcd_hienthi_dongho" 24 6 4 "FUNCTION"
+F G "ham_615_lcd_hienthi_dongho" 24 360 "void()" `1532 
+C L "ham_615_tat_2led_chinh" 24 6 1 "FUNCTION"
+F G "ham_615_tat_2led_chinh" 24 377 "void()" `1535 
+C L "ham_615_giai_ma_gan_cho_8led_quet" 24 6 1 "FUNCTION"
+F G "ham_615_giai_ma_gan_cho_8led_quet" 24 384 "void()" `1536 
+C L "ham_615_phim_mod" 24 6 2 "FUNCTION"
+F G "ham_615_phim_mod" 24 399 "void()" `1537 
+C L "ham_615_phim_up" 24 6 1 "FUNCTION"
+F G "ham_615_phim_up" 24 409 "void()" `1538 
+C L "ham_615_phim_dw" 24 6 1 "FUNCTION"
+F G "ham_615_phim_dw" 24 431 "void()" `1539 
+C L "bai_615_lcd_8led_gio_phut_giay" 24 6 1 "FUNCTION"
+F G "bai_615_lcd_8led_gio_phut_giay" 24 453 "void()" `1540 
+C L "ham_616_hienthi_lcd" 24 6 4 "FUNCTION"
+F G "ham_616_hienthi_lcd" 24 500 "void()" `1542 
+C L "bai_616_lcd_4led_dem_sp_t0" 24 6 1 "FUNCTION"
+F G "bai_616_lcd_4led_dem_sp_t0" 24 508 "void()" `1543 
+C L "ham_617_hienthi_lcd" 24 6 5 "FUNCTION"
+F G "ham_617_hienthi_lcd" 24 524 "void()" `1544 
+C L "ham_617_phim_up" 24 6 1 "FUNCTION"
+F G "ham_617_phim_up" 24 541 "void()" `1547 
+C L "ham_617_phim_dw" 24 6 1 "FUNCTION"
+F G "ham_617_phim_dw" 24 550 "void()" `1548 
+C L "ham_617_phim_clr" 24 6 1 "FUNCTION"
+F G "ham_617_phim_clr" 24 559 "void()" `1549 
+C L "bai_617_lcd_4led_dem_sp_t0_ud" 24 6 1 "FUNCTION"
+F G "bai_617_lcd_4led_dem_sp_t0_ud" 24 568 "void()" `1550 
+C L "ham_621_hienthi_lcd" 24 6 4 "FUNCTION"
+F G "ham_621_hienthi_lcd" 24 586 "void()" `1551 
+C L "bai_621_lcd_key4x4" 24 6 1 "FUNCTION"
+F G "bai_621_lcd_key4x4" 24 594 "void()" `1552 
+C L "bai_622_lcd_key4x4_dich" 24 6 4 "FUNCTION"
+F G "bai_622_lcd_key4x4_dich" 24 609 "void()" `1554 
+C L "ham_623_hienthi_lcd" 24 6 4 "FUNCTION"
+F G "ham_623_hienthi_lcd" 24 635 "void()" `1556 
+C L "bai_623_lcd_key4x4_dich_4hang_1234" 24 6 1 "FUNCTION"
+F G "bai_623_lcd_key4x4_dich_4hang_1234" 24 648 "void()" `1557 
+C L "ham_624_hienthi_lcd" 24 6 4 "FUNCTION"
+F G "ham_624_hienthi_lcd" 24 672 "void()" `1558 
+C L "bai_624_lcd_key4x4_dich" 24 6 1 "FUNCTION"
+F G "bai_624_lcd_key4x4_dich" 24 684 "void()" `1560 
+C L "ham_625_hienthi_lcd" 24 6 4 "FUNCTION"
+F G "ham_625_hienthi_lcd" 24 717 "void()" `1563 
+C L "bai_625_lcd_4led_dem_sp_t0_matrix_key" 24 6 1 "FUNCTION"
+F G "bai_625_lcd_4led_dem_sp_t0_matrix_key" 24 735 "void()" `1566 
+C L "bai_631_ht_trai_tim" 24 6 4 "FUNCTION"
+F G "bai_631_ht_trai_tim" 24 771 "void()" `1567 
+V L "hang2" 24 772 "int8[1]" `1568 
+V L "i" 24 773 "sint8" `1569 
+C L "bai_632_ht_20_traitim" 24 6 4 "FUNCTION"
+F G "bai_632_ht_20_traitim" 24 790 "void()" `1571 
+V L "hang2" 24 791 "int8[1]" `1572 
+V L "i" 24 792 "sint8" `1573 
+C L "bai_633_lcd_3kytu" 24 6 4 "FUNCTION"
+F G "bai_633_lcd_3kytu" 24 810 "void()" `1575 
+V L "hang1" 24 811 "int8[1]" `1576 
+C L "bai_633_lcd_3kytu" 24 6 1 "FUNCTION"
+V L "hang2" 24 812 "int8[1]" `1577 
+C L "bai_633_lcd_3kytu" 24 6 1 "FUNCTION"
+V L "hang3" 24 813 "int8[1]" `1578 
+C L "bai_633_lcd_3kytu" 24 6 1 "FUNCTION"
+V L "i" 24 814 "sint8" `1579 
+C L "bai_634_lcd_8kytu" 24 6 4 "FUNCTION"
+F G "bai_634_lcd_8kytu" 24 839 "void()" `1581 
+V L "hang1" 24 840 "int8[1]" `1582 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang2" 24 841 "int8[1]" `1583 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang3" 24 842 "int8[1]" `1584 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang4" 24 843 "int8[1]" `1585 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang5" 24 844 "int8[1]" `1586 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang6" 24 845 "int8[1]" `1587 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang7" 24 846 "int8[1]" `1588 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "hang8" 24 847 "int8[1]" `1589 
+C L "bai_634_lcd_8kytu" 24 6 1 "FUNCTION"
+V L "i" 24 848 "sint8" `1590 
+C L "bai_635_lcd_apple" 24 6 4 "FUNCTION"
+F G "bai_635_lcd_apple" 24 887 "void()" `1592 
+V L "hang1" 24 888 "int8[1]" `1593 
+V L "hang2" 24 889 "int8[1]" `1594 
+V L "hang3" 24 890 "int8[1]" `1595 
+V L "hang4" 24 891 "int8[1]" `1596 
+V L "i" 24 892 "sint8" `1597 
+C L "bai_636_lcd_apple_dichchuyen" 24 6 4 "FUNCTION"
+F G "bai_636_lcd_apple_dichchuyen" 24 923 "void()" `1599 
+V L "hang1" 24 924 "int8[1]" `1600 
+V L "hang2" 24 925 "int8[1]" `1601 
+V L "hang3" 24 926 "int8[1]" `1602 
+V L "hang4" 24 927 "int8[1]" `1603 
+V L "i" 24 928 "sint8" `1604 
+C L "bai_641_lcd_so_0" 24 6 4 "FUNCTION"
+F G "bai_641_lcd_so_0" 24 983 "void()" `1610 
+C L "bai_642_lcd_so_0123" 24 6 4 "FUNCTION"
+F G "bai_642_lcd_so_0123" 24 998 "void()" `1612 
+C L "bai_643_lcd_dem_00_99" 24 6 4 "FUNCTION"
+F G "bai_643_lcd_dem_00_99" 24 1016 "void()" `1614 
+C L "ham_644_hienthi_lcd_ktl" 24 6 5 "FUNCTION"
+F G "ham_644_hienthi_lcd_ktl" 24 1038 "void()" `1616 
+C L "bai_644_lcd_dem_sp_ktl" 24 6 1 "FUNCTION"
+F G "bai_644_lcd_dem_sp_ktl" 24 1045 "void()" `1617 
+C L "bai_652_glcd_hien_thi_chuoi" 24 6 2 "FUNCTION"
+C L "bai_652_glcd_hien_thi_chuoi" 24 1061 5 "*"
+F G "bai_652_glcd_hien_thi_chuoi" 24 1068 "void()" `1619 
+C L "ham_653_glcd_hienthi_t0" 24 1061 4 "FUNCTION"
+V L "t0" 24 1086 "int8" `1626 
+F G "ham_653_glcd_hienthi_t0" 24 1087 "void(int8 t0)" `1625 
+C L "bai_653_glcd_dem_sp_t0" 24 1061 1 "FUNCTION"
+F G "bai_653_glcd_dem_sp_t0" 24 1095 "void()" `1627 
+C L "ham_654_glcd_hienthi_t0" 24 1061 4 "FUNCTION"
+V L "t0" 24 1115 "int8" `1630 
+F G "ham_654_glcd_hienthi_t0" 24 1116 "void(int8 t0)" `1629 
+C L "ham_654_hienthi_lcd" 24 1061 1 "FUNCTION"
+F G "ham_654_hienthi_lcd" 24 1124 "void()" `1631 
+C L "bai_654_glcd_lcd_4led_dem_sp_t0" 24 1061 1 "FUNCTION"
+F G "bai_654_glcd_lcd_4led_dem_sp_t0" 24 1133 "void()" `1632 
+C L "bai_661_glcd_bitmap_spkt" 24 1061 4 "FUNCTION"
+F G "bai_661_glcd_bitmap_spkt" 24 1158 "void()" `1635 
+C L "bai_662_glcd_2bitmap_spkt" 24 1061 4 "FUNCTION"
+F G "bai_662_glcd_2bitmap_spkt" 24 1171 "void()" `1636 
+C L "bai_663_glcd_dt_dt" 24 1061 4 "FUNCTION"
+F G "bai_663_glcd_dt_dt" 24 1185 "void()" `1637 
+C L "ham_664_hienthi" 24 1061 4 "FUNCTION"
+F G "ham_664_hienthi" 24 1199 "void()" `1638 
+C L "bai_664_glcd_dem_sp_t0_ht_cot" 24 1061 1 "FUNCTION"
+F G "bai_664_glcd_dem_sp_t0_ht_cot" 24 1208 "void()" `1639 
+C L "ham_665_SO_LAMA" 24 1061 4 "FUNCTION"
+F G "ham_665_SO_LAMA" 24 1245 "void()" `1640  "SO XII"
+C L "ham_665_SO_LAMA" 24 1061 1 "FUNCTION"
+C L "ham_665_SO_LAMA" 24 1061 1 "FUNCTION"
+C L "ham_665_SO_LAMA" 24 1061 1 "FUNCTION"
+C L "ham_665_DONGHO_TEXT" 24 1061 1 "FUNCTION"
+F G "ham_665_DONGHO_TEXT" 24 1269 "void()" `1641 
+C L "ham_665_DONGHO_TEXT" 24 1061 1 "FUNCTION"
+C L "ham_665_DONGHO_TEXT" 24 1061 1 "FUNCTION"
+C L "ham_665_DONGHO_TEXT" 24 1061 1 "FUNCTION"
+C L "ham_665_hienthi_lcd" 24 1061 1 "FUNCTION"
+F G "ham_665_hienthi_lcd" 24 1293 "void()" `1649 
+C L "BAI_655_GLCD_DEM_GIAY" 24 1061 1 "FUNCTION"
+F G "BAI_655_GLCD_DEM_GIAY" 24 1307 "void()" `1653 
+C L "BAI_655_GLCD_DEM_GIAY" 24 1061 4 "FUNCTION"
+C L "ham_671_glcd_hienthi_t0" 24 1061 4 "FUNCTION"
+F G "ham_671_glcd_hienthi_t0" 24 1356 "void()" `1654 
+C L "ham_671_giai_ma_gan_cho_8led_quet" 24 1061 1 "FUNCTION"
+F G "ham_671_giai_ma_gan_cho_8led_quet" 24 1369 "void()" `1655 
+C L "ham_671_tat_2led_chinh" 24 1061 1 "FUNCTION"
+F G "ham_671_tat_2led_chinh" 24 1381 "void()" `1656 
+C L "ham_671_phim_mod" 24 1061 1 "FUNCTION"
+F G "ham_671_phim_mod" 24 1388 "void()" `1657 
+C L "ham_671_phim_up" 24 1061 1 "FUNCTION"
+F G "ham_671_phim_up" 24 1398 "void()" `1658 
+C L "ham_671_phim_dw" 24 1061 1 "FUNCTION"
+F G "ham_671_phim_dw" 24 1419 "void()" `1659 
+C L "bai_671_glcd_tonghop_5_module" 24 1061 1 "FUNCTION"
+F G "bai_671_glcd_tonghop_5_module" 24 1440 "void()" `1660 
+C L "ham_672_glcd_hienthi_t0" 24 1061 4 "FUNCTION"
+F G "ham_672_glcd_hienthi_t0" 24 1506 "void()" `1663 
+C L "ham_672_giai_ma_gan_cho_8led_quet" 24 1061 1 "FUNCTION"
+F G "ham_672_giai_ma_gan_cho_8led_quet" 24 1519 "void()" `1664 
+C L "ham_672_tat_2led_chinh" 24 1061 1 "FUNCTION"
+F G "ham_672_tat_2led_chinh" 24 1531 "void()" `1665 
+C L "ham_672_phim_mod" 24 1061 1 "FUNCTION"
+F G "ham_672_phim_mod" 24 1538 "void()" `1666 
+C L "ham_672_phim_up" 24 1061 1 "FUNCTION"
+F G "ham_672_phim_up" 24 1548 "void()" `1667 
+C L "ham_672_phim_dw" 24 1061 1 "FUNCTION"
+F G "ham_672_phim_dw" 24 1569 "void()" `1668 
+C L "bai_672_glcd_tonghop_5_module" 24 1061 1 "FUNCTION"
+F G "bai_672_glcd_tonghop_5_module" 24 1590 "void()" `1669 
+D G "nd_tren" 27 4 "30"
+D G "nd_duoi" 27 5 "25"
+D G "gh_nda_tren" 27 6 "0x23"
+D G "gh_nda_duoi" 27 7 "0x21"
+C L "khoi_tao_adc" 27 1 2 "FUNCTION"
+F G "khoi_tao_adc" 27 12 "void()" `1672 
+C L "khoi_tao_adc" 27 1 2 "FUNCTION"
+C L "khoi_tao_adc" 27 1 1 "FUNCTION"
+V G "j" 27 23 "int8" `1673 
+V G "solan" 27 23 "int8" `1674 
+V G "lm35a" 27 24 "int16" `1675 
+V G "lm35b" 27 24 "int16" `1676 
+V G "gtcdt" 27 24 "int16" `1677 
+V G "kqadc" 27 25 "int16" `1678 
+V G "k_cach" 27 26 "float" `1679 
+V G "clk_cach" 27 26 "float" `1680 
+V G "ttqn" 27 27 "int1" `1681 
+C L "bai_701_lm35a" 27 1 4 "FUNCTION"
+F G "bai_701_lm35a" 27 34 "void()" `1682 
+C L "ham_702_so_sanh_dk_buzzer" 27 1 5 "FUNCTION"
+F G "ham_702_so_sanh_dk_buzzer" 27 51 "void()" `1683 
+C L "bai_702_lm35a_buzz" 27 1 1 "FUNCTION"
+F G "bai_702_lm35a_buzz" 27 65 "void()" `1684 
+C L "ham_703_so_sanh_dk_buzzer" 27 1 5 "FUNCTION"
+F G "ham_703_so_sanh_dk_buzzer" 27 83 "void()" `1685 
+C L "bai_703_lm35a_buzz_auto" 27 1 1 "FUNCTION"
+F G "bai_703_lm35a_buzz_auto" 27 99 "void()" `1686 
+C L "ham_704_so_sanh_dk_buzzer" 27 1 5 "FUNCTION"
+F G "ham_704_so_sanh_dk_buzzer" 27 117 "void()" `1687 
+C L "ham_704_hienthi_lcd" 27 1 1 "FUNCTION"
+F G "ham_704_hienthi_lcd" 27 133 "void()" `1688 
+C L "bai_704_lm35a_buzz_auto" 27 1 1 "FUNCTION"
+F G "bai_704_lm35a_buzz_auto" 27 139 "void()" `1689 
+C L "ham_705_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_705_doc_nd_lm35a" 27 161 "void()" `1691 
+C L "ham_705_doc_nd_lm35b" 27 1 1 "FUNCTION"
+F G "ham_705_doc_nd_lm35b" 27 174 "void()" `1692 
+C L "bai_705_adc_2lm35" 27 1 1 "FUNCTION"
+F G "bai_705_adc_2lm35" 27 187 "void()" `1693 
+C L "ham_706_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_706_doc_nd_lm35a" 27 198 "void()" `1694 
+C L "ham_706_doc_nd_lm35b" 27 1 1 "FUNCTION"
+F G "ham_706_doc_nd_lm35b" 27 211 "void()" `1695 
+C L "ham_706_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+F G "ham_706_so_sanh_dk_buzzer" 27 224 "void()" `1696 
+C L "ham_706_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_706_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "bai_706_2lm35_buzz" 27 1 1 "FUNCTION"
+F G "bai_706_2lm35_buzz" 27 242 "void()" `1697 
+C L "ham_707_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_707_doc_nd_lm35a" 27 254 "void()" `1698 
+C L "ham_707_doc_nd_lm35b" 27 1 1 "FUNCTION"
+F G "ham_707_doc_nd_lm35b" 27 267 "void()" `1699 
+C L "ham_707_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+F G "ham_707_so_sanh_dk_buzzer" 27 280 "void()" `1700 
+C L "ham_707_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_707_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_707_hienthi_lcd" 27 1 1 "FUNCTION"
+F G "ham_707_hienthi_lcd" 27 298 "void()" `1701 
+C L "bai_707_2lm35_lcd" 27 1 1 "FUNCTION"
+F G "bai_707_2lm35_lcd" 27 310 "void()" `1704 
+C L "bai_708_lm35a_counter_t0" 27 1 5 "FUNCTION"
+F G "bai_708_lm35a_counter_t0" 27 326 "void()" `1705 
+C L "ham_709_doc_nd_lm35a" 27 1 5 "FUNCTION"
+F G "ham_709_doc_nd_lm35a" 27 350 "void()" `1706 
+C L "ham_709_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+F G "ham_709_so_sanh_dk_buzzer" 27 363 "void()" `1707 
+C L "ham_709_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_709_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_709_phim_up" 27 1 1 "FUNCTION"
+F G "ham_709_phim_up" 27 381 "void()" `1708 
+C L "ham_709_phim_dw" 27 1 1 "FUNCTION"
+F G "ham_709_phim_dw" 27 395 "void()" `1709 
+C L "bai_709_lm35_up_dw" 27 1 1 "FUNCTION"
+F G "bai_709_lm35_up_dw" 27 409 "void()" `1710 
+C L "ham_710_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_710_doc_nd_lm35a" 27 422 "void()" `1711 
+C L "ham_710_doc_nd_lm35b" 27 1 1 "FUNCTION"
+F G "ham_710_doc_nd_lm35b" 27 435 "void()" `1712 
+C L "ham_710_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+F G "ham_710_so_sanh_dk_buzzer" 27 448 "void()" `1713 
+C L "ham_710_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_710_so_sanh_dk_buzzer" 27 1 1 "FUNCTION"
+C L "ham_710_hienthi_lcd" 27 1 1 "FUNCTION"
+F G "ham_710_hienthi_lcd" 27 466 "void()" `1714 
+C L "bai_710_lm35_counter_lcd" 27 1 1 "FUNCTION"
+F G "bai_710_lm35_counter_lcd" 27 482 "void()" `1718 
+C L "bai_711_gp2d12_ss10cm" 27 1 4 "FUNCTION"
+F G "bai_711_gp2d12_ss10cm" 27 500 "void()" `1719 
+C L "ham_712_giai_ma_hienthi_4led" 27 1 4 "FUNCTION"
+V L "tam" 27 518 "float" `1721 
+F G "ham_712_giai_ma_hienthi_4led" 27 519 "void(float tam)" `1720 
+V L "x" 27 520 "int16" `1722 
+C L "bai_712_gp2d12_ss1cm" 27 1 1 "FUNCTION"
+F G "bai_712_gp2d12_ss1cm" 27 526 "void()" `1723 
+C L "ham_713_giai_ma_hienthi_4led" 27 1 4 "FUNCTION"
+V L "tam" 27 585 "float" `1725 
+F G "ham_713_giai_ma_hienthi_4led" 27 586 "void(float tam)" `1724 
+V L "x" 27 587 "int16" `1726 
+C L "bai_713_gp2d12_ss1cm" 27 1 1 "FUNCTION"
+F G "bai_713_gp2d12_ss1cm" 27 593 "void()" `1727 
+C L "ham_714_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_714_doc_nd_lm35a" 27 606 "void()" `1728 
+C L "ham_714_doc_nd_lm35b" 27 1 1 "FUNCTION"
+F G "ham_714_doc_nd_lm35b" 27 619 "void()" `1729 
+C L "ham_714_doc_khoangcach_gp2d12" 27 1 1 "FUNCTION"
+F G "ham_714_doc_khoangcach_gp2d12" 27 632 "void()" `1730 
+C L "ham_714_hienthi_lcd" 27 1 1 "FUNCTION"
+F G "ham_714_hienthi_lcd" 27 641 "void()" `1731 
+C L "bai_714_lcd_2lm35_t0_gp2d12" 27 1 1 "FUNCTION"
+F G "bai_714_lcd_2lm35_t0_gp2d12" 27 661 "void()" `1736 
+C L "bai_731_ds18b20a" 27 1 5 "FUNCTION"
+F G "bai_731_ds18b20a" 27 679 "void()" `1737 
+C L "bai_732_ds18b20a_on_off_32led" 27 1 6 "FUNCTION"
+F G "bai_732_ds18b20a_on_off_32led" 27 698 "void()" `1738 
+C L "bai_733_ds18b20a_lcd_buzzer" 27 1 5 "FUNCTION"
+F G "bai_733_ds18b20a_lcd_buzzer" 27 726 "void()" `1739 
+C L "bai_733_ds18b20a_lcd_buzzer" 27 1 1 "FUNCTION"
+C L "bai_733_ds18b20a_lcd_buzzer" 27 1 1 "FUNCTION"
+C L "bai_733_ds18b20a_lcd_buzzer" 27 1 1 "FUNCTION"
+C L "ham_734_doc_nd_lm35a" 27 1 4 "FUNCTION"
+F G "ham_734_doc_nd_lm35a" 27 763 "void()" `1741 
+C L "bai_734_ds18b20a_lm35a" 27 1 1 "FUNCTION"
+F G "bai_734_ds18b20a_lm35a" 27 776 "void()" `1742 
+C L "bai_734_ds18b20a_lm35a" 27 1 1 "FUNCTION"
+C L "bai_734_ds18b20a_lm35a" 27 1 1 "FUNCTION"
+C L "bai_734_ds18b20a_lm35a" 27 1 1 "FUNCTION"
+C L "bai_734_ds18b20a_lm35a" 27 1 2 "FUNCTION"
+C L "bai_735_ds18b20a_t0" 27 1 4 "FUNCTION"
+F G "bai_735_ds18b20a_t0" 27 810 "void()" `1743 
+C L "bai_735_ds18b20a_t0" 27 1 1 "FUNCTION"
+D G "solando" 28 4 "100"
+D G "gioihan_dk" 28 5 "180"
+D G "pir" 28 6 "pin_a3"
+V G "k" 28 10 "int16" `1744 
+V G "giatri_mod" 28 11 "int8" `1745 
+V G "giay_ch" 28 12 "int16" `1746 
+V G "phut_ch" 28 12 "int16" `1747 
+V G "gio_ch" 28 12 "int16" `1748 
+V G "ttsd" 28 12 "int16" `1749 
+V G "dac" 28 13 "int8" `1750 
+V G "adc_lm35a" 28 14 "int16" `1751 
+V G "adc_lm35b" 28 14 "int16" `1752 
+V G "adc_cds" 28 14 "int16" `1753 
+V G "tt_triac" 28 15 "int1" `1754 
+V G "tt_triac1" 28 15 "int1" `1755 
+C L "khoi_tao_ds13b07" 28 1 2 "FUNCTION"
+F G "khoi_tao_ds13b07" 28 20 "void()" `1756 
+C L "khoi_tao_ds13b07" 28 1 2 "FUNCTION"
+C L "hien_thi_gia_tri_mod" 28 1 1 "FUNCTION"
+F G "hien_thi_gia_tri_mod" 28 37 "void()" `1758 
+C L "hieu_chinh_so_bcd_tang" 28 1 1 "FUNCTION"
+V L "x" 28 42 "int8" `1760 
+F G "hieu_chinh_so_bcd_tang" 28 43 "int8(int8 x)" `1759 
+V L "y" 28 44 "int8" `1761 
+C L "hieu_chinh_so_bcd_giam" 28 1 1 "FUNCTION"
+V L "x" 28 51 "int8" `1763 
+F G "hieu_chinh_so_bcd_giam" 28 52 "int8(int8 x)" `1762 
+V L "y" 28 53 "int8" `1764 
+C L "luu_giai_ma_hien_thi_sau_khi_chinh" 28 1 1 "FUNCTION"
+F G "luu_giai_ma_hien_thi_sau_khi_chinh" 28 61 "void()" `1765 
+C L "bai_801_i2c_rt_lcd" 28 1 4 "FUNCTION"
+F G "bai_801_i2c_rt_lcd" 28 71 "void()" `1766 
+C L "ham_802_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_802_phim_mod" 28 86 "void()" `1767 
+C L "ham_802_phim_up" 28 1 1 "FUNCTION"
+F G "ham_802_phim_up" 28 103 "void()" `1768 
+C L "ham_802_phim_dw" 28 1 1 "FUNCTION"
+F G "ham_802_phim_dw" 28 144 "void()" `1769 
+C L "bai_802_i2c_rt_lcd_3key" 28 1 1 "FUNCTION"
+F G "bai_802_i2c_rt_lcd_3key" 28 185 "void()" `1770 
+C L "ham_803_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_803_phim_mod" 28 206 "void()" `1771 
+C L "ham_803_phim_up" 28 1 1 "FUNCTION"
+F G "ham_803_phim_up" 28 223 "void()" `1772 
+C L "ham_803_phim_dw" 28 1 1 "FUNCTION"
+F G "ham_803_phim_dw" 28 288 "void()" `1773 
+C L "ham_803_nhap_nhay_con_tro" 28 1 1 "FUNCTION"
+F G "ham_803_nhap_nhay_con_tro" 28 353 "void()" `1774 
+C L "bai_803_i2c_rt_lcd_3key" 28 1 1 "FUNCTION"
+F G "bai_803_i2c_rt_lcd_3key" 28 374 "void()" `1775 
+C L "bai_803_i2c_rt_lcd_3key" 28 1 1 "FUNCTION"
+C L "ham_804_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_804_phim_mod" 28 397 "void()" `1776 
+C L "ham_804_phim_up" 28 1 1 "FUNCTION"
+F G "ham_804_phim_up" 28 414 "void()" `1777 
+C L "ham_804_phim_dw" 28 1 1 "FUNCTION"
+F G "ham_804_phim_dw" 28 479 "void()" `1778 
+C L "ham_804_nhap_nhay_con_tro" 28 1 1 "FUNCTION"
+F G "ham_804_nhap_nhay_con_tro" 28 544 "void()" `1779 
+C L "bai_804_i2c_rt_lcd_3key_nn" 28 1 1 "FUNCTION"
+F G "bai_804_i2c_rt_lcd_3key_nn" 28 565 "void()" `1786 
+C L "bai_804_i2c_rt_lcd_3key_nn" 28 1 1 "FUNCTION"
+C L "bai_805_i2c_rt_lcd_3key_buzzer" 28 1 4 "FUNCTION"
+F G "bai_805_i2c_rt_lcd_3key_buzzer" 28 588 "void()" `1787 
+C L "bai_805_i2c_rt_lcd_3key_buzzer" 28 1 1 "FUNCTION"
+C L "ham_806_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_806_phim_mod" 28 604 "void()" `1788 
+C L "ham_806_phim_up" 28 1 1 "FUNCTION"
+F G "ham_806_phim_up" 28 621 "void()" `1789 
+C L "ham_806_phim_up" 28 1 1 "FUNCTION"
+C L "ham_806_phim_up" 28 1 1 "FUNCTION"
+C L "ham_806_phim_up" 28 1 1 "FUNCTION"
+C L "ham_806_phim_dw" 28 1 1 "FUNCTION"
+F G "ham_806_phim_dw" 28 662 "void()" `1790 
+C L "ham_806_phim_dw" 28 1 1 "FUNCTION"
+C L "ham_806_nhap_nhay_con_tro" 28 1 1 "FUNCTION"
+F G "ham_806_nhap_nhay_con_tro" 28 703 "void()" `1791 
+C L "ham_806_hien_thi_gio_canh_bao_lcd" 28 1 1 "FUNCTION"
+F G "ham_806_hien_thi_gio_canh_bao_lcd" 28 726 "void()" `1792 
+C L "ham_806_hien_thi_gio_canh_bao_lcd" 28 1 1 "FUNCTION"
+C L "bai_806_i2c_rt_lcd_3key_alram" 28 1 1 "FUNCTION"
+F G "bai_806_i2c_rt_lcd_3key_alram" 28 736 "void()" `1793 
+C L "bai_806_i2c_rt_lcd_3key_alram" 28 1 1 "FUNCTION"
+C L "bai_806_i2c_rt_lcd_3key_alram" 28 1 1 "FUNCTION"
+C L "ham_807_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_807_phim_mod" 28 776 "void()" `1794 
+C L "ham_807_phim_up" 28 1 1 "FUNCTION"
+F G "ham_807_phim_up" 28 793 "void()" `1795 
+C L "ham_807_phim_dw" 28 1 1 "FUNCTION"
+F G "ham_807_phim_dw" 28 858 "void()" `1796 
+C L "ham_807_nhap_nhay_con_tro" 28 1 1 "FUNCTION"
+F G "ham_807_nhap_nhay_con_tro" 28 923 "void()" `1797 
+C L "ham_807_hien_thi_gio_canh_bao_lcd" 28 1 1 "FUNCTION"
+F G "ham_807_hien_thi_gio_canh_bao_lcd" 28 944 "void()" `1804 
+C L "ham_807_hien_thi_gio_canh_bao_lcd" 28 1 1 "FUNCTION"
+C L "bai_807_i2c_rt_lcd_3key_chuong" 28 1 1 "FUNCTION"
+F G "bai_807_i2c_rt_lcd_3key_chuong" 28 954 "void()" `1805 
+C L "bai_807_i2c_rt_lcd_3key_chuong" 28 1 1 "FUNCTION"
+C L "bai_807_i2c_rt_lcd_3key_chuong" 28 1 1 "FUNCTION"
+C L "bai_807_i2c_rt_lcd_3key_chuong" 28 1 1 "FUNCTION"
+C L "ham_808_hien_thi_thoi_gian_ds1307_so_z" 28 1 4 "FUNCTION"
+F G "ham_808_hien_thi_thoi_gian_ds1307_so_z" 28 1006 "void()" `1806 
+C L "ham_808_hien_thi_thoi_gian_ds1307_so_z" 28 1 1 "FUNCTION"
+C L "bai_808_i2c_rt_lcd_to" 28 1 1 "FUNCTION"
+F G "bai_808_i2c_rt_lcd_to" 28 1018 "void()" `1807 
+C L "ham_809_phim_mod" 28 1 4 "FUNCTION"
+F G "ham_809_phim_mod" 28 1034 "void()" `1808 
+C L "bai_809_i2c_rt_lcd_to_nho" 28 1 1 "FUNCTION"
+F G "bai_809_i2c_rt_lcd_to_nho" 28 1052 "void()" `1809 
+C L "bai_811_pcf8591_4led_lm35a" 28 1 4 "FUNCTION"
+F G "bai_811_pcf8591_4led_lm35a" 28 1070 "void()" `1810 
+C L "bai_811_pcf8591_4led_lm35a" 28 1 1 "FUNCTION"
+C L "ham_812_so_sanh_dk_buzzer" 28 1 4 "FUNCTION"
+F G "ham_812_so_sanh_dk_buzzer" 28 1090 "void()" `1811 
+C L "ham_812_so_sanh_dk_buzzer" 28 1 1 "FUNCTION"
+C L "ham_812_so_sanh_dk_buzzer" 28 1 1 "FUNCTION"
+C L "bai_812_pcf8591_4led_lm35a_buz" 28 1 1 "FUNCTION"
+F G "bai_812_pcf8591_4led_lm35a_buz" 28 1106 "void()" `1812 
+C L "bai_812_pcf8591_4led_lm35a_buz" 28 1 1 "FUNCTION"
+C L "ham_813_doc_nd_lm35b" 28 1 4 "FUNCTION"
+F G "ham_813_doc_nd_lm35b" 28 1127 "void()" `1813 
+C L "ham_813_doc_nd_lm35b" 28 1 1 "FUNCTION"
+C L "bai_813_pcf8591_4led_lm35a_buz" 28 1 1 "FUNCTION"
+F G "bai_813_pcf8591_4led_lm35a_buz" 28 1140 "void()" `1814 
+C L "ham_814_so_sanh_dk_buzzer" 28 1 4 "FUNCTION"
+F G "ham_814_so_sanh_dk_buzzer" 28 1150 "void()" `1815 
+C L "ham_814_so_sanh_dk_buzzer" 28 1 1 "FUNCTION"
+C L "ham_814_so_sanh_dk_buzzer" 28 1 1 "FUNCTION"
+C L "ham_814_doc_nd_lm35a" 28 1 1 "FUNCTION"
+F G "ham_814_doc_nd_lm35a" 28 1168 "void()" `1816 
+C L "ham_814_doc_nd_lm35a" 28 1 1 "FUNCTION"
+C L "bai_814_pcf8591_4led_lm35a_buz_den" 28 1 1 "FUNCTION"
+F G "bai_814_pcf8591_4led_lm35a_buz_den" 28 1181 "void()" `1817 
+C L "ham_815_doc_nd_lm35a" 28 1 4 "FUNCTION"
+F G "ham_815_doc_nd_lm35a" 28 1193 "void()" `1818 
+C L "ham_815_doc_nd_lm35a" 28 1 1 "FUNCTION"
+C L "ham_815_doc_nd_lm35b" 28 1 1 "FUNCTION"
+F G "ham_815_doc_nd_lm35b" 28 1206 "void()" `1819 
+C L "ham_815_doc_nd_lm35b" 28 1 1 "FUNCTION"
+C L "bai_815_pcf8591_4led_lm35ab" 28 1 1 "FUNCTION"
+F G "bai_815_pcf8591_4led_lm35ab" 28 1219 "void()" `1820 
+C L "bai_821_pcf8591_4led_cds" 28 1 4 "FUNCTION"
+F G "bai_821_pcf8591_4led_cds" 28 1231 "void()" `1821 
+C L "bai_821_pcf8591_4led_cds" 28 1 1 "FUNCTION"
+C L "ham_822_sosanh_cds_dk_den" 28 1 4 "FUNCTION"
+F G "ham_822_sosanh_cds_dk_den" 28 1249 "void()" `1822 
+C L "bai_822_pcf8591_4led_cds_on_off_den" 28 1 1 "FUNCTION"
+F G "bai_822_pcf8591_4led_cds_on_off_den" 28 1263 "void()" `1823 
+C L "bai_822_pcf8591_4led_cds_on_off_den" 28 1 1 "FUNCTION"
+C L "ham_831_kiemtra_pir_mo_den" 28 1 4 "FUNCTION"
+F G "ham_831_kiemtra_pir_mo_den" 28 1282 "void()" `1824 
+C L "bai_831_pir_dk_den" 28 1 1 "FUNCTION"
+F G "bai_831_pir_dk_den" 28 1296 "void()" `1825 
+C L "ham_832_kiemtra_pir_mo_den" 28 1 6 "FUNCTION"
+F G "ham_832_kiemtra_pir_mo_den" 28 1308 "void()" `1826 
+C L "ham_832_sosanh_cds_dk_den" 28 1 1 "FUNCTION"
+F G "ham_832_sosanh_cds_dk_den" 28 1322 "void()" `1827 
+C L "bai_832_pir_dk_32led_cds_dk_den" 28 1 1 "FUNCTION"
+F G "bai_832_pir_dk_32led_cds_dk_den" 28 1336 "void()" `1828 
+C L "bai_832_pir_dk_32led_cds_dk_den" 28 1 1 "FUNCTION"
+V G "pwm_capso" 29 11 "int8" `1829 
+V G "duty" 29 12 "int16" `1830  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+C L "bai_901_step_on_off" 29 1 3 "FUNCTION"
+F G "bai_901_step_on_off" 29 19 "void()" `1831 
+C L "bai_902_step_on_off_qn" 29 1 4 "FUNCTION"
+F G "bai_902_step_on_off_qn" 29 34 "void()" `1832 
+C L "ham_903_phim_inv" 29 1 4 "FUNCTION"
+F G "ham_903_phim_inv" 29 49 "void()" `1833 
+C L "bai_903_step_on_off_inv" 29 1 1 "FUNCTION"
+F G "bai_903_step_on_off_inv" 29 69 "void()" `1834 
+C L "ham_904_phim_inv" 29 1 4 "FUNCTION"
+F G "ham_904_phim_inv" 29 86 "void()" `1835 
+C L "bai_904_step_on_off_inv" 29 1 1 "FUNCTION"
+F G "bai_904_step_on_off_inv" 29 107 "void()" `1836 
+V G "flag1" 29 123 "int8" `1837 
+C L "hien_thi_4led_7doan" 29 1 1 "FUNCTION"
+F G "hien_thi_4led_7doan" 29 126 "void()" `1838 
+C L "hien_thi_lcd_so_to" 29 1 1 "FUNCTION"
+F G "hien_thi_lcd_so_to" 29 132 "void()" `1839  "setup_lcd();"
+C L "doc_nd_lm35a" 29 1 1 "FUNCTION"
+F G "doc_nd_lm35a" 29 155 "void()" `1842 
+C L "bai_thi" 29 1 1 "FUNCTION"
+F G "bai_thi" 29 168 "void()" `1843 
+C L "MAIN" 29 1 1 "FUNCTION"
+F G "MAIN" 0 3 "void()" `1844 
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 1 "FUNCTION"
+C L "MAIN" 0 5 1 "FUNCTION"
+F B "reset_cpu" 0 0
+F B "abs" 1 0
+F B "sleep" 0 1
+F B "delay_cycles" 1 0
+F B "read_bank" 2 0
+F B "write_bank" 3 0
+F B "shift_left" 2 2
+F B "shift_right" 2 2
+F B "rotate_left" 2 0
+F B "rotate_right" 2 0
+F B "_mul" 2 0
+F B "memset" 3 0
+F B "isamoung" 2 0
+F B "isamong" 2 0
+F B "bit_set" 2 0
+F B "bit_clear" 2 0
+F B "bit_test" 2 0
+F B "toupper" 1 0
+F B "tolower" 1 0
+F B "swap" 1 0
+F B "printf" 1 255
+F B "fprintf" 1 255
+F B "sprintf" 1 255
+F B "scanf" 1 255
+F B "fscanf" 1 255
+F B "make8" 2 0
+F B "make16" 2 0
+F B "make32" 1 255
+F B "label_address" 1 1
+F B "goto_address" 1 0
+F B "_va_arg" 1 0
+F B "offsetofbit" 2 2
+F B "_iosctrl" 1 2
+F B "profileout" 1 2
+F B "enable_interrupts" 1 0
+F B "disable_interrupts" 1 0
+F B "interrupt_active" 1 0
+F B "clear_interrupt" 1 0
+F B "interrupt_enabled" 1 0
+F B "jump_to_isr" 1 0
+F B "ext_int_edge" 1 2
+F B "read_eeprom" 1 0
+F B "write_eeprom" 2 0
+F B "read_program_eeprom" 1 0
+F B "write_program_eeprom" 2 0
+F B "write_program_memory" 3 0
+F B "read_program_memory" 3 0
+F B "read_rom_memory" 3 0
+F B "erase_program_eeprom" 1 0
+F B "write_configuration_memory" 2 3
+F B "read_configuration_memory" 2 3
+F B "strcpy" 2 0
+F B "memcpy" 3 0
+F B "strstr100" 2 0
+F B "output_high" 1 0
+F B "output_low" 1 0
+F B "input" 1 0
+F B "input_state" 1 0
+F B "output_float" 1 0
+F B "output_drive" 1 0
+F B "output_bit" 1 1
+F B "output_toggle" 1 0
+F B "output_a" 1 0
+F B "output_b" 1 0
+F B "output_c" 1 0
+F B "output_d" 1 0
+F B "output_e" 1 0
+F B "input_a" 0 0
+F B "input_b" 0 0
+F B "input_c" 0 0
+F B "input_d" 0 0
+F B "input_e" 0 0
+F B "set_tris_a" 1 0
+F B "set_tris_b" 1 0
+F B "set_tris_c" 1 0
+F B "set_tris_d" 1 0
+F B "set_tris_e" 1 0
+F B "get_tris_a" 0 0
+F B "get_tris_b" 0 0
+F B "get_tris_c" 0 0
+F B "get_tris_d" 0 0
+F B "get_tris_e" 0 0
+F B "input_change_a" 0 0
+F B "input_change_b" 0 0
+F B "input_change_c" 0 0
+F B "input_change_d" 0 0
+F B "input_change_e" 0 0
+F B "port_b_pullups" 1 0
+F B "setup_counters" 2 0
+F B "setup_wdt" 1 0
+F B "restart_cause" 0 0
+F B "restart_wdt" 0 0
+F B "get_rtcc" 0 0
+F B "set_rtcc" 1 0
+F B "get_timer0" 0 0
+F B "set_timer0" 1 0
+F B "setup_comparator" 1 0
+F B "setup_port_a" 1 2
+F B "setup_adc_ports" 1 2
+F B "get_adc_ports" 0 0
+F B "setup_adc" 1 0
+F B "set_adc_channel" 1 0
+F B "read_adc" 0 1
+F B "adc_done" 0 0
+F B "setup_timer_0" 1 0
+F B "setup_vref" 1 0
+F B "setup_timer_1" 1 0
+F B "get_timer1" 0 0
+F B "set_timer1" 1 0
+F B "setup_timer_2" 3 0
+F B "get_timer2" 0 0
+F B "set_timer2" 1 0
+F B "setup_timer_3" 1 0
+F B "set_timer3" 1 0
+F B "get_timer3" 0 0
+F B "setup_ccp1" 1 2
+F B "set_pwm1_duty" 1 0
+F B "setup_ccp2" 1 0
+F B "set_pwm2_duty" 1 0
+F B "setup_low_volt_detect" 1 0
+F B "setup_oscillator" 0 2
+F B "setup_psp" 1 0
+F B "psp_output_full" 0 0
+F B "psp_input_full" 0 0
+F B "psp_overflow" 0 0
+F B "setup_spi" 1 0
+F B "spi_read" 0 1
+F B "spi_write" 1 2
+F B "spi_data_is_in" 0 0
+F B "setup_spi2" 1 0
+F B "spi_read2" 0 1
+F B "spi_write2" 1 0
+F B "spi_data_is_in2" 0 0
+F B "brownout_enable" 1 0
+F B "i2c_read" 0 2
+F B "i2c_write" 1 2
+F B "i2c_start" 0 2
+F B "i2c_stop" 0 1
+F B "i2c_isr_state" 0 1
+F B "delay_ms" 1 0
+F B "delay_us" 1 0

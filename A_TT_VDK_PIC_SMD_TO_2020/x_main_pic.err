@@ -1,0 +1,10 @@
+>>> Warning 203 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong4_4led_7doan.c" Line 113(1,1): Condition always TRUE
+>>> Warning 230 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong6_lcd_glcd.c" Line 21(48,49): String truncated
+>>> Warning 230 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong6_lcd_glcd.c" Line 22(48,49): String truncated
+>>> Warning 230 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong6_lcd_glcd.c" Line 23(48,49): String truncated
+>>> Warning 230 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong6_lcd_glcd.c" Line 24(48,49): String truncated
+>>> Warning 230 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong6_lcd_glcd.c" Line 25(111,112): String truncated
+>>> Warning 202 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong8_i2c_all.c" Line 13(15,18): Variable never used:   dac
+      Memory usage:   ROM=15%      RAM=70% - 71%
+      0 Errors,  7 Warnings.
+Build Successful.

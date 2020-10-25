@@ -1,0 +1,483 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     i
+017     y8
+018     sl
+019-01A lt
+01B-01C lp
+01D-020 y
+021.0   tt_on_off
+021.1   tt_inv
+021.2   STEPMOTOR_TN
+021.3   STEPMOTOR_ONOFF
+021.4   DCMOTOR_TN
+021.5   DCMOTOR_ONOFF
+021.6   ttqn
+021.7   tt_triac
+022-023 dl_btn
+024     tin_hieu_dk_74573_a
+024.2   g_lcda
+024.4   g_32a
+024.6   g_4a
+025     tin_hieu_dk_74573_b
+025.2   g_rbdcb
+025.4   g_8b
+025.6   g_mtb
+026.0   step_motor_enable
+026-027 rbdc
+026.1   step_motor_in1
+026.2   step_motor_in2
+026.3   step_motor_in3
+026.4   step_motor_in4
+026.5   dc_enable
+026.6   pwrkey
+027.0   buzzer
+027.1   triac_1
+027.2   triac_2
+027.3   relay_1
+027.4   relay_2
+028     donvi4
+029     chuc4
+02A     tram4
+02B     ngan4
+02C     donvi2
+02D     donvi1
+02E     chuc2
+02F     chuc1
+030-037 led_7dq
+038     tt8led
+039     lcddata
+03A     lcdcontrol
+03B     glcddata
+03C     glcdcontrol
+03D-040 YP_CHAY
+041-044 YT_CHAY
+045-048 Y_CODINH
+049-04A ZT
+04B-04C ZT_CHAY_T
+04D-04E ZT_CHAY_P
+04F-050 ZT_CODINH
+051-052 ZP
+053-054 ZP_CHAY_T
+055-056 ZP_CHAY_P
+057-058 ZP_CODINH
+059-05A TGDLAY
+05B     DEM_LED
+05C     I32
+05D     J32
+05E     TTCT_TD
+05F     I16
+060     J16
+061     ttct
+062-065 ZA
+066-069 YA
+06A-06D XA
+06E-071 ZB
+072-075 YB
+076-079 XB
+07A     IA
+07B     JA
+07C     DS18AL
+07D     DS18AH
+07E     DS18A_TAM
+07F-080 DS18A
+081-084 STEPMOTOR_FULLSTEP
+085-08C STEPMOTOR_HALFSTEP
+08D     STEPMOTOR_I
+08E     STEPMOTOR_DELAY
+08F-090 so_buoc
+091-092 PWM_DUTY
+093     mpt1
+094     mpt2
+095.0   lcd_e
+095     lcd_control
+095.1   lcd_rw
+095.2   lcd_rs
+095.3   lcd_p
+096.0   glcd_psb
+096     glcd_control
+096.1   glcd_nc
+096.2   glcd_e
+096.3   glcd_rw
+096.4   glcd_rs
+096.5   glcd_p0
+096.6   glcd_p1
+096.7   glcd_p2
+097     doc
+098     ngang
+099-499 gdram_vdk
+49A     nam_ds13
+49B     thang_ds13
+49C     ngay_ds13
+49D     thu_ds13
+49E     gio_ds13
+49F     phut_ds13
+4A0     giay_ds13
+4A1     ma_ds13
+4A2     control_ds13
+4A3     giaytam
+4A4     mp
+4A5     mp1
+4A6     t0
+4A7     t0_tam
+4A8-4A9 t0_16bit
+4AA-4AB t0_tam_16bit
+4AC     donvi
+4AD     chuc
+4AE     tram
+4AF-4B2 m4led
+4B3-4BA m4led8
+4BB-4BC tg_delay
+4BD     gio
+4BE     phut
+4BF     giay
+4C0     bdn
+4C1     dem_tg_exit
+4C2-4C9 led7dq
+4CA     gia_tri_mod
+4CB     gioi_han
+4CC     flag
+4CD-4CE gioi_han_tam
+4CF-4E2 hang1
+4E3-4F6 hang2
+4F7-50A hang3
+50B-51E hang4
+51F-56E hang1234
+56F     dem
+570     j
+571     solan
+572-573 lm35a
+574-575 lm35b
+576-577 gtcdt
+578-579 kqadc
+57A-57D k_cach
+57E-581 clk_cach
+582-583 k
+584     giatri_mod
+585-586 giay_ch
+587-588 phut_ch
+589-58A gio_ch
+58B-58C ttsd
+58D     dac
+58E-58F adc_lm35a
+590-591 adc_lm35b
+592-593 adc_cds
+594.0   tt_triac1
+595     pwm_capso
+596-597 duty
+598     flag1
+599     xuat_buzzer_relay.rbdc1
+599-59C @DIVFF.P1
+599-59A @ITOF.P2
+599     @delay_ms1.P3
+599     pcf8591_xuat_dac.dac_out
+599     @DIV88.P1
+599-59A @DIV1616.P2
+599.0   touch_present.present
+599     touch_write_byte.data
+599-59C @SFTOI.P1
+599-59C atan2.y
+599     @PSTRINGC_984.@SCRATCH1
+599     hien_thi_4led_7doan.@SCRATCH1
+599     hien_thi_lcd_so_to.@SCRATCH1
+599     MAIN.@SCRATCH1
+59A     @DIVS88.P1
+59A     xuat_buzzer_relay.rbdc2
+59A     @I2C_WRITE_1.P1
+59A     @DIV88.P2
+59A     touch_write_byte.i
+59A     touch_present.@SCRATCH1
+59A     @PSTRINGC_984.@SCRATCH2
+59A     hien_thi_4led_7doan.@SCRATCH2
+59A     hien_thi_lcd_so_to.@SCRATCH2
+59B     @DIVS88.P1
+59B     @delay_us1.P2
+59B     xuat_4led_7doan_4so.bl743
+59B     lcd_hienthi_so_z_toado_xy.lcd_so
+59B-59C @DIV1616.P1
+59B     @DIV88.@SCRATCH1
+59B     touch_write_byte.@SCRATCH1
+59C     touch_write_bit.data
+59C     xuat_4led_7doan_4so.bl742
+59C     lcd_hienthi_so_z_toado_xy.x1
+59C     @DIVS88.@SCRATCH1
+59D     xuat_4led_7doan_4so.bl741
+59D-5A0 @DIVFF.P1
+59D     lcd_hienthi_so_z_toado_xy.y1
+59D-5A0 atan2.x
+59D     @DIV1616.@SCRATCH1
+59D     @DIVS88.@SCRATCH2
+59E     lcd_hienthi_so_z_toado_xy.i
+59E     xuat_4led_7doan_4so.bl740
+59F     @MUL88.P1
+59F     lcd_hienthi_so_z_toado_xy.@SCRATCH1
+5A0     lcd_data.lcd_data_x
+5A0     lcd_goto_xy.x
+5A0     @MUL88.P1
+5A0     lcd_hienthi_so_z_toado_xy.@SCRATCH2
+5A1     lcd_goto_xy.y
+5A1-5A4 atan2.z
+5A1     @DIVFF.@SCRATCH1
+5A2     lcd_goto_xy.@SCRATCH1
+5A2     @DIVFF.@SCRATCH2
+5A3     lcd_command.lcd_data_x
+5A3     @DIVFF.@SCRATCH3
+5A4     lcd_xuat_8bit.lcd_data_x
+5A4     @DIVFF.@SCRATCH4
+5A5.0   atan2.sign
+5A5     xuat_lcd20x4.lcd_signal
+5A5     @DIVFF.@SCRATCH5
+5A6     atan2.quad
+5A6     xuat_lcd20x4.lcd_ins_hthi
+5A6     @DIVFF.@SCRATCH6
+5A7     xuat_1byte.bytexuat
+5A7.7   xuat_1byte.bseri
+5A8     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  ma7doan.call
+0000B0  ma7doan.data
+0000C0  lcd_so_x.call
+0000DA  lcd_so_x.data
+000116  lcd_ma_8doan.call
+000130  lcd_ma_8doan.data
+000170  lcd_vitri.call
+00018A  lcd_vitri.data
+00018E  interrupt_timer1
+0001A2  @const1493.call
+0001BA  @const1495.call
+0001D0  @const1496.call
+0001E6  @const1497.call
+0001FC  @const1499.call
+0001FE  @const1500.call
+000214  @const1501.call
+000218  @const1502.call
+00022C  @const1504.call
+000242  @const1505.call
+000258  @const1507.call
+00026E  @const1508.call
+000284  @const1510.call
+00029A  @const1511.call
+0002B0  @const1514.call
+0002BA  @const1516.call
+0002BC  @const1518.call
+0002C6  @const1520.call
+0002C8  @const1521.call
+0002CA  @const1523.call
+0002D4  @const1525.call
+0002D6  @const1526.call
+0002D8  @const1531.call
+0002E2  @const1533.call
+0002E4  @const1534.call
+0002E6  @const1541.call
+0002F0  @const1545.call
+0002FE  @const1546.call
+00030C  @const1553.call
+00031A  @const1555.call
+000328  @const1559.call
+00032C  @const1561.call
+00033E  @const1562.call
+000350  @const1564.call
+00035E  @const1565.call
+00036C  @const1570.call
+00037E  @const1574.call
+000390  @const1580.call
+0003A2  @const1591.call
+0003B4  @const1598.call
+0003C6  @const1605.call
+0003D8  @const1606.call
+0003DA  @const1607.call
+0003DC  @const1608.call
+0003DE  @const1609.call
+0003E0  @const1611.call
+0003F6  @const1613.call
+000408  @const1615.call
+000420  @const1618.call
+000432  @const1620.call
+000444  @const1622.call
+000454  @const1623.call
+000460  @const1624.call
+00046E  @const1628.call
+00047C  @const1633.call
+00048A  @const1634.call
+000498  @const1642.call
+0004A0  @const1643.call
+0004A6  @const1644.call
+0004A8  @const1645.call
+0004AE  @const1646.call
+0004B0  @const1647.call
+0004B6  @const1648.call
+0004B8  @const1650.call
+0004C2  @const1651.call
+0004C4  @const1652.call
+0004C6  @const1661.call
+0004D4  @const1662.call
+0004E8  @const1670.call
+0004EE  @const1671.call
+000502  @const1690.call
+000514  @const1702.call
+00051C  @const1703.call
+000524  @const1715.call
+000536  @const1716.call
+000548  @const1717.call
+000558  @const1732.call
+000560  @const1733.call
+000568  @const1734.call
+000578  @const1735.call
+00057E  @const1740.call
+00058C  @const1757.call
+000594  @const1780.call
+000598  @const1781.call
+00059C  @const1782.call
+0005A0  @const1783.call
+0005A4  @const1784.call
+0005A8  @const1785.call
+0005AC  @const1798.call
+0005B0  @const1799.call
+0005B4  @const1800.call
+0005B8  @const1801.call
+0005BC  @const1802.call
+0005C0  @const1803.call
+0005C4  @const1840.call
+0005DA  @const1841.call
+0005F0  reset_cac_bien
+000610  set_up_port_ic_chot
+00065A  khoi_tao_timer0
+000666  khoi_tao_timer1_ngat
+00067C  xuat_1byte
+0006A6  mo_ic_74573_a_thong_dl
+0006D4  xuat_glcd_lcd
+000700  xuat_lcd20x4
+000714  lcd_xuat_8bit
+00072E  lcd_command
+000738  @delay_ms1
+000762  setup_lcd
+0007BE  @delay_us1
+0007DE  touch_present
+000838  touch_write_bit
+0008AC  touch_write_byte
+0008E2  KHOI_TAO_DS18B20
+00092C  khoi_tao_adc
+000944  @I2C_WRITE_1
+000996  pcf8591_xuat_dac
+0009F8  lcd_data
+000A02  mo_ic_74573_b_thong_dl
+000A32  xuat_buzzer_relay
+000A5A  DC_MOTOR_ENABLE
+000A62  @DIVS88
+000AAE  xuat_4led_7doan_4so
+000ADA  hien_thi_4led_7doan
+000B32  @DIV88
+000B5E  lcd_goto_xy
+000B82  @MUL88
+000BD2  lcd_hienthi_so_z_toado_xy
+000C48  @PSTRINGC_984
+000C68  @DIV1616
+000CAE  hien_thi_lcd_so_to
+000DEE  @ITOF
+000E26  @DIVFF
+000F86  @SFTOI
+000FC4  doc_nd_lm35a
+001066  bai_thi
+001160  @cinit1
+001160  MAIN
+00126E  @cinit2
+
+Project Directory:
+    D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\
+
+Project Files:
+    x_main_pic.c                                            [09-Sep-20 11:24  CRC=422E8466]
+    b_tv_lbr_chuong_all.c                                   [09-Sep-20 11:08  CRC=80CF0988]
+    tv_01_mbi_hardware.c                                    [30-May-20 13:17  CRC=093F07FB]
+    ..\..\..\..\APP\PICC\Devices\18f4550.h                  [12-Nov-13 14:35  CRC=5337E248]
+    tv_03_mbi_32led_don.c                                   [03-May-20 15:36  CRC=796F0EE7]
+    tv_04_mbi_4led_7doan.c                                  [20-Jun-20 20:40  CRC=31F79CE0]
+    tv_05_mbi_8led_7doan.c                                  [13-Jun-20 13:15  CRC=54001C79]
+    tv_06_mbi_lcd_glcd.c                                    [03-May-20 15:42  CRC=B9040DA6]
+    tv_10_mbi_led_matran.c                                  [03-May-20 15:43  CRC=97619CD3]
+    TV_PICKIT2_SHIFT_32LED_DON.c                            [20-Jun-20 22:29  CRC=B75244A1]
+    TV_PICKIT2_SHIFT_DS18B20.c                              [22-Aug-20 14:58  CRC=F220AF14]
+    ..\..\..\..\APP\PICC\Drivers\TOUCH.c                    [02-Mar-10 13:04  CRC=24D0ECE7]
+    TV_PICKIT2_SHIFT_STEP_MOTOR.c                           [05-Sep-20 16:56  CRC=97FE8470]
+    TV_PICKIT2_SHIFT_DC_MOTOR.c                             [02-Jun-15 01:30  CRC=B77513A4]
+    lbr_03_key.c                                            [16-May-20 08:55  CRC=0E6E134C]
+    lbr_04_timer_ngat.c                                     [03-May-20 11:46  CRC=00000000]
+    lbr_06_lcd.c                                            [03-May-20 16:10  CRC=7143F172]
+    lbr_06_glcd.c                                           [03-May-20 16:11  CRC=5E21D0E3]
+    lbr_08_i2c.c                                            [25-Aug-20 13:16  CRC=FEE56009]
+    lbr_10_matran_cot.c                                     [03-May-20 16:25  CRC=00000000]
+    lbr_10_matran_hang.c                                    [03-May-20 16:26  CRC=00000000]
+    chuong3_32led_key.c                                     [27-Jun-20 14:45  CRC=D3F4D016]
+    chuong4_4led_7doan.c                                    [15-Aug-20 16:23  CRC=F6FE5C39]
+    chuong5_8led_7doan.c                                    [20-Jun-20 20:53  CRC=4796DAFF]
+    chuong6_lcd_glcd.c                                      [15-Aug-20 13:12  CRC=4DAD0458]
+    ..\..\..\..\APP\PICC\Drivers\graphics.c                 [11-Jul-20 14:37  CRC=F2729014]
+    ..\..\..\..\APP\PICC\Drivers\math.h                     [28-Sep-12 11:35  CRC=546412C9]
+    chuong7_adc_cb.c                                        [05-Sep-20 14:06  CRC=651A7115]
+    chuong8_i2c_all.c                                       [05-Sep-20 15:28  CRC=521DC908]
+    chuong9_dongco.c                                        [09-Sep-20 11:23  CRC=178DA979]
+    chuonga_led_matran.c                                    [03-May-20 11:46  CRC=00000000]
+
+Source signature=DF852B5D
+
+Units:
+    x_main_pic (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   x_main_pic.xsym
+    Errors:      x_main_pic.err
+    Ext Symbols: x_main_pic.esym
+    INHX32:      x_main_pic.hex
+    Symbols:     x_main_pic.sym
+    List:        x_main_pic.lst
+    Debug/COFF:  x_main_pic.cof
+    Project:     x_main_pic.ccspjt
+    Call Tree:   x_main_pic.tre
+    Statistics:  x_main_pic.STA

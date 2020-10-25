@@ -1,0 +1,4 @@
+>>> Warning 203 "D:\CET\vi xu li(PIC16F887)\THUC_TAP\A_TT_VDK_PIC_SMD_TO_2020\chuong4_4led_7doan.c" Line 112(1,1): Condition always TRUE
+      Memory usage:   ROM=9%      RAM=10% - 10%
+      0 Errors,  1 Warnings.
+Build Successful.
